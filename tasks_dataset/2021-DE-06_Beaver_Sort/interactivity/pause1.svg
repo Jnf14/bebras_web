@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="80.611 143.722 8.957 13.769"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="pause.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="46.453638"
+     inkscape:cx="4.0183951"
+     inkscape:cy="4.9418014"
+     inkscape:window-x="-8"
+     inkscape:window-y="222"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <path
+     sodipodi:nodetypes="ccccc"
+     d="m 81.110826,143.772 h 2.706907 l 3.48e-4,13.6613 h -2.706907 z"
+     style="font-variation-settings:normal;vector-effect:none;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.181363;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000"
+     id="rect1297" />
+  <path
+     sodipodi:nodetypes="ccccc"
+     d="m 86.36022,143.772 h 2.70756 l 3.94e-4,13.6613 h -2.70756 z"
+     style="font-variation-settings:normal;vector-effect:none;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.181363;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000"
+     id="rect1297-6" />
+</svg>

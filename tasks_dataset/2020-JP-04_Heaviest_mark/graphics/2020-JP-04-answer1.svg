@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="2020-JP-04-answer1.svg"
+   id="svg5"
+   version="1.1"
+   height="120"
+   width="120"
+   viewBox="73.1 716.8 120.00001 120">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg5"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     id="namedview7"
+     inkscape:window-height="480"
+     inkscape:window-width="640"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     id="path32"
+     d="M 185.95991,834.8432 H 80.240088 c -2.836147,0 -5.183303,-2.34913 -5.183303,-5.18767 V 723.94445 c 0,-2.83854 2.347156,-5.18767 5.183303,-5.18767 H 185.95991 c 2.83615,0 5.1833,2.34913 5.1833,5.18767 v 105.80896 c -0.0978,2.83854 -2.34715,5.08979 -5.1833,5.08979 z"
+     stroke-miterlimit="10"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="3.91357"
+     stroke="#000000"
+     fill="#ffffff" />
+  <g
+     transform="matrix(0.97798171,0,0,0.97880627,3.5663213,17.148444)"
+     id="g34">
+    <path
+       id="path36"
+       d="m 131.6,816.1 c 9.2,0.5 32,-19.5 40.1,-40.1 4.9,-12.5 4.6,-28.9 -14.3,-34.4 -12.9,-3.8 -23.2,11.1 -25.3,13.7 l -0.7,0.1 c -2,-2.6 -12.4,-17.5 -25.3,-13.7 -18.9,5.5 -19.1,21.9 -14.3,34.4 8.1,20.6 30.8,40.5 40.1,40.1 z"
+       stroke-miterlimit="10"
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke-width="5.2202"
+       stroke="#c30d23"
+       fill="#d574a5" />
+  </g>
+</svg>

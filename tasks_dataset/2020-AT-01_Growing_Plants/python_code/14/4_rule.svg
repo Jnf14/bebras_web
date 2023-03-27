@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="90.609428"
+   viewBox="-432 -151 41.971916 90.609428"
+   width="41.971916"
+   version="1.1"
+   id="svg158"
+   sodipodi:docname="4_rule.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata164">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs162" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview160"
+     showgrid="false"
+     inkscape:zoom="1.0159652"
+     inkscape:cx="154.46037"
+     inkscape:cy="317.78596"
+     inkscape:window-x="1352"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg158"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <polyline
+     points="-400.0,200.0 -400.0,180.0 -400.0,200.0 -380.0,200.0 -400.0,200.0 -400.0,220.0 -400.0,200.0 -420.0,200.0 -400.0,200.0"
+     id="polyline4"
+     style="fill:none;stroke:#ff0000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+     transform="translate(-11.014042,-281.37653)" />
+  <polyline
+     points="-400.0,200.0 -400.0,210.0 -400.0,200.0 -400.0,170.0 -407.7645713530756,141.02222521132796"
+     id="polyline6"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+     transform="translate(-11.014042,-281.37653)" />
+  <polygon
+     points="-400,203 -405,201 -400,210 -395,201 "
+     id="polygon10"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-linejoin:round"
+     transform="translate(-11.014042,-281.37653)" />
+  <polyline
+     points="-400.0,170.0 -392.2354286469244,141.02222521132794 -389.6472381958992,131.36296694843725 -392.2354286469244,141.02222521132794"
+     id="polyline12"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+     transform="translate(-11.014042,-281.37653)" />
+  <polygon
+     points="-391.45897,138.12445 -387.14698,141.35039 -389.64724,131.36297 -396.80624,138.7622 "
+     id="polygon14"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-linejoin:round"
+     transform="translate(-11.014042,-281.37653)" />
+</svg>

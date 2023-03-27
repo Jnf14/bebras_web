@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+        <head>
+                <meta charset="utf-8">
+                <style> /* Do Not Change */
+                        html, body, div, span, p, h1, h2, h3, h4, h5, li, td, th { font-family: Arial, sans-serif; }
+                        h1 { text-align: center; }
+                        p, h1, h2, h3, h4, h5, li, td, th, .edithere { background-color: #ffffff; }
+                        p + p, table + p, ol + p, ul + p { /* vertical space before paragraphs */ margin-top: 0.5em; }
+                        .question { /* identify the question paragraph */ font-style: italic; }
+                        .answers { /* identify the answer list */ list-style-type: upper-alpha; }
+                        .code { /* for code in p or span */ font-family: "Consolas", "Courier New", monospace; }
+                        .donotchange { background-color: #ffffff; }
+                        table { border: 1px solid; border-collapse: collapse; margin-left:auto; margin-right:auto; }
+                        td, th { border: 1px solid; padding: 3px; }
+                </style>
+
+                <title>2021-CA-01: Cuckoo Birds</title>
+        </head>
+
+        <body>
+                <h1>2021-CA-01: Dottis</h1>
+
+                <table>
+                        <tr>
+                                <td class="donotchange"><em>6yo-8yo:</em> <span class="edithere">-</span></td>
+                                <td class="donotchange"><em>8yo-10yo:</em> <span class="edithere">-</span></td>
+                                <td class="donotchange"><em>10yo-12yo:</em> <span class="edithere">hard</span></td>
+                                <td class="donotchange"><em>12yo-14yo:</em> <span class="edithere">medium</span></td>
+                                <td class="donotchange"><em>14yo-16yo:</em> <span class="edithere">easy</span></td>
+                                <td class="donotchange"><em>16yo-19yo:</em> <span class="edithere">&acirc;&euro;�</span></td>
+                      </tr>
+
+                        <tr>
+                                <td colspan="6" class="donotchange"><em>Answer type:</em> <span class="edithere">Interactive (Drag & Drop)</span></td>
+                           </tr>
+
+                        <tr>
+                        <td colspan="3" class="donotchange"><span class="edithere">&acirc;&euro;�</span> <em>algorithms and programming</em></td>
+                                <td colspan="3" class="donotchange"><span class="edithere">&acirc;&euro;�</span> <em class="donotchange">computer processes and hardware</em></td>
+                        </tr>
+                        <tr>
+                                <td colspan="3" class="donotchange"><span class="edithere">X</span> <em class="donotchange">data, data structures, and representations</em></td>
+                                <td colspan="3" class="donotchange"><span class="edithere">&acirc;&euro;�</span> <em class="donotchange">communication and networking</em></td>
+                        </tr>
+                        <tr>
+                                <td colspan="3" class="donotchange"><span class="edithere">&acirc;&euro;�</span> <em class="donotchange">interactions, systems, and society</em></td>
+                                <td colspan="3" class="donotchange"></td>
+                        </tr>
+                </table>
+
+                <hr/>
+
+                <h2 class="donotchange">Body</h2>
+
+                <p>
+                Dottis sind V&ouml;gel mit Punkten. <br/>
+                  Neben einem Baum stehen f&uuml;nf Dottis.
+                  Einer nach dem anderen - in der Reihenfolge von links nach rechts - klettern sie in den Baum und ziehen in die leeren Nester.
+               Der mit den vier Punkten ist der erste. Jeder Dotti geht so vor:
+                </p>
+                <p>
+                        Er beginnt unten am Baum. Er f&uuml;hrt solange die folgenden Schritte aus, bis er ein leeres Nest gefunden hat:
+                        <ol>
+                          <li>Er klettert hoch bis er ein Nest findet.</li>
+                          <li>Wenn das Nest leer ist, bleibt er in diesem Nest, fertig.</li>
+                          <li>Wenn das Nest belegt ist, klettert er weiter, und zwar: Wenn der Dotti im Nest
+                          <ul>
+                          <li>mehr Punkte hat, klettert er nach links.</li>
+                          <li>gleich viele oder weniger Punkte hat, klettert er nach rechts.</li>
+                          </ul>
+                        </ol>
+                </p>
+
+
+                <h2 class="donotchange">Question / Challenge</h2>
+
+                <p class="question">
+                        Ziehe nacheinander jeden Dotti in das richtige Nest.
+                </p>
+				<p>
+                        <img src="graphics-deu/2021-CA-01_taskbody.svg" type="image/svg+xml" alt="" height=500px></img>
+                </p>
+
+                <h2 class="donotchange">Answer Options / Interactivity Description</h2>
+
+                <p>
+
+
+                        Version 1: The first bird (and only the first) in the "bird row" can be dragged into an empty nest.
+                        This way all birds in the bird row can be dargged - one by one in the correct order - into empty nests.<br>
+                        There is a reset button. When it it pressed, the original situation (empty nests and all birds in the bird row) will be restored.
+
+                         <br/>
+
+
+                        All situations with each bird in a nest can be submitted as solutions.
+                </p>
+                <p>
+                        Version 2: A bird can be dragged from its initial position in the "bird row" into an empty nest.<br>
+                        From a nest, a bird can be dragged back either (a) to its initial position in the bird row only
+                        (not to any other (empty) position in the row, as the order in the row is crucial) or (b) into another empty nest.  <br/>
+                        All situations with each bird in a nest can be submitted as solutions.
+                </p>
+
+                <hr/>
+
+                <h2 class="donotchange">Answer Explanation</h2>
+                <p>
+                        Das ist die richtige L&ouml;sung:
+                </p>
+                <table style="margin-left: 0px;">
+                        <tr>
+                                <td style="width: 250px;">
+
+                                         Der Dotti, der mit 4 Punkten, geht in das unterste Nest.
+                                </td>
+                                <td>
+                                <img src="graphics-deu/2021-CA-01-solution-step1.svg" type="image/svg+xml" alt="" style="width: 500px;"></img>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        Der zweite Dotti hat 2 Punkte. Im untersten Nest sitzt der erste Dotti mit 4 Punkten.
+                                        Weil 4 mehr als 2 ist, klettert der zweite Dotti nach links weiter und zieht in das erste freie Nest.
+                                </td>
+                                <td>
+                                        <img src="graphics-deu/2021-CA-01-solution-step2.svg" type="image/svg+xml" alt="" style="width: 500px;"></img>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                 Der dritte Dotti hat 3 Punkte. Weil 4 mehr als 3 ist, klettert der dritte Dotti am untersten Nest nach links.
+                                 Im n&auml;chsten Nest ist der zweite Dotti mit 2 Punkten. Weil 2 weniger als 3 ist, klettert der dritte Dotti weiter nach rechts.
+                                 Er zieht in das n&auml;chste freie Nest. Das ist das h&ouml;chste Nest.
+
+
+                                </td>
+                                <td>
+                                        <img src="graphics-deu/2021-CA-01-solution-step3.svg" type="image/svg+xml" alt="" style="width: 500px;"></img>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                 Der vierte Dotti hat einen Punkt. Am untersten Nest klettert er nach links.
+                                 Auch an den beiden n&auml;chsten Nestern klettert er nach links weiter.
+                                 Denn alle Dottis auf seinem Weg haben weniger Punkte als er.
+                                 Er landert schlie&szlig;lich in dem leeren Nest, das sich ganz links befindet.
+
+                                </td>
+                                <td>
+                                        <img src="graphics-deu/2021-CA-01-solution-step4.svg" type="image/svg+xml" alt="" style="width: 500px;"></img>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                 Der letzte Dotti hat f&uuml;nf Punkte. Er muss beim untersten Nest nach rechts klettern und gelangt dann in das leere Nest ganz rechts.
+                                </td>
+                                <td>
+                                        <img src="graphics-deu/2021-CA-01-solution-step5.svg" type="image/svg+xml" alt="" style="width: 500px;"></img>
+                                </td>
+                        </tr>
+                </table>
+
+                <h2 class="donotchange">It's Informatics!</h2>
+
+                <p>
+                        Wenn sich die Dottis nach diesem Verfahren in die Nester setzen, hat das einen interessanten Vorteil:
+                        Ein bestimmter Dotti kann dann schnell gefunden werden.
+                        Wenn der Dotti, den du sucht, weniger Punkte hat als der, auf den du gerade schaust, musst du im linken Teil des Baums weitersuchen.
+                        Ansonsten suchst du rechts weiter. Bei jeder Pr&uuml;fung eines Vogels, wird der Bereich, den du noch durchsuchen musst, halbiert.
+                        Deshalb wirst du deinen Dotti schnell finden.
+
+                </p>
+                <p>
+                        Diese Art Daten zu organisieren nennt man bin&auml;ren Suchbaum. Das Wort "bin&auml;r" kommt vom lateinischen Wort "bis" f&uuml;r "zweimal".
+                        Denn am Ende eines Astes (wo in der Aufgabe ein Nest sitzt) f&uuml;hren h&ouml;chstens zwei kleinere &Auml;ste weiter.
+                        Bin&auml;re Suchb&auml;ume werden in Computerprogrammen verwendet, wenn viele Daten schnell gefunden werden m&uuml;ssen.
+                        Sie sind meistens viel gr&ouml;&szlig;er, als der kleine Baum in der Aufgabe. Au&szlig;erdem gibt es noch einen Unterschied:
+                        Der Baum in der Aufgabe hatte eine feste Anzahl von f&uuml;nf Dottis.
+                        Dagegen kann man bei einem bin&auml;ren Suchbaum immer weiter Daten einf&uuml;gen.
+                        Bei jedem Einf&uuml;gen wird an das Ende eines Astes ein neuer Ast hinzugef&uuml;gt und so der Baum vergr&ouml;&szlig;ert.
+                        Weil sich der bin&auml;re Suchbaum &auml;ndern kann, nennt man ihn eine dynamische Datenstruktur.
+                </p>
+
+                <h2 class="donotchange">Keywords and Websites</h2>
+
+                <p>
+                        Bin&auml;rer Suchbaum
+                        <ul>
+                                <li><a href="https://www.geeksforgeeks.org/binary-search-tree-data-structure/">https://www.geeksforgeeks.org/binary-search-tree-data-structure/</a></li>
+                        </ul>
+                </p>
+
+                <hr/>
+
+                <h2 class="donotchange">Wording and Phrases</h2>
+
+                <p>
+                        <ul>
+                                <li>Erster Kuckuck, zweiter Kuckuck, etc. (von links nach rechts) (</li>
+                                <li>Unterstes Nest - die Wurzel des bin&auml;ren Suchbaums</li>
+                                <li>Punkte -  die Kreisfl&auml;chen auf den K&ouml;pfen der Kuckucke</li>
+                                <li>in ein Nest ziehen</li>
+                                <li>nach rechts (links) weiterklettern </li>
+                                <li>klettern</li>
+                        </ul>
+                </p>
+
+                <h2 class="donotchange">Comments</h2>
+
+                <p>
+                        Sarah Chan (Author), sarah.chan@uwaterloo.ca, 2021-03-30:
+                        <em>Things to think about:<ul>
+                                <li>Does it need to be explicitly mentioned that nests can hold at most one bird?</li>
+                                <li>What happens if a bird travels out of the tree / there is no nest available?</li>
+                                <li>Should the image have more branches and / or nests?</li>
+                                <li>Are the head feathers easy to count?</li>
+                        </ul></em>
+                </p>
+                <p>
+                        Baumann Wilfried, 2021-04-21:
+                        <ul>
+                                <li>One suggestion is to mention the motivation of the data structure (quick retrieval) in the task body and not only in the "it's informatics"
+                                <br><strong>From author: I don't see a natural way to introduce quick retrieval in the task body. Also, the task body already has a lot of text. I'm reluctant to add more.</strong></li>
+                        </ul>
+                </p>
+                <p>
+                        Wolfgang Pohl, 2021-04-22:
+                        <ul>
+                                <li>It could go down by one age group if the text were less complex. The task as such I consider less difficult.
+                                <br><strong>From author: I agree, the task itself is not that difficult, but there is a lot of text to absorb.</strong></li>
+                                <li>The text is way too long for a Bebras task of this difficulty. Also, the iterative part of the "nest search" algorithm could be described in a clearer way. Describe the structure of the tree first: Nests are at places where another branch splits off, so that from each nest you can continue either left or right. Also, introduce the head feathers at the beginning, and that their number is relevant. Simplify the wording: Now, you can drop the whole "where the top &acirc;&euro;&brvbar;" part in the first step of the algorithm. Replace "upon realizing" by "if" - perhaps even remove this whole sentence.<br>
+                                Algorithm (expand to natural language):<br>
+                                1. Start at the bottom.<br>
+                                2. Loop: go until you encounter a nest. if the nest is empty, then stay there. Else if fewer feathers go left and if same or more feathers go right
+                    <br><strong>From author: I'm not convinced that rewriting the task as a pseudocode algorithm will be an improvement. For younger students parsing an algorithm can actually be more difficult than parsing natural language. I agree with the concern though and I have gone through the text and made some improvements.</strong></li>
+                    <li>A third image would be nice in the explanation.
+                    <br><strong>From author: I've added a third image.</strong></li>
+                    <li>It should be easier to count the head feathers.
+                    <br><strong>From author: I'm open to new images being drawn.</strong></li>
+                    <li>I am not certain we can CC license the pixabay image in the name of Bebras.
+                    <br><strong>From author: From the pixabay website "All contents are released under the Pixabay License, which makes them safe to use without asking for permission or giving credit to the artist - even for commercial purposes."</strong></li>
+            </ul>
+        </p>
+                <p>
+                        Wolfgang Pohl, 2021-04-22:  It is quite a coincidence that, after reviewing this task, I get my hands on it again at the workshop.  I tried to follow my own review of course:
+                        <ul>
+                                <li>Quite some rewording to (a) shorten the text, (b) better separate context and nesting algorithm &acirc;&euro;� so that the algorithm itself can be given in a much shorter way.</li>
+                                <li>The birds have spots now, and the number of spots gives their "value" instead of the number of head feathers, which were not easy to count &acirc;&euro;� the spots are easier to spot!  Also, "spots" is much shorter than "head feathers".</li>
+                                <li>(MC version) Removed the somewhat unmotivated "R" label and just said "highest nest".  This nest has a somewhat different color as well, but this must not play a crucial role, as color-blind persons may not be able to distinguish the colors.</li>
+                                <li>(INTeractive version) Removed the somewhat unmotivated "R" label, which is not needed in this version.</li>
+                                <li>Created a separate interactive version (which in particular needs more steps in the explanation).  This task cries for interactivity!</li>
+                        </ul>
+                </p>
+                <p>
+                2021-07-16, Michael Weigend, mw@creative-informatics.de, Germany. translation from English into German.
+                F&uuml;r den Vogel wurde ein Name erfunden ("Dotti"). Neue Grafiken, Nester sind heller und besser zu erkennen.
+                Aufgabentext wurde etwas gek&uuml;rzt und umstrukturiert. Regeln sind jetzt am Ende des Textes und n&auml;her zum Bild.
+                Pfeile (aber keine Gr&ouml;&szlig;er-kleiner-Symbole) in den Bildern zur Erkl&auml;rung der richtigen L&ouml;sung.
+                Erweiterung der II-Teils, kurze Erl&auml;uterung des Brgriffs "dynamische Struktur".
+                </p>
+
+
+                <h2 class="donotchange">Graphics and Other Files</h2>
+
+                <p>
+                        2021-CA-01-eng.html (this file) <br>
+                        2021-CA-01_birds.svg, 2021-CA-01_taskbody.svg, 2021-CA-01-solution-step[1-5].svg: selfmade by Susanne Datzko
+                </p>
+
+                <h2 class="donotchange">Authors and Contributors (incl. Graphics)</h2>
+
+                <p>
+                        Sarah Chan, sarah.chan@uwaterloo.ca, Canada
+                </p>
+                <p>
+                        Wolfgang Pohl, pohl@bwinf.de, Germany
+                </p>
+                 <p>
+                        Michael Weigend, mw@creative-informatics.de, Germany
+                </p>
+				<p>
+                        Susanne Datzko, susanne.datzko@inf.ethz.ch, Switzerland (graphics)
+                </p>
+
+                <hr/>
+
+                <h2 class="donotchange">License</h2>
+
+                <p class="donotchange">Copyright &copy; 2021 Bebras &ndash; International Challenge on Informatics and Computational Thinking.  This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a></p>
+
+        </body>
+
+</html>

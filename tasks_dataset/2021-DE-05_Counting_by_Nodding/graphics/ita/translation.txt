@@ -1,0 +1,8 @@
+DE-05
+
+setze Zähler auf 0 -> porta contatore a 0
+wiederhole bis ___ -> ripeti fino a quando ____
+warte bis ___ -> attendi fino a quando ____
+erhöhe Zähler um 1 -> cambia contatore di 1
+gib Zähler Karten aus -> emetti contatore carte
+nasenlänge -> lunghezza del naso

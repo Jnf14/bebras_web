@@ -1,0 +1,281 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage[margin=2mm,paperwidth=9.8cm,paperheight=8.3cm]{geometry}
+\usepackage{microtype}
+\usepackage{fontawesome}
+
+\usepackage{tikz}
+
+\usetikzlibrary{arrows,positioning,automata}
+\tikzset{
+  every initial by arrow/.style={initial text={}},
+  every state/.style={semithick},
+  accepting by double/.style={double distance=.4mm},
+  font=\small,
+  >=stealth', %'
+  auto
+}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+%  \begin{center}
+%    \bfseries\Huge
+%    Lieblings-Biber-Lieder
+%  \end{center}
+%
+%  \bigskip
+%
+%  Biberin Lisa singt gerne Biber-Lieder -- aber nicht beliebige Biber-Lieder,
+%  sondern nur Lisa-Lieblings-Biber-Lieder.  Alle ihre Lieblings-Biber-Lieder
+%  gehen so:
+%  \begin{quote}
+%    \itshape\hspace{-1.6cm}\scalebox{3}{\faMusic}\hspace{0.33cm}
+%    Dum-da-da Dum-da-da \quad Bang \quad Dum-da-da Dum-da-da
+%  \end{quote}
+%  oder auch 
+%  \begin{quote}
+%    \itshape\hspace{-1.6cm}\scalebox{3}{\faMusic}\hspace{0.33cm}
+%    Dum-da-da Dum-da-da \quad Bang \quad Dum-da-da Dum-da-da \quad Bang \\
+%    Dum-da-da Dum-da-da \quad Bang \quad Dum-da-da Dum-da-da
+%  \end{quote}
+%  Lisa-Lieblings-Biber-Lieder bestehen also aus der Wiederholung von "`Dum-da-da Dum-da-da"',
+%  wobei immer ein "`Bang"' zwischen zwei Wiederholungen kommt.
+%  Um sich das merken zu k\"onnen, erstellt Lisa folgendes Diagramm:
+%  \begin{center} 
+%    \begin{tikzpicture}[node distance=3cm]
+%      \node[state] (0)              {Start};
+%      \node[state] (1) [right of=0] {};
+%      \node[state] (2) [right of=1] {End};
+%      \path[->] (0) edge[bend left] node {Dum-da-da} (1)
+%                (1) edge[bend left] node {Dum-da-da} (2)
+%                (2) edge[bend left] node {Bang} (0);
+%    \end{tikzpicture}
+%  \end{center} 
+%  Um zu singen, beginnt Lisa bei "`Start"' und folgt dann den Pfeilen, um
+%  die Abfolge der Worte richtig zu singen.  Das Lied beenden darf sie nur, wenn
+%  sie auf "`End"' kommt.
+%
+%  Nach einer Zeit wird ihr langweilig und sie m\"ochte statt der Wiederholung
+%  von "`Dum-da-da"' auch noch "`Wupp-di-doo lalala"' singen k\"onnen.
+%  Um beides zu kombinieren erstellt folgendes Diagramm: 
+%  \begin{center} 
+%    \begin{tikzpicture}[node distance=3cm]
+%      \node[state] (0)              {Start};
+%      \node[state] (1) [right of=0] {};
+%      \node[state] (3) [left of=0]  {};
+%      \node[state] (2) [right of=1] {End};
+%      \path[->] (0) edge[bend left]  node {Dum-da-da} (1)
+%                (1) edge[bend left]  node {Dum-da-da} (2)
+%                (0) edge[bend right] node[swap] {Wupp-di-doo} (3)
+%                (3) edge[bend right] node[swap] {lalala} (0)
+%                (2) edge[bend left]  node {Bang} (0);
+%    \end{tikzpicture}
+%  \end{center} 
+%
+%  Wieder beginnt sie bei "`Start"' und endet bei "`End"'.
+%  \begin{quote}
+%    \itshape\hspace{-1.6cm}\scalebox{3}{\faMusic}\hspace{0.33cm}
+%    Wupp-di-doo lalala \quad Wupp-di-doo lalala \\
+%    Dum-da-da Dum-da-da \quad Bang \quad Dum-da-da
+%  \end{quote}
+%  oder auch
+%  \begin{quote}
+%    \itshape\hspace{-1.6cm}\scalebox{3}{\faMusic}\hspace{0.33cm}
+%    Dum-da-da Dum-da-da \quad Bang \quad Wupp-di-doo lalala \quad Wupp-di-doo lalala \\
+%    Dum-da-da Dum-da-da \quad Bang \quad Wupp-di-doo lalala \\
+%    Dum-da-da Dum-da-da \quad Bang \quad Dum-da-da Dum-da-da 
+%  \end{quote}
+%
+%  \section*{Aufgaben}
+%
+%  Hilf Lisa, neue Lieder zu singen, die mit Diagrammen dargestellt werden.
+%
+%  \subsection*{Aufgabe 1}
+%
+%  Betrachte das folgende Diagramm und die Lieder, die mit diesem gesungen
+%  werden k\"onnen. 
+%  
+%  \begin{center}
+%    \begin{tikzpicture}[node distance=3cm]
+%      \node[state] (0)             {Start};
+%      \node[state] (1) [left of=0] {};
+%      \node[state] (2) [left of=1] {};
+%      \node[state] (3) [left of=2] {End};
+%      \path[->] (0) edge[bend right] node[swap] {Jup-pi} (1)
+%                (1) edge[bend right] node[swap] {Dup-pi} (2)
+%                (2) edge[bend right] node[swap] {Dup-pi} (1)
+%                (2) edge[bend right] node[swap] {Duuu} (3)
+%                (3) edge[bend right] node[swap] {Juhuu} (0);
+%    \end{tikzpicture}
+%  \end{center}
+%
+%  Welches der drei Diagramme ist f\"ur dieselben Lieder?
+%
+%  \begin{enumerate}
+%    \item[]\ \\
+%    \begin{tikzpicture}[node distance=4cm]
+%      \node[state] (0)                  {Start};
+%      \node[state] (1) [right of=0]      {};
+%      \node[state] (2) [left=4cm of 0]  {};
+%      \node[state] (2a) [above=2cm of 2]  {};
+%      \node[state] (3) [below right=2cm and 1cm of 2] {End};
+%      \path[->] (0) edge[bend right] node[swap] {Jup-pi} (1)
+%                (1) edge[bend right] node[swap] {Dup-pi Dup-pi Dup-pi} (2)
+%                (2) edge[bend right] node[swap] {Dup-pi} (2a)
+%                (2a) edge[bend right] node[swap] {Dup-pi} (2)
+%                (2) edge[bend right] node[swap] {Duuu} (3)
+%                (0) edge[bend left] node {Jup-pi Dup-pi} (2)
+%                (3) edge[bend right] node[swap] {Juhuu} (0);
+%    \end{tikzpicture}
+%
+%    \newpage
+%
+%    \item[]\ \\
+%    \begin{tikzpicture}[node distance=4cm]
+%      \node[state] (0)                  {Start};
+%      \node[state] (1) [left of=0]      {};
+%      \node[state] (2) [left=4cm of 1]  {};
+%      \node[state] (3) [below=1cm of 2] {End};
+%      \path[->] (0) edge[bend right] node[swap] {Jup-pi} (1)
+%                (1) edge[bend right] node[swap] {Dup-pi Dup-pi Dup-pi} (2)
+%                (2) edge[bend right] node[swap] {Duuu} (3)
+%                (0) edge[bend left] node {Jup-pi Dup-pi} (2)
+%                (3) edge[bend right] node[swap] {Juhuu} (0);
+%    \end{tikzpicture}
+%
+%    \item[]\ \\
+%    \begin{tikzpicture}[node distance=5cm]
+%      \node[state] (0)                  {Start};
+%      \node[state] (1) [left of=0]      {};
+%      \node[state] (2) [left=4cm of 1]  {};
+%      \node[state] (3) [above right=2cm and 1cm of 2] {End};
+%      \path[->] (0) edge[bend right] node[swap] {Jup-pi} (1)
+%                (1) edge[bend right] node[swap] {Dup-pi Dup-pi} (2)
+%                (2) edge[bend left] node[] {Duuu} (3)
+%                (0) edge[bend left] node {Jup-pi Dup-pi} (2)
+%                (3) edge[bend left] node[swap] {Juhuu} (0);
+%    \end{tikzpicture}
+%  \end{enumerate}
+% 
+%  \subsection*{Aufgabe 2}
+%
+%  Drei der folgenden Diagramme sind f\"ur das gleiche Lied.  Welches ist f\"ur ein
+%  anderes Lied, d.\,h.\ welches Diagramm passt nicht zu den anderen?
+%  
+%  \begin{enumerate}
+%    \item[]\ \\
+%    \begin{tikzpicture}[node distance=3cm]
+%      \node[state] (0)              {Start};
+%      \node[state] (1) [right of=0] {};
+%      \node[state] (2) [right of=1] {};
+%      \node[state] (3) [right of=2] {};
+%      \node[state] (4) [right of=3] {End};
+%      \path[->] (0) edge[bend left] node {La} (1)
+%                (1) edge[bend left] node {La} (2)
+%                (2) edge[bend left] node {La} (3)
+%                (3) edge[bend left] node {Wupp-di-dooo} (1)
+%                (3) edge[bend left] node {Schwang} (4);
+%    \end{tikzpicture}
+%    \item[]\ \\
+%    \begin{tikzpicture}[node distance=3cm]
+%      \node[state] (0)              {Start};
+%      \node[state] (1) [left of=0] {};
+%      \node[state] (3) [left of=1] {};
+%      \node[state] (4) [left of=3] {End};
+%      \path[->] (0) edge[bend right] node[swap] {La} (1)
+%                (1) edge[bend right] node[swap] {La La} (3)
+%                (3) edge[bend right] node[swap] {Wupp-di-dooo} (1)
+%                (3) edge[bend right] node[swap] {Schwang} (4);
+%    \end{tikzpicture}
+%    \item[]\ \\
+%    \begin{tikzpicture}[node distance=3cm]
+%      \node[state] (0)              {Start};
+%      \node[state] (1) [left of=0] {};
+%      \node[state] (2) [left of=1] {};
+%      \node[state] (4) [left of=2] {End};
+%      \path[->] (0) edge[bend right] node[swap] {La La} (1)
+%                (1) edge[bend right] node[swap] {La} (2)
+%                (2) edge[bend right] node[swap] {Wupp-di-dooo} (0)
+%                (2) edge[bend right] node[swap] {Schwang} (4);
+%    \end{tikzpicture}
+%  \end{enumerate}
+%
+%  \subsection*{Aufgabe 3}
+%
+%  Betrachte das folgende Diagramm. 
+%  
+%  \begin{center}
+    \begin{tikzpicture}[node distance=3cm]
+      \node[state] (0)                  {Start};
+      \node[state] (1) [right of=0]     {};
+      \node[state] (2) [left of=0]      {};
+      \node[state] (3) [below of=1]     {};
+      \node[state] (4) [below of=2]     {};
+      \node[state] (5) [below=5cm of 0] {End};
+      \path[->] (0) edge[bend left] node {La La} (1)
+                (0) edge[bend right] node[swap] {Dum-di} (2)
+                (1) edge[bend left] node[] {Dada} (3)
+                (2) edge[bend right] node[swap] {Dum} (4)
+                (4) edge[bend right] node[swap] {Dada} (2)
+                (4) edge[bend right] node[swap] {La La La} (1)
+                (3) edge[bend left] node[] {Diddel-di} (4)
+                (4) edge[bend right] node[swap] {Dada-dam} (5);
+    \end{tikzpicture}
+%  \end{center}
+%
+%  Welches der folgenden Lieder kann mit dem Diagramm nicht gesungen werden? 
+%
+%  \hspace{-7mm}\begin{minipage}{1.6cm}
+%    \scalebox{3}{\faMusic}
+%  \end{minipage}
+%  \begin{minipage}{14cm}
+%    \begin{enumerate}
+%      \item \textit{Lala Dada Diddel-di Dada Dum Dada Dum Dada-dam}
+%      \item \textit{Dum-di Dum Dada Dada-dam}
+%      \item \textit{Dum-di Dum Dada Dum Lalala Dada  Diddel-di Dada Dum Dada-dam}
+%    \end{enumerate}
+%  \end{minipage}
+%
+%  \section*{L\"osungen zu den Aufgaben}
+%
+%  \textbf{Aufgabe 1.} Das erste Diagramm ist f\"ur dieselben Lieder.  Der wesentliche
+%    Punkt ist, dass mit dem Mittelteil das "`Dup-pi"' jeweils ein Mal oder drei Mal wiederholt
+%    werden kann.
+%
+%  \smallskip
+%
+%  \textbf{Aufgabe 2.} Das erste und das dritte Diagramm sind f\"ur dieselben Lieder.
+%    Hier ist der wesentliche Punkt, dass auf ein "`La La"' immer ein "`Wupp-di-dooo"' oder
+%    am End ein "`Schwang"' folgen muss.
+%  
+%  \smallskip
+%
+%  \textbf{Ausgabe 3.}  Das zweite Lied kann nicht gesungen werden, da auf das "`Dada"'
+%    kein "`Dada-dam"' folgen kann. 
+%
+%  
+%  \enlargethispage{1cm}
+%
+%  \section*{Das ist Informatik}
+%
+%  In der Informatik geht es zu einem wesentlichen Teil um das Finden von Strukturen.
+%  In den Aufgaben betrachten wir strukturierte Texte (Lieder), die nach einem festen
+%  Regelsystem aufgebaut sind.  Die erzeugenden Mechanismen ("`Diagramme"') sind hier sogenannte
+%  \emph{Endliche Automaten}, die eine andere Darstellungsform f\"ur \emph{regul\"are Ausdr\"ucke} sind.
+%
+%  Diese spielen eine sehr wichtige Rolle in der Textverarbeitung und der
+%  Formalisierung von Programmiersprachen, also Sprachen, die der Computer "`verstehen"'
+%  kann. 
+
+\end{document}

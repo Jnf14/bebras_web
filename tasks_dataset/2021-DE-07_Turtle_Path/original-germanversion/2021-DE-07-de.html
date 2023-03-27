@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<style> /* Do Not Change */
+			html, body, div, span, p, h1, h2, h3, h4, h5, li, td, th { font-family: Arial, sans-serif; }
+			h1 { text-align: center; }
+			p, h1, h2, h3, h4, h5, li, td, th, .edithere { background-color: #ffffff; }
+			p + p, table + p, ol + p, ul + p { /* vertical space before paragraphs */ margin-top: 0.5em; }
+			.question { /* identify the question paragraph */ font-style: italic; }
+			.answers { /* identify the answer list */ list-style-type: upper-alpha; }
+			.code { /* for code in p or span */ font-family: "Consolas", "Courier New", monospace; }
+			.donotchange { background-color: #ffffff; }
+			table { border: 1px solid; border-collapse: collapse; margin-left:auto; margin-right:auto; }
+			td, th { border: 1px solid; padding: 3px; }
+		</style>
+
+<!-- EDIT HERE: TASK-ID and task title (a student friendly version of the task name; it will usually be translated); same as below -->
+		<title>2021-DE-07: Schildkrötenpfad</title>
+<!-- FINISH EDITING-->
+
+	</head>
+
+	<body>
+<!-- EDIT HERE: TASK-ID and task title; same as above -->
+		<h1>2021-DE-07: Schildkrötenpfad</h1>
+<!-- FINISH EDITING-->
+
+		<table>
+			<tr>
+<!-- EDIT HERE: easy/medium/hard/–; assign task to an age group and select its diffulty, only change the value but not the age categories itself -->
+				<td class="donotchange"><em>6yo-8yo:</em> <span class="edithere"></span></td>
+				<td class="donotchange"><em>8yo-10yo:</em> <span class="edithere">hard</span></td>
+				<td class="donotchange"><em>10yo-12yo:</em> <span class="edithere">medium</span></td>
+				<td class="donotchange"><em>12yo-14yo:</em> <span class="edithere">easy</span></td>
+				<td class="donotchange"><em>14yo-16yo:</em> <span class="edithere"></span></td>
+				<td class="donotchange"><em>16yo-19yo:</em> <span class="edithere"></span></td>
+<!-- FINISH EDITING-->
+      </tr>
+
+<!-- EDIT HERE: various; name answer type of the task; typical answer types are:
+  * Multiple-Choice
+	* Multiple-Choice with Images
+	* Multiple-Select
+	* Multiple-Select with Images
+	* Dropdown-Select
+	* Open Integer
+	* Open Text
+	* Interactive (Click-On-Object)
+	* Interactive (Drag & Drop)
+	* Interactive (Other)
+	* Other (please specify)
+	For Multiple-Choice and Multiple-Select if necessary add "Keep Order".
+-->
+		<tr>
+				<td colspan="6" class="donotchange"><em>Answer type:</em> <span class="edithere">Interactive (Other)</span></td>
+   		</tr>
+<!-- FINISH EDITING-->
+
+<!-- EDIT HERE: X/–; assign task to a category, select by writing X in front, deselect by writing – in front, only change the marker but not the age categories itself -->
+			<tr>
+        		<td colspan="3" class="donotchange"><span class="edithere">X</span> <em>algorithms and programming</em></td>
+				<td colspan="3" class="donotchange"><span class="edithere">–</span> <em class="donotchange">computer processes and hardware</em></td>
+			</tr>
+			<tr>
+				<td colspan="3" class="donotchange"><span class="edithere">–</span> <em class="donotchange">data, data structures, and representations</em></td>
+				<td colspan="3" class="donotchange"><span class="edithere">–</span> <em class="donotchange">communication and networking</em></td>
+			</tr>
+			<tr>
+				<td colspan="3" class="donotchange"><span class="edithere">–</span> <em class="donotchange">interactions, systems, and society</em></td>
+				<td colspan="3" class="donotchange"></td>
+			</tr>
+<!-- FINISH EDITING-->
+		</table>
+
+		<hr/>
+
+		<h2 class="donotchange">Body</h2>
+
+<!-- EDIT HERE: insert task text and images here. -->
+    <img src="2021-DE-07-turtlepath-move.svg" style="width: 90px; float: right;">
+    <p>
+		Eine Schildkröte soll verschiedene Gärten abgrasen.<br />
+		Jeder Garten ist in Quadrate unterteilt, die entweder mit Gras oder Steinen bedeckt sind.<br />
+		Die Schildkröte kann keine Steine ​​überqueren. Sie kann sich aber von einem Grasfeld zu einem anderen Grasfeld direkt daneben bewegen.
+    </p>
+    <p>
+		Die Schildkröte soll die Gärten vollständig abgrasen, sie startet auf dem Feld, auf dem sie im Bild steht.<br />
+		Dafür soll sie alle Grasfelder betreten, aber jedes nur genau einmal.
+    </p>
+    <p>
+    Leider kann die Schildkröte einen der Gärten nicht vollständig abgrasen.
+    </p>
+
+<!-- FINISH EDITING-->
+
+		<h2 class="donotchange">Question / Challenge</h2>
+
+<!-- EDIT HERE: formulate the question (in case of multiple-choice or open-answer task) or challenge (or instruction; in case of a constructive task) here. -->
+		<p class="question">
+			Welcher ist es?
+		</p>
+<!-- FINISH EDITING-->
+
+		<h2 class="donotchange">Answer Options / Interactivity Description</h2>
+
+<!-- EDIT HERE:
+     - for multiple-choice tasks: formulate the answer choices here. Please explain and motivate your choice of wrong answers in the comment section. Use the following template:
+       <ol class="answers">
+         <li>answer 1</li>
+         <li>answer 2</li>
+         <li>answer 3</li>
+         <li>answer 4</li>
+      </ol>
+	   - For open-answer tasks: formulate the range of answers here that an implementation of a task should accept. (Examples: Integer numbers from [0,99]; strings of 4 capital letters; … ).
+	   - For interactive tasks: describe the interactivity here.
+-->
+		<ol class="answers">
+         <li><img src="graphics/2021-DE-07-turtlepathA.svg" style="width: 270px;"</li>
+         <li><img src="graphics/2021-DE-07-turtlepathB.svg" style="width: 270px;"></li>
+         <li><img src="graphics/2021-DE-07-turtlepathC.svg" style="width: 270px;"</li>
+         <li><img src="graphics/2021-DE-07-turtlepathD.svg" style="width: 270px;"></li>
+        </ol>
+
+
+		<!-- FINISH EDITING-->
+
+		<hr/>
+
+		<h2 class="donotchange">Answer Explanation</h2>
+<!-- EDIT HERE: explain which is the correct answer and why. For multiple-choice tasks, also explain why the other answer choices are wrong.
+     This must be understandable for the target age group. Use about 2 to 5 sentences for the correct answer, and somewhat less for the wrong answers. Focus narrowly on the task, do not explain yet what this has to do with informatics.
+-->
+		<p>
+			A: <img src="graphics/2021-DE-07-turtlepathA-solution.svg" style="width: 270px;">&nbsp;
+			B: <img src="graphics/2021-DE-07-turtlepathB-solution.svg" style="width: 270px;"><br>
+			C: <img src="graphics/2021-DE-07-turtlepathC-solution.svg" style="width: 270px;">&nbsp;
+			D: <img src="graphics/2021-DE-07-turtlepathD-solution.svg" style="width: 270px;">
+		</p>
+		<p>
+			Für die Gärten A, B und D kann die Aufgabe gelöst werden.
+		</p>
+		<p>
+			Für den Garten C gibt es jedoch keine solche Lösung.
+			Ein Lösungspfad müsste jedenfalls die oben bei C gezeigt Teillösung enthalten.
+			Dann müsste die Schildkröte noch einen Weg über die sechs verbleibenden Grasfelder finden.
+			Diese Lösung müsste bei einem Ende der Teillösung beginnen und beim anderen Ende der Teillösung enden.
+			Jedes der sechs Felder sollte dabei genau einmal besucht werden.
+			Es gibt jedoch keinen solchen Weg.<br/>
+			Beginnen wir in der linken unteren Ecke
+			(die gleiche Überlegung gilt aber auch wenn man in der linken oberen Ecke startet).
+			Beim Ausprobieren der möglichen Wege, zeigt sich dass es nur drei Möglichkeiten gibt, wie man alle sechs Felder besuchen kann.
+			Jedoch endet keine der Lösungen in der linken oberen Ecke.
+		</p>
+		<p>
+			<img src="graphics/2021-DE-07-turtlepathC-explanation.svg" style="width: 480px;">
+		</p>
+<!-- FINISH EDITING-->
+
+		<h2 class="donotchange">It's Informatics!</h2>
+<!-- EDIT HERE: explain to the target age group, why this task is about informatics (and computational thinking): What are the informatics concepts, what is the informatics “story” behind this task? Use about 3 to 8 sentences. Do not explain the correct answers of a task, but give a larger picture. -->
+		<p>
+			Die Schildkröte soll einen Weg durch ihren Garten finden und dabei jedes Grasfeld genau einmal besuchen.
+			Das Problem hinter dieser Aufgabe nennt man <em>Hamiltonpfadproblem</em>.
+		</p>
+		<p>
+			Ein Schildkrötengarten (also die Grasquadrate) können so betrachtet werden:<br />
+			Jedes Grasquadrat ist ein <em>Knoten</em> (dargestellt als Punkt). Der Garten D sieht dann so aus:
+
+		</p>
+			<img src="graphics/2021-DE-07-turtlepath-graph-D.svg" style="width: 400px;">
+		<p>
+			Für derartige Strukturen (von Informatikern, aber auch von Mathematikern <em>Graphen</em> genannt)
+			stellte sich im 19. Jahrhundert Sir William Rowan Hamilton die Frage,
+			ob es einen geschlossenen Pfad entlang der Kanten gibt, der jeden Knoten (außer dem Startknoten) genau einmal besucht.
+			Dieses "Hamiltonkreisproblem" ist im Allgemeinen sehr schwer zu lösen. Dasselbe gilt für das Hamiltonpfadproblem, indem
+			der Pfad der alle Knoten genau einmal besucht nicht geschlossen sein muss.
+			Es gibt keinen Algorithmus, der für beliebige Graphen effizient (d. h. in angemessener Zeit)
+			entscheiden kann, ob es einen solchen Hamiltonpfad für den Graphen
+			gibt oder nicht. Das Problem ist damit eines der berühmten NP-vollständigen Probleme.
+		</p>
+<!-- FINISH EDITING-->
+
+		<h2 class="donotchange">Keywords and Websites</h2>
+<!-- EDIT HERE (delete this): give some keywords, useful to find further information on the web. The target are the teachers and interested students. // Indicate websites (in English and other languages) which offer further information on the particular domain of informatics mentioned in the “It's informatics” part. Wikipedia is often a good start. -->
+		<p>
+			Graph, Hamiltonpfad<br />
+			https://de.wikipedia.org/wiki/Hamiltonkreisproblem<br />
+			https://en.wikipedia.org/wiki/Hamiltonian_path_problem<br />
+		</p>
+<!-- FINISH EDITING-->
+		<hr/>
+		<h2 class="donotchange">Wording and Phrases</h2>
+<!-- EDIT HERE: list of words and phrases used to name important things mentioned in the task body (actors, activities/processes, concepts, definitions, objects, names, etc.) This is to ensure the consequent use of terminology in the task body and to facilitate translation. -->
+		<ul>
+			<li>turtle: acting entity in this task</li>
+			<li>garden: activity / motion space of the turtle</li>
+			<li>(grass or stone) square: basic component of a garden</li>
+			<li>move from one (grass) square to the next:  basic motion of the turtle; needs to be defined to exclude diagonal moves</li>
+			<li>feeding path: a sequence of moves that takes the turtle to all grass squares, while visiting each square exactly once.</li>
+		</ul>
+<!-- FINISH EDITING-->
+
+		<h2 class="donotchange">Comments</h2>
+<!-- EDIT HERE: use the following template:
+      <li>author, e-mail, date (YYYY-MM-DD): <em>Comment</em>.</li>
+-->
+		<ul>
+			<li>Wolfgang Pohl, pohl@bwinf.de, 2021-03-11: <em>Variation a (MC):  Turtle visits each grass square only once.  Is this possible?</em></li>
+			<li>Wolfgang Pohl, pohl@bwinf.de, 2021-03-11: <em>Variation b (Interactive):  Turtle visits each grass square only once.  Click into the squares successively to describe its path. See folder "interactive" for a sketch of this variation.</em></li>
+			<li>Wolfgang Pohl, pohl@bwinf.de, 2021-05-02: <em>Replies to reviews inserted into reviews.txt.</em></li>
+			<li>Wolfgang Pohl, pohl@bwinf.de, 2021-05-02: <em>Based on one review, I tried another stone pattern in answer option A (2021-DE-07-turtlepathA.svg).  This one is public domain, but not perfect. I hope the workshop will produce some nice stone background pattern.</em></li>
+		</ul>
+<!-- FINISH EDITING-->
+
+		<h2 class="donotchange">Graphics and Other Files</h2>
+<!-- EDIT HERE: filename, author, source/self-made, license
+     Please indicate:
+       - Source of each image or of each other file to produce the task image(s): (URL and/or author)
+			 - License for each image.
+    Note: If the source of an image is unclear, it might be copyrighted and cannot be used in the task.
+		Use the following template:
+		  <li><tt>filename</tt>, author, source/self-made, license</li>
+-->
+		<p>
+			Graphics are mostly self-made by the task author.  <br>
+			The "stone pattern", however, while freely usable, requires attribution like this: <br>
+			<a href="http://www.freepik.com">Designed by 0melapics / Freepik</a><br>
+			So you might want to replace it by something made on your own.
+			Group 4: Based on the suggestion of the author "stone pattern" is redesigned.
+		</p>
+		<ul>
+			<li>2021-DE-07-eng.html (this file)</li>
+			<li>2021-DE-07-turtlepathA.svg</li>
+			<li>2021-DE-07-turtlepathB.svg</li>
+			<li>2021-DE-07-turtlepathC.svg</li>
+			<li>2021-DE-07-turtlepathD.svg</li>
+			<li>2021-DE-07-turtlepathA-solution.svg</li>
+			<li>2021-DE-07-turtlepathB-solution.svg</li>
+			<li>2021-DE-07-turtlepathC-solution.svg</li>
+			<li>2021-DE-07-turtlepathD-solution.svg</li>
+			<li>2021-DE-07-turtlepathC-explanation.svg</li>
+			<li>2021-DE-07-turtlepath-move.svg</li>
+		</ul>
+<!-- FINISH EDITING-->
+
+		<h2 class="donotchange">Authors and Contributors (incl. Graphics)</h2>
+
+<!-- EDIT HERE (keep this template and add above this line): author / contributor / editor, e-mail, country. Use the following template:
+      <li>Author / contributor / editor, <a href="e-mail">email</a>, country.</li>
+-->
+    	<ul>
+	    	<li>Wolfgang Pohl, <a href="mailto:pohl@bwinf.de">pohl@bwinf.de</a>, Germany: task proposal</li>
+			  <li>Susanne Datzko, <a href="mailto:susanne.datzko@informatik-biber.ch">susanne.datzko@informatik-biber.ch</a>, Switzerland:  graphics</li>
+		  	<li>Yasemin Gülbahar, <a href="mailto:ysmnglbhr@gmail.com">ysmnglbhr@gmail.com</a>, Turkey: graphics</li>
+			  <li>Liam Baumann, <a href="mailto:lbaumann@outlook.at">lbaumann@outlook.at</a>, Austria: German translation</li>
+		  </ul>
+<!-- FINISH EDITING-->
+
+		<hr/>
+
+		<h2 class="donotchange">License</h2>
+
+		<p class="donotchange">Copyright &copy; 2021 Bebras &ndash; International Challenge on Informatics and Computational Thinking.  This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a></p>
+	</body>
+</html>

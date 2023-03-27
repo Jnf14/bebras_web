@@ -1,0 +1,101 @@
+.bbrs-task-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.bbrs-task-grid {
+    display: grid;
+    margin: 100px !important;
+    width: 100px;
+    aspect-ratio: 1.15;
+}
+
+.bbrs-task-grid.invisible {
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+}
+
+.bbrs-task-block.invisible {
+    pointer-events: none;
+}
+
+.bbrs-task-block.invisible.filled {
+    pointer-events: auto;
+}
+
+.bbrs-task-block  {
+    grid-area:1/1;
+    display: flex;
+    align-items: center;
+}
+
+.bbrs-task-block.visible {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%,75% 100%,25% 100%,0 50%);
+    box-shadow: inset 0 0 50px 25px #ff9a0073;
+    background-color: #fcba5e;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90px;
+    cursor: pointer;
+}
+
+.bbrs-task-block.invisible {
+    background: transparent;
+    box-shadow: none;
+}
+
+/*.bbrs-task-block.visible:hover {*/
+/*    background-color: tomato;*/
+/*}*/
+
+.bbrs-task-grid > :nth-child(1) {
+    transform: translateY(100%);
+}
+.bbrs-task-grid > :nth-child(2) {
+    transform: translateY(-100%);
+}
+.bbrs-task-grid > :nth-child(3) {
+    transform: translate(-75%,-50%)
+}
+.bbrs-task-grid > :nth-child(4) {
+    transform: translate(75%,-50%)
+}
+.bbrs-task-grid > :nth-child(5) {
+    transform: translate(75%,50%)
+}
+.bbrs-task-grid > :nth-child(6) {
+    transform: translate(-75%,50%)
+}
+.bbrs-task-table {
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+}
+.bbrs-task-table td {
+    padding: 5px;
+    vertical-align: top;
+    border: none;
+}
+
+.bbrs-bee-container {
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: auto 60px, contain;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.draggable {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: auto;
+    cursor: pointer;
+    padding: 5px;
+}
+

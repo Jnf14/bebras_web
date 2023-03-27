@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<style> /* Do Not Change */
+			html, body, div, span, p, h1, h2, h3, h4, h5, li, td, th { font-family: Arial, sans-serif; }
+			h1 { text-align: center; }
+			p, h1, h2, h3, h4, h5, li, td, th, .edithere { background-color: #dfffdf; }
+			p + p, table + p, ol + p, ul + p { /* vertical space before paragraphs */ margin-top: 0.5em; }
+			.question { /* identify the question paragraph */ font-style: italic; }
+			.answers { /* identify the answer list */ list-style-type: upper-alpha; }
+			.code { /* for code in p or span */ font-family: "Consolas", "Courier New", monospace; }
+			.donotchange { background-color: #ffffff; }
+			table { border: 1px solid; border-collapse: collapse; margin-left:auto; margin-right:auto; }
+			td, th { border: 1px solid; padding: 3px; }
+		</style>
+
+		<title>2021-CA-02: Theklas Netze</title>
+
+	</head>
+
+	<body>
+
+		<h1>2021-CA-02: Theklas Netze</h1>
+
+		<table>
+			<tr>
+				<td class="donotchange"><em>6yo-8yo:</em> <span class="edithere">-</span></td>
+				<td class="donotchange"><em>8yo-10yo:</em> <span class="edithere">-</span></td>
+				<td class="donotchange"><em>10yo-12yo:</em> <span class="edithere">-</span></td>
+				<td class="donotchange"><em>12yo-14yo:</em> <span class="edithere">hard</span></td>
+				<td class="donotchange"><em>14yo-16yo:</em> <span class="edithere">medium</span></td>
+				<td class="donotchange"><em>16yo-19yo:</em> <span class="edithere">easy</span></td>
+      		</tr>
+
+			<tr>
+				<td colspan="6" class="donotchange"><em>Answer type:</em> <span class="edithere">Multiple-Choice with Images OR Interactive (Click-On-Object)</span></td>
+   			</tr>
+
+			<tr>
+        		<td colspan="3" class="donotchange"><span class="edithere">–</span> <em>algorithms and programming</em></td>
+				<td colspan="3" class="donotchange"><span class="edithere">–</span> <em class="donotchange">computer processes and hardware</em></td>
+			</tr>
+			<tr>
+				<td colspan="3" class="donotchange"><span class="edithere">X</span> <em class="donotchange">data, data structures, and representations</em></td>
+				<td colspan="3" class="donotchange"><span class="edithere">–</span> <em class="donotchange">communication and networking</em></td>
+			</tr>
+			<tr>
+				<td colspan="3" class="donotchange"><span class="edithere">–</span> <em class="donotchange">interactions, systems, and society</em></td>
+				<td colspan="3" class="donotchange"></td>
+			</tr>
+		</table>
+
+		<hr/>
+
+		<h2 class="donotchange">Body</h2>
+
+<p>
+		    Spinne Thekla möchte möglichst viele verschiedene Netze bauen.
+			Deshalb hat sie sich ein Verfahren ausgedacht, den genauen Aufbau ihrer Netze festzuhalten.
+		</p>
+				<p>
+			Das macht sie so: Sie nummeriert die Endpunkte von 1 bis N und verwendet Felder in dem Raster nach folgendem Schema:
+		</p>
+		<p>
+			<ul>
+				<li>Wenn es einen Faden gibt, der Endpunkt A mit Endpunkt B verbindet, dann wird das Feld in Spalte A und Zeile B mit einem "x" markiert.</li>
+				<li>Ein Faden der Endpunkt A mit Endpunkt B verbindet, verbindet auch
+				Endpunkt B mit Endpunkt A.</li>
+			</ul>
+		</p>
+		<p>
+			<img src="graphics-deu/2021-CA-02-taskbody.svg" type="image/svg+xml" alt="" height=300px>
+		</p>
+		<p>
+			Thekla baut nun folgendes Netz:
+		</p>
+		<p>
+			<img src="graphics-deu/2021-CA-02-question.svg" type="image/svg+xml" alt="" height=300px>
+		</p>
+
+		<h2 class="donotchange">Question / Challenge</h2>
+
+		<p class="question">
+			Was ist die richtige Darstellung für dieses Netz?
+		</p>
+
+		<h2 class="donotchange">Answer Options / Interactivity Description</h2>
+
+		<table class="answers">
+		<tr>
+		<th>A</th>
+		<th>B</th>
+		<th>C</th>
+		<th>D</th>
+		</tr>
+		<tr>
+			<td><img src="graphics-deu/2021-CA-02-answerA.svg" type="image/svg+xml" alt="" height=200px></td>
+			<td><img src="graphics-deu/2021-CA-02-answerB.svg" type="image/svg+xml" alt="" height=200px></td>
+			<td><img src="graphics-deu/2021-CA-02-answerC.svg" type="image/svg+xml" alt="" height=200px></td>
+			<td><img src="graphics-deu/2021-CA-02-answerD.svg" type="image/svg+xml" alt="" height=200px></td>
+		</tr>
+		</table>
+		<p>
+			Interaktive Option:<br />
+			Statt der Überprüfung vorgegebener Antwortmöglichkeiten könnte der
+			Schüler gefragt werden, eine leere Matrix selbst zu vervollständigen.
+			Auswahl erfolgt durch Klicken der Zellen. Nochmaliges Klicken entgernt die Markierung wieder.
+		</p>
+
+		<hr/>
+
+		<h2 class="donotchange">Answer Explanation</h2>
+		<table>
+		<tr>
+		<td>Antwort A ist richtig, denn alle Felder gemäss der Regeln richtig markiert.</td>
+		<td>
+		<img src="graphics-deu/2021-CA-02-answerA.svg" type="image/svg+xml" alt="" height=200px>
+		</td>
+		</tr>
+		<tr>
+		<td>Bei Antwort B wurde eine zusätzliche Verbindung fälschlich eingezeichnet (Endpunkt 1 nach Endpunkt 2 in beiden Richtungen) und eine wurde vergessen (Endpunkt 2 nach Endpunkt 5 in beiden Richtungen).</td>
+		<td>
+		<img src="graphics-deu/2021-CA-02-explanationB.svg" type="image/svg+xml" alt="" height=200px>
+		</td>
+		</tr>
+		<tr>
+		<td>Antwort C: in dem hier verwendeten Verfahren sollten eigentlich in der Diagonale von links oben nach rechts unten keine Einträge vorhanden sein. Das wären ja Verbindungen eines Endpunkts mit sich selbst, was in manchen Netzen durchaus erlaubt sein kann, in Spinnennetzen aber nicht vorkommt. Bei dieser Antwort finden sich aber 2 solche Verbindungen (bei Endpunkt 1 und bei Endpunkt 4).</td>
+		<td>
+		<img src="graphics-deu/2021-CA-02-explanationC.svg" type="image/svg+xml" alt="" height=200px>
+		</td>
+		</tr>
+		<tr>
+		<td>Antwort D: alle Darstellungen von Netzen sollten symmetrisch sein bezüglich der Diagonalen von links oben nach rechts unten. In dieser Antwort findet sich zwar die Verbindung von Endpunkt 2 nach Endpunkt 5, die entsprechende Verbindung zurück von Endpunkt 5 nach Endpunkt 2 fehlt aber.</td>
+		<td>
+		<img src="graphics-deu/2021-CA-02-explanationD.svg" type="image/svg+xml" alt="" height=200px>
+		</td>
+		</tr>
+		</table>
+
+		<h2 class="donotchange">It's Informatics!</h2>
+
+		<p>
+			Das Spinnennetz kann als Graph betrachtet werden, ein Konzept, das häufig in der Informatik verwendet wird.
+		</p>
+		<p>
+			Ein Graph besteht aus Knoten (den Endpunkten des Netzes) und Kanten (den Fäden zwischen den Endpunkten). Graphen werden zum Beispiel auch verwendet, um Objekte und die Beziehungen zwischen Objekten darzustellen. Ein Diagramm könnte beispielsweise Personen zeigen, die in sozialen Medien befreundet sind, oder Flüge zwischen Ländern.
+		</p>
+		<p>
+			In dieser Aufgabe wird gezeigt wie man die Struktur eines Spinnennetzes in einem Raster speichern kann. Gewisse Eigenschaften, wie zum Beispiel das genaue Aussehen des Netzes, gehen dabei verloren. In vielen Fällen ist man aber nicht an den genauen geometrischen Eigenschaften des Graphen interessiert sondern nur an seiner Struktur. Gewisse Eigenschaften des Graphen bleiben erhalten: Existiert eine bestimmte Kante? Wie viele Kanten sind mit einem bestimmten Knoten verbunden?
+		</p>
+		<p><img src="graphics-deu/2021-CA-02-itsinformatics.svg" type="image/svg+xml" alt="" height=150px></p>
+		<p>
+			Die vorgestellte Möglichkeit ist nur eine von vielen Möglichkeiten die Struktur eines Netzes festzuhalten. Die Methode ist nicht sehr sparsam, denn es werden für jede Verbindung beide Richtungen gespeichert, was nicht notwendig wäre und auch die freien Diagonalenfelder wären gar nicht notwendig. Dafür weist dieses Verfahren den Vorteil auf, dass Darstellungsfehler teilweise erkannt werden können. Antwort C und Antwort D konnten zum Beispiel als falsch erkannt werden ohne auf das Netz Bezug zu nehmen. 
+        </p>
+		<p>
+			Die vorgestellte Darstellungsform wird Adjazenz-Matrix genannt.
+		</p>
+		<h2 class="donotchange">Keywords and Websites</h2>
+
+		<p>
+			Adjazenzmatrix
+			<ul>
+			<li><a href="https://de.wikipedia.org/wiki/Adjazenzmatrix">https://de.wikipedia.org/wiki/Adjazenzmatrix</a></li>
+			</ul>
+		</p>
+
+		<hr/>
+
+		<h2 class="donotchange">Wording and Phrases</h2>
+
+		<p>
+			<ul>
+				<li>Endpunkt: Stelle wo die Spinnfäden an der Mauer angeheftet sind.</li>
+				<li>Die Spinne baut das Netz.</li>
+				<li>Die Endpunkte werden mit Spinnfäden verbunden.</li>
+			</ul>
+		</p>
+
+		<h2 class="donotchange">Comments</h2>
+
+		<p>Group 15: Very minor changes were made to text by this group at the workshop.</p>
+		<p>
+			Sarah Chan (Author), sarah.chan@uwaterloo.ca, 2021-03-30:
+			<em>Things to think about:<ul>
+				<li>Is it clear what is meant by an anchor point?</li>
+				<li>It doesn't really matter if students mix up rows and columns since the quilt is symmetrical.
+				<li>Providing the numbering of the anchor points, rows, and columns is critical in order to prevent ambiguity.</li>
+			</ul></em>
+		</p>
+
+		<p>
+			Lidia Feklistova, 2021-04-14:
+			<ul>
+				<li>The task looks easier than indicated.
+				<br><strong>From author: I think the interactive version is easier than the MC version. Also, a smaller web would be easier. In its current form, this task requires a lot of bookkeeping and it may be hard for younger students to keep track, especially if they don't have paper and pencil.</strong></li>
+				<li>In the body the wording "anchors numbered A and B" can be misunderstood. A student may start searching for A and B but find only numbers 1-5.
+				<br><strong>From author: Does changing A and B to X and Y help? I am open to other options.</strong></li>
+				<li>An explanation about graph (what is it, why it is important etc) will be appreciated.
+				<br><strong>From author: I added some text about what a graph is and included some examples.</strong></li>
+			</ul>
+		</p>
+
+		<p>
+			Ungyeol Jung, 2021-04-23:
+			<ul>
+				<li>It would be even better if examples of using graphs were included.
+				<br><strong>From author: I added some text about what a graph is and included some examples.</strong></li>
+			</ul>
+		</p>
+
+		<h2 class="donotchange">Graphics and Other Files</h2>
+
+		<p>
+			2021-CA-02-taskbody.svg, 2021-CA-02-answer[A-D].svg, 2021-CA-02-explanation[B-D].svg, 2021-CA-02-itsinformatics.svg, 2021-CA-02-question.svg: by Susanne Datzko, susanne.datzko@inf.ethz.ch, Switzerland
+		</p>
+
+		<h2 class="donotchange">Authors and Contributors (incl. Graphics)</h2>
+
+		<p>
+			Sarah Chan, sarah.chan@uwaterloo.ca, Canada<br>
+			Wilfried Baumann, baumann@ocg.at, Austria (translation from English into German)<br>
+			Susanne Datzko, susanne.datzko@inf.ethz.ch, Switzerland (contributor, graphics)
+		</p>
+
+		<hr/>
+
+		<h2 class="donotchange">License</h2>
+
+		<p class="donotchange">Copyright &copy; 2021 Bebras &ndash; International Challenge on Informatics and Computational Thinking.  This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a></p>
+
+	</body>
+
+</html>

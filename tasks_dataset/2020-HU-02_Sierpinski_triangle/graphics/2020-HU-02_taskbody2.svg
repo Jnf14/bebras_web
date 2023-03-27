@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="6.0606313cm"
+   height="5.2553787cm"
+   viewBox="0 0 302.33735 262.33887"
+   id="svg99"
+   sodipodi:docname="taskbody_3.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata105">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs103" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1408"
+     inkscape:window-height="750"
+     id="namedview101"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="2.9351278"
+     inkscape:cx="114.53161"
+     inkscape:cy="99.314244"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg99" />
+  <g
+     stroke-miterlimit="10.000"
+     id="g97"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     transform="translate(-214.01775,-90.926565)">
+    <g
+       id="misc" />
+    <!-- misc -->
+    <g
+       id="layer0">
+      <clipPath
+         id="clip20639cfc-267f-4c36-8d28-4f0b6f0a3c54">
+        <path
+           d="M 0,0 V 611 H 873 V 0 Z"
+           id="path5"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip1)"
+         id="g16">
+        <g
+           id="g14"
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none">
+          <path
+             d="M 440,222.1 H 290 L 365,352 Z"
+             id="path8"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title10">Dreieck triangle_{1,0}</title>
+          <desc
+             id="desc12">Dreieck triangle_{1,0}: Polygon D, E, F</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip1 -->
+      <clipPath
+         id="clipa32e3580-4c46-4b35-b32f-14bcfe214bf0">
+        <path
+           d="M 0,0 V 611 H 873 V 0 Z"
+           id="path18"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip2)"
+         id="g29">
+        <g
+           id="g27"
+           style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="M 215,352 H 515"
+             id="path21"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title23">Strecke c</title>
+          <desc
+             id="desc25">Strecke c: Strecke A, B</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip2 -->
+      <clipPath
+         id="clipd31f4e2f-0eda-452a-babc-9c51e72a7259">
+        <path
+           d="M 0,0 V 611 H 873 V 0 Z"
+           id="path31"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip3)"
+         id="g42">
+        <g
+           id="g40"
+           style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="M 515,352 365,92.192"
+             id="path34"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title36">Strecke a</title>
+          <desc
+             id="desc38">Strecke a: Strecke B, C</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip3 -->
+      <clipPath
+         id="clipfeb68bd7-2cf4-4301-ab8f-55648dcc383d">
+        <path
+           d="M 0,0 V 611 H 873 V 0 Z"
+           id="path44"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip4)"
+         id="g55">
+        <g
+           id="g53"
+           style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="M 365,92.192 215,352"
+             id="path47"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title49">Strecke b</title>
+          <desc
+             id="desc51">Strecke b: Strecke C, A</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip4 -->
+      <clipPath
+         id="clip1163e41b-9f40-49f4-b423-ac1629523c24">
+        <path
+           d="M 0,0 V 611 H 873 V 0 Z"
+           id="path57"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip5)"
+         id="g68">
+        <g
+           id="g66"
+           style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="M 440,222.1 H 290"
+             id="path60"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title62">Strecke f</title>
+          <desc
+             id="desc64">Strecke f: Strecke D, E</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip5 -->
+      <clipPath
+         id="clip884f7a2c-154b-4c31-a702-ca94c8161c5d">
+        <path
+           d="M 0,0 V 611 H 873 V 0 Z"
+           id="path70"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip6)"
+         id="g81">
+        <g
+           id="g79"
+           style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="M 290,222.1 365,352"
+             id="path73"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title75">Strecke d</title>
+          <desc
+             id="desc77">Strecke d: Strecke E, F</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip6 -->
+      <clipPath
+         id="clipe59452d1-8d9a-498c-801f-9c4a504ec898">
+        <path
+           d="M 0,0 V 611 H 873 V 0 Z"
+           id="path83"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip7)"
+         id="g94">
+        <g
+           id="g92"
+           style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="M 365,352 440,222.1"
+             id="path86"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title88">Strecke e</title>
+          <desc
+             id="desc90">Strecke e: Strecke F, D</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip7 -->
+    </g>
+    <!-- layer0 -->
+  </g>
+  <!-- default stroke -->
+</svg>
+<!-- bounding box -->
+

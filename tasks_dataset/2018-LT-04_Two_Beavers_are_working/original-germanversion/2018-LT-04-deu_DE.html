@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+
+<title>2018-LT-04: Two Beavers are Working</title>
+<!-- The task name is used to identify the task internationally.
+It must be in English, and will not be translated.
+The task name is also used to name the folder containing this task:  2018-XY-01_Task-Name
+-->
+<style>
+html, body, div, span {
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font: 100% Helvetica, sans-serif; }
+h1 {
+  font-size: 1.3em; }
+h2 {
+  font-size: 1.1em; }
+p + p, table + p, ol + p, ul + p { /* vertical space before paragraphs */
+  margin-top: 0.5em; }
+#question { /* identify the question paragraph */
+  font-weight: bold; }
+ul, ol {
+  list-style-position: outside;
+  margin-left: 1em;
+  }
+#answers { /* identify the answer list */
+   list-style-type: upper-alpha;
+   }
+.code { /* for p and span */
+  font-family: "Lucida Console", "Courier New", Monaco, monospace;
+  font-size: 0.9em;
+  }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;}
+</style>
+</head>
+
+<body>
+
+<!-- Task Header -->
+
+<h1>2018-LT-04: Two Beavers are Working</h1>
+
+<hr />
+<h2>Task Attributes</h2>
+<ul>
+<li><b>Age Group / Difficulty:</b> IV / medium </li>
+<!-- (the one age group this task is most appropriate for, plus an estimate
+of the difficulty for students in this age group: easy, medium, or hard).
+Possible age groups: I (6-8 years), II (8-10 years), III (10-12 years),
+IV (12-14 years), V (14-16 years), VI (16-19 years) -->
+<li><b>Category:</b> DSR </li>
+<!-- one of:  ALP (Algorithms and Programming),
+              DSR (Data, Data Structures, and Representations)
+              CPH (Computer Processes and Hardware)
+              COM (Communication and Networking)
+              ISS (Interactions, Systems, and Society)  -->
+<li><b>Keywords:</b>  constraints, constraint satisfaction  </li>
+<!-- A list of keywords that more specifically identify the informatics topic(s) the task is related to. -->
+<li><b>Answer type:</b>constructive (drag and drop)</li>
+<li><b>Colour-blind-proof:</b> yes</li>
+</ul>
+
+<!-- Task Body -->
+
+<hr /><hr />
+<h2 class="em">Biber-Arbeit</h2>
+<!-- The task title usually is a longer version of the task name.
+The task title will usually be translated. -->
+
+
+<div  style="width: 320px; float: left; margin-right: 10px;">
+<p>
+Das Bauen von einem Biberdamm kann man in mehrere Teilaufgaben zerlegen, wie Bäume faellen, Äste enfernen, Stämme zum Wasser transportieren, usw. Das Bild zeigt alle 8 Teilaufgaben A, B, C, D, E, F, G, H  mit Anzahl der Stunden, die man zu ihrer Erledigung braucht. Die Teilaufgaben sind nicht ganz unabhängig , d.h. es können nicht alle gleichzeitig erledigt werden. Ein Pfeil von X nach Y sagt aus, dass die Teilaufgabe X muss vollständig erledigt werden , vorher man anfägt die Teilaufgabe Y zu erledigen.
+</p>
+</div>
+<p>
+<img src="graphics_DE/2018-LT-04-tasks.svg" style="width: 400px;">
+</p>
+<div style=" clear: both;">
+<p style="width: 320px; float: left; margin-right: 10px;">
+Biberin Ulla will den Biber Otso helfen, um den Damm schneller zu bauen. Sie teilen sich die Teilaufgaben untereinander und herstellen einen zeitlichen Arbeitsplan, der die Abhaengigkeiten aus der ersten Zeichnung erfuellt. Somit sollte der Damm in 32 Stunden fertig werden. Das geht aber schneller!
+</p>
+<p>
+<img src="graphics_DE/2018-LT-04-schedule-taskbody.svg" style="height: 130px;">
+</p>
+<p id="question" style="clear: both;">
+Erstelle einen Arbeitsplan, mit dem der Damm in möglichst kurzer Zeit fertig wird.
+</p>
+<p>
+Ziehe dazu die Aufgaben nach unten in den Plan.<br>
+Aufgaben, die noch nicht begonnen werden können, sind grau gefärbt.<br>
+Wenn du mit dem Plan noch nicht zufrieden bist, ziehe Aufgaben zurück nach oben.
+</p>
+<img src="graphics_DE/screenshot-interactivity-DE.png">
+
+<hr />
+<h2>Answers</h2>
+<!-- For a multiple-choice task, your choice of answers goes here (if needed): -->
+<!--
+><ol id="answers">
+<li>answer 1</li>
+<li>answer 2</li>
+<li>answer 3</li>
+<li>answer 4</li>
+</ol>
+-->
+<!-- For tasks with open answers or even constructive tasks:  Describe the range of answers here. -->
+<p>
+The students shall drag and drop the jobs from a row into the two rows of the schedule.  Any arrangement of jobs is accepted.
+</p>
+
+<hr />
+<h2>So ist es richtig:</h2>
+<!--
+Explain which is the correct answer and why this is a correct answer.
+In case of multiple-choice tasks, also explain why the other answer choices are incorrect.
+In case of open tasks (non-choice), explain the full set of correct answers, and why answers not in this set are incorrect.  If the task asks for an optimum, you should be able to prove the optimality of the correct answer.
+Students (Bebras participants) must be able to understand this explanation.
+-->
+<p>
+Im Arbeitsplan aus der Aufgabe hat der erste Biber eine lange Pause (10 Stunden), und der zweite Biber hat insgesamt 8 Stunden lang Leerlauf.  Die beiden wären schneller fertig, wenn sie ständig arbeiteten. 
+</p>
+<p style="width: 400px; float: left; margin-right: 10px;">
+Man kommt zu einem insgesamt schnelleren Arbeitsplan, wenn man darauf achtet, dass die beiden größten Aufgaben E(10) und F(9) nicht vom selben Biber ausgeführt werden. Hier ist ein Arbeitsplan, der mit 23 Stunden auskommt. Schneller geht es nicht, denn die beiden Biber arbeiten ohne Pause.
+</p>
+<p>
+<img src="graphics_DE/2018-LT-04-schedule-solution.svg" style="height: 130px;">
+</p>
+
+<hr />
+<h2>Das ist Informatik!</h2>
+<!--
+This part is to relate the task to the central informatics concept behind this task:
+a specific problem/algorithm, a specific data structure, a fundamental idea, …
+It should also tell about the relevance of this concept:
+to some area of computer application, to the inner workings of digital systems, to CS research, …
+If there are several concepts in this task, it is recommended to focus on one of them.
+It might be nice to also add one or two relevant web-links here, for further reading.
+This text is for teachers and students at the same time. -->
+<p>
+Menschen sind ungeduldig, und deshalb wird oft verlangt, dass Arbeiten möglichst schnell erledigt werden.  Wenn mehrere "Betriebsmittel" zur Verfügung stehen, seien es Menschen, Maschinen oder Biber, spielt die Verteilung der "Jobs" auf diese Betriebsmittel für die Schnelligkeit eine wichtige Rolle.
+</p>
+<p>
+Auch in Computern sollen die Jobs, die durch die vielen, gleichzeitig darauf ablaufenden Prozesse zu erledigen sind, gut auf die Betriebsmittel, etwa die Prozessorkerne verteilt werden.  Für dieses "Scheduling" gibt es viele verschiedene, von der Informatik gut untersuchte Strategien.  Der Arbeitsplan in dieser Biberaufgabe wurde so erstellt, dass unter den anstehenden Jobs der mit der längsten Dauer einem gerade "arbeitslosen" Biber zugeteilt wurde – in diesem Fall eine schlechte Strategie.  Im Allgemeinen funktioniert es besser, wenn kurze Jobs zuerst erledigt werden:  Die Strategie "shortest-job-next" (kürzester Job zuerst) führt zu einer im Durchschnitt minimalen Wartezeit der Jobs.
+</p>
+<p>
+<a href="https://de.wikipedia.org/wiki/Scheduling">https://de.wikipedia.org/wiki/Scheduling</a><br>
+<a href="https://de.wikipedia.org/wiki/Shortest-Job-Next">https://de.wikipedia.org/wiki/Shortest-Job-Next</a>
+</p>
+
+<!-- Task Metadata (beyond header) -->
+
+<hr />
+<h2>Wording</h2>
+<!-- A list of words and phrases used to name important things mentioned in the task body:
+actors, activities/processes, concepts, definitions, objects, names, etc.).
+Please list those words/phrases that are crucial to understanding the task -
+and therefore also crucial to transferring the task to another language.
+These words and phrases play a role similar to identifiers in a computer program.
+Hence, there should be only one word/phrase for denoting each object or activity in the task.
+It is recommended to work on this section before writing the task body. -->
+<ul>
+<li><em>word</em>:  meaning</li>
+</ul>
+
+<hr />
+<h2>Comments</h2>
+<!-- Important remarks, like:
+explanation of a significant modification to the task,
+suggestion of potential variants of the task, … -->
+<p>see ODT file
+</p>
+
+
+<hr />
+<h2>Graphics</h2>
+<!-- List of graphics or images used in graphics.
+For each image, please name the author and/or the source.
+For images from third parties, please explain why the image is free to be used in the task.
+Note: If the source of an image is unclear, it might be copyrighted and cannot be used in the task. -->
+<p>See ODT file</p>
+
+<hr />
+<h2>Files</h2>
+<!-- All files needed for this task. -->
+<p>2018-HU-06b-deu_DE.html (this file)<br />
+<em>in graphics_DE:</em> <br>
+keyexample.svg<br>
+keyexampleclosed.svg<br>
+keyexampleopen.svg<br>
+keysolution.svg<br>
+interactive_area_image.svg
+</p>
+
+<hr />
+<h2>Authorship</h2>
+<!-- All persons who made a significant contribution to this task. -->
+<p>See ODT file</p>
+<p>2018-10-25 Wolfgang Pohl (Germany), pohl@bwinf.de:<br>
+German version revised
+</p>
+
+<hr />
+<h2>License</h2>
+<p>
+Copyright &copy; 2018 Bebras &ndash; International Challenge on Informatics and Computational Thinking.<br />
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a>
+</p>
+
+<hr />
+</body>
+</HTML>

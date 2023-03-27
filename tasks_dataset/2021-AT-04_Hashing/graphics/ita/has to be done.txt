@@ -1,0 +1,15 @@
+First image 2021-AT-04a-taskbody1-compatible.svg:
+Change the text to "Diamanti Belli: Antologia Generale" but the computation remains the same
+
+Second image graphics/deu/2021-AT-04-answerA-compatible.svg:
+Change the text to "Gran giorno, bel fiore!" but the computation remains the same
+
+Third image graphics/deu/2021-AT-04-answerB-compatible.svg:
+Change the text to "Bebretti forse fa danni" but the computation remains the same 
+
+Fourth image graphics/deu/2021-AT-04-answerC-compatible.svg:
+Change the text to "Discutibile hotel da distruggere" but the computation remains the same 
+
+Fifth image graphics/deu/2021-AT-04-answerD-compatible.svg:
+Change the text to "Bebretti: documenti e fotocopie" but the computation remains the same 
+
