@@ -5,3 +5,6 @@ find /path/to/task-dev -name "20*.md" -exec sh -c 'cp -Rp "${0%/*}" /path/to/thi
 
 # Delete all files with .odt extension 
 find /path/to/this/folder -name "*.odt" -type f -delete
+
+# Delete empty folders
+find . -type d -empty -delete
