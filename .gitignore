@@ -1,3 +1,6 @@
 
 .DS_Store
-task_dataset/pdf_tasks/
+
+node_modules/
+tasks_dataset/pdf_tasks/
+
