@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.2371693mm"
+   height="8.2758512mm"
+   viewBox="0 0 8.2371693 8.2758512"
+   version="1.1"
+   id="svg3574"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="2022-DE-05-taskbody_buttonleft.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3576"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="7.5087439"
+     inkscape:cx="-12.851684"
+     inkscape:cy="19.910121"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs3571" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-139.21646,-73.201605)">
+    <g
+       transform="matrix(-0.2261228,0,0,0.2261228,311.08878,-31.585075)"
+       id="g4112-8"
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5">
+      <g
+         transform="translate(4.89965,-27.2057)"
+         id="g4090-8">
+        <path
+           d="m 723.645,527.209 c 0.004,0.008 -3.279,-2.784 -3.462,-3.831 l -0.059,-27.317 c 0,-2.116 1.719,-3.835 3.835,-3.835 h 27.33 c 0.793,0 3.282,2.508 3.894,2.92 -0.6,-1.334 -0.301,-4.652 -5.252,-4.531 h -27.33 c -2.116,0 -3.835,1.718 -3.835,3.835 v 27.33 c -0.241,4.058 4.174,5.484 4.879,5.429 z"
+           style="fill:#a80303"
+           id="path4088-8" />
+      </g>
+      <g
+         transform="matrix(1.0052,0,0,0.969441,2.76965,-10.8604)"
+         id="g4094-2">
+        <path
+           d="m 753.393,494.819 c 0,-2.183 -1.71,-3.955 -3.815,-3.955 h -27.189 c -2.105,0 -3.815,1.772 -3.815,3.955 v 28.192 c 0,2.184 1.71,3.956 3.815,3.956 h 27.189 c 2.105,0 3.815,-1.772 3.815,-3.956 z"
+           style="fill:#ff0d00"
+           id="path4092-4" />
+      </g>
+      <g
+         transform="rotate(180,739.425,495.31)"
+         id="g4098-4">
+        <path
+           d="m 720.555,525.024 c -0.238,-0.5 -0.372,-1.059 -0.372,-1.65 v -27.33 c 0,-2.117 1.718,-3.835 3.835,-3.835 h 27.33 c 0.752,0 1.453,0.217 2.046,0.591 -0.618,-1.292 -1.937,-2.185 -3.463,-2.185 h -27.33 c -2.116,0 -3.835,1.718 -3.835,3.835 v 27.33 c 0,1.365 0.715,2.564 1.789,3.244 z"
+           style="fill:#ff3d22"
+           id="path4096-1" />
+      </g>
+      <g
+         transform="translate(6.31634,-25.6119)"
+         id="g4102-9">
+        <path
+           d="m 720.555,525.024 c -0.238,-0.5 -0.372,-1.059 -0.372,-1.65 v -27.33 c 0,-2.117 1.718,-3.835 3.835,-3.835 h 27.33 c 0.752,0 1.453,0.217 2.046,0.591 -0.618,-1.292 -1.937,-2.185 -3.463,-2.185 h -27.33 c -2.116,0 -3.835,1.718 -3.835,3.835 v 27.33 c 0,1.365 0.715,2.564 1.789,3.244 z"
+           style="fill:#dc0501"
+           id="path4100-2" />
+      </g>
+      <g
+         transform="translate(6.55977,-27.0753)"
+         id="g4106-3">
+        <path
+           d="m 722.009,495.158 c -2.438,2.661 -0.777,18.795 0.143,20.238 1.047,1.643 3.874,-1.048 3.294,-2.662 -1.501,-4.177 -3.165,-8.563 0.146,-12.288 1.507,-1.696 3.042,-1.829 5.093,-2.513 0.498,-0.166 9.922,0.497 10.584,0 1.292,-0.969 0.247,-2.785 -0.926,-3.175 0,0 -17.21,-0.827 -18.334,0.4 z"
+           style="fill:#fb735b"
+           id="path4104-7" />
+      </g>
+      <g
+         transform="translate(-37.6927,-27.2057)"
+         id="g4110-2">
+        <path
+           d="m 768.187,508.002 v 6.58 h 1.183 c 0.348,-0.564 0.515,-1.197 0.328,-1.718 -0.577,-1.606 -1.178,-3.243 -1.511,-4.862 z"
+           style="fill:#ffc1b6"
+           id="path4108-8" />
+      </g>
+    </g>
+    <g
+       transform="matrix(0.2261228,0,0,0.2261228,-21.918381,-30.722168)"
+       id="g4262-6"
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5">
+      <path
+         d="m 717.643,479.135 0.024,-9.867 -1.524,-0.003 -0.049,19.435 1.525,0.004 0.024,-9.56 12.142,9.984 0.191,-5.568 h 12.211 v -8.947 h -12.211 l -0.191,-5.773 z"
+         style="fill:#ffffff"
+         id="path4260-7" />
+    </g>
+  </g>
+</svg>

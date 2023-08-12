@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="418.233 340.156 74.133 95.491" width="74.133" height="95.491" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g transform="matrix(0.318303, 0, 0, 0.318303, 259.476624, 314.966431)" style="">
+    <path d="M 250 184.53 L 300 213.397 L 300 271.133 L 250 300 L 200 271.133 L 200 213.397 Z" style="stroke-width: 3.2885px; fill: rgb(255, 242, 170); stroke: rgb(208, 121, 0);" transform="matrix(-0.866025, -0.5, 0.5, -0.866025, 754.40652, 589.052032)" bx:shape="n-gon 250 242.265 57.735 57.735 6 0 1@b533c151"/>
+    <path d="M 250 184.53 L 300 213.397 L 300 271.133 L 250 300 L 200 271.133 L 200 213.397 Z" style="stroke-width: 3.2885px; fill: rgb(255, 242, 170); stroke: rgb(208, 121, 0);" transform="matrix(-0.866025, -0.5, 0.5, -0.866025, 754.865993, 488.944274)" bx:shape="n-gon 250 242.265 57.735 57.735 6 0 1@b533c151"/>
+    <path d="M 250 184.53 L 300 213.397 L 300 271.133 L 250 300 L 200 271.133 L 200 213.397 Z" style="stroke-width: 3.2885px; fill: rgb(252, 186, 94); stroke: rgb(208, 121, 0);" transform="matrix(-0.866025, -0.5, 0.5, -0.866025, 666.30154, 638.944305)" bx:shape="n-gon 250 242.265 57.735 57.735 6 0 1@b533c151"/>
+  </g>
+</svg>

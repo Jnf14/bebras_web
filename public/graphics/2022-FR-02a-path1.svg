@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="508.966 125.88 91.801 63.437" width="91.801" height="63.437" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g transform="matrix(0.318303, 0, 0, 0.318303, 352.487335, 94.049629)" style="">
+    <path d="M 250 184.53 L 300 213.397 L 300 271.133 L 250 300 L 200 271.133 L 200 213.397 Z" style="stroke-width: 3.2885px; fill: rgb(255, 242, 170); stroke: rgb(208, 121, 0);" transform="matrix(0, 1, -1, 0, 791.601318, -100.000002)" bx:shape="n-gon 250 242.265 57.735 57.735 6 0 1@b533c151"/>
+    <path d="M 250 184.53 L 300 213.397 L 300 271.133 L 250 300 L 200 271.133 L 200 213.397 Z" style="stroke-width: 3.2885px; fill: rgb(255, 242, 170); stroke: rgb(208, 121, 0);" transform="matrix(0, 1, -1, 0, 877.611827, -51.047157)" bx:shape="n-gon 250 242.265 57.735 57.735 6 0 1@b533c151"/>
+    <path d="M 250 184.53 L 300 213.397 L 300 271.133 L 250 300 L 200 271.133 L 200 213.397 Z" style="stroke-width: 3.2885px; fill: rgb(252, 186, 94); stroke: rgb(208, 121, 0);" transform="matrix(0, 1, -1, 0, 964.537415, -0.703126)" bx:shape="n-gon 250 242.265 57.735 57.735 6 0 1@b533c151"/>
+  </g>
+</svg>

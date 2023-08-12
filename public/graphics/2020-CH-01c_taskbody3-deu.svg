@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="17.902786mm"
+   height="17.329845mm"
+   viewBox="0 0 17.902786 17.329845"
+   version="1.1"
+   id="svg1660"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="2020-CH-01c_taskbody3.svg">
+  <defs
+     id="defs1654" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="400"
+     inkscape:cy="560"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g882"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata1657">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-36.366021,-149.94603)">
+    <g
+       id="g882"
+       transform="translate(-137.21852,9.9476646)">
+      <ellipse
+         style="fill:none;stroke:#000000;stroke-width:0.865;stroke-linecap:square;paint-order:markers stroke fill;stop-color:#000000"
+         id="path833-5"
+         cx="182.53593"
+         cy="148.66328"
+         rx="8.5188932"
+         ry="8.2324228" />
+      <ellipse
+         ry="6.5321565"
+         rx="6.7624149"
+         cy="148.66328"
+         cx="182.53593"
+         id="path833-9-7"
+         style="fill:#ffd83e;stroke:#000000;stroke-width:0.365001;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;stop-color:#000000" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="177.53423"
+         y="150.03406"
+         id="text852-9"><tspan
+           sodipodi:role="line"
+           id="tspan850-9"
+           x="177.53423"
+           y="150.03406"
+           style="stroke-width:0.264583">Ende</tspan></text>
+    </g>
+  </g>
+</svg>

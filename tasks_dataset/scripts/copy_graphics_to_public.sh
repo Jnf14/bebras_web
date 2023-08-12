@@ -1,0 +1,1 @@
+find . -name "20*.svg" -type f -exec cp {} ./public/graphics \;

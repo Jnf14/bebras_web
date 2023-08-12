@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+     <html lang="en">
+       <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <title>2020-JP-01b Appareils ménagers</title>
+         
+        
+       </head>
+       <body><h1 id="2020-jp-01b-appareils-m%C3%A9nagers" tabindex="-1">2020-JP-01b Appareils ménagers</h1>
+
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markdown-it-texmath/css/texmath.min.css">
+          <style>/* 
+* Minimal CSS Reset and Base Style
+*/
+
+html {
+   box-sizing: border-box;
+   /* background:#eee; */
+   -webkit-text-size-adjust: 100%;
+}
+ 
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+body {
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12pt;
+   line-height: 140%;
+   max-width: 750px;
+   margin: auto;
+   padding: 40px;
+   /* background:white; */
+   border-left: 1px solid lightgrey;
+   border-right: 1px solid lightgrey;
+}
+
+h1 {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   /* background: white; */
+   z-index: 10;
+   backdrop-filter: blur(8px);
+
+   margin: 0;
+   padding: 15px 0;
+   border-bottom: 1px solid lightgrey;
+   font-size: 150%;
+   font-weight: bold;
+   text-align: center;
+   page-break-after: avoid;
+}
+
+.bebras-sectionbody-1 {
+   margin-top: -1px;
+}
+
+h2 {
+   font-size: 120%;
+   font-weight: bold;
+   margin-top: 40px;
+   padding-bottom: 5px;
+   border-bottom: 1px solid lightgrey;
+   clear: both;
+   page-break-after: avoid;
+}
+
+p, ul, ol {
+   margin: 10px 0;
+}
+
+li {
+   margin-top: 5px;
+}
+
+img {
+    max-width: unset;
+    max-height: unset;
+}
+
+th,
+td {
+    padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+    border-top: unset;
+}
+
+/* Center all paragraph-images by default */
+img.only-img-in-p {
+   display: block;
+   margin: 10px auto;
+}
+
+.center {
+   width: 100%;
+   text-align: center;
+}
+
+.clear {
+   clear: both;
+}
+
+.indent {
+   margin-left: 30px;
+}
+
+.comment {
+   padding-left: 10px;
+   font-size: 90%;
+   border-left: 2px solid lightgrey;
+}
+
+/* sub and sup rules to not disgracefully affect line-height */
+
+sup {
+   vertical-align: top;
+   position: relative;
+   top: -0.4em;
+}
+
+sub {
+   vertical-align: bottom;
+   position: relative;
+   bottom: -0.4em;
+}
+
+@media only screen and (max-width: 600px) {
+
+   body {
+       padding: 20px;
+   }
+
+   ul, ol {
+       padding-left: 20px;
+   }
+
+}
+
+
+/*
+* Print/PDF
+*/
+
+@page {
+ margin: 60px 60px 80px;
+}
+ 
+@media only print {
+
+   html {
+       background: none;
+   }
+
+   body {
+       background: none;
+       border: none;
+       padding: 0;
+       max-width: unset;
+   }
+
+   .table-of-contents {
+       display: none;
+   }
+}
+
+.bebras-layout-cell {
+   padding: 0;
+}
+
+/* .bebras-page-header, .bebras-page-header-space {
+ display: none;
+}
+
+.bebras-page-footer,
+.bebras-page-footer-space {
+   margin-top: 10px;
+   height: 30px;
+}
+
+.bebras-page-header,
+.bebras-page-footer {
+   left: 0;
+   right: 0;
+}
+
+.bebras-page-header {
+ position: fixed;
+ top: 0;
+}
+
+.bebras-page-footer {
+ position: fixed;
+ bottom: 0;
+ border-top: 0.5px solid lightgray;
+ display: flex;
+ font-size: 70%;
+}
+
+.bebras-page-footer-taskid {
+   font-weight: bold;
+}
+
+.bebras-page-footer-tasktitle {
+   margin-left: 0.8em;
+   font-style: italic;
+}
+
+
+@media only screen {
+   .bebras-page-header, .bebras-page-header-space,
+.bebras-page-footer, .bebras-page-footer-space {
+       display: none;
+   }
+} */
+
+
+
+/* 
+* Header
+*/
+
+.bebras-header {
+   line-height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   font-size: 90%;
+   border-collapse: collapse;
+   padding: 1px 0 0 1px;
+   margin-bottom: 20px;
+}
+
+.bebras-header-cell {
+   padding: 5px;
+   border: 1px solid #BBB;
+   margin: -1px 0 0 -1px;
+}
+
+.bebras-ages {
+   display: flex;
+   justify-content: stretch;
+}
+
+.bebras-age {
+   text-align: center;
+   flex: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.bebras-header-caption {
+   font-style: italic;
+}
+
+.bebras-header-caption::after {
+   content: ': ';
+}
+
+.bebras-categories {
+   display: flex;
+   align-items: stretch;
+}
+
+.bebras-categories-cell {
+   flex: auto;
+   display: flex;
+   flex-direction: column;
+}
+
+.bebras-keywords {
+   display: flex;
+}
+
+.bebras-keywords-caption {
+   padding-right: 0.5em;
+}
+
+.bebras-keywords-list {
+   flex: auto;
+}
+
+.table-of-contents li {
+   margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+   .bebras-categories {
+       flex-direction: column;
+   }
+
+   .bebras-ages {
+       flex-wrap: wrap;
+   }
+
+   .bebras-age {
+       flex-basis: 33%;
+   }
+}
+
+
+/* 
+* Main content
+*/
+
+.bebras-sectionbody-2 {
+   margin-left: -17px;
+   border-left: 4px solid;
+   padding-left: 13px;
+   page-break-before: avoid;
+   border-left-color:rgba(128,128,128,0);
+}
+
+.bebras-sectionbody-2:hover {
+   border-left-color:rgba(128,128,128,0.2);
+}
+
+.bebras-sectionbody-questionchallenge,
+.bebras-sectionbody-questionchallenge-for-the-online-challenge,
+.bebras-sectionbody-questionchallenge-for-the-brochures,
+.bebras-sectionbody-interactivity-instructions {
+   font-style: italic;
+}
+
+.bebras-sectionbody-questionchallenge em, .bebras-sectionbody-questionchallenge i,
+.bebras-sectionbody-questionchallenge-for-the-online-challenge em, .bebras-sectionbody-questionchallenge-for-the-online-challenge i,
+.bebras-sectionbody-questionchallenge-for-the-brochures em, .bebras-sectionbody-questionchallenge-for-the-brochures i,
+.bebras-sectionbody-interactivity-instructions em, .bebras-sectionbody-interactivity-instructions i {
+   font-style: normal;
+}
+
+.bebras-sectioncontainer-questionchallenge,
+.bebras-sectioncontainer-answer-optionsinteractivity-description
+.bebras-sectioncontainer-contributors,
+.bebras-sectioncontainer-supportfiles,
+.bebras-sectioncontainer-keywords-and-websites,
+.bebras-sectioncontainer-wording-and-phrases {
+   page-break-inside: avoid;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+   .bebras-sectionbody-2 {
+       margin-left: -13px;
+       padding-left: 9px;
+   }
+
+}
+
+
+/* 
+* Footer
+*/
+
+.bebras-license {
+   display: flex;
+   line-height: 100%;
+}
+
+.bebras-license-text {
+   font-size: 90%;
+   line-height: 100%;
+   padding-left: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+
+   .bebras-license {
+       flex-direction: column-reverse;
+   }
+
+   .bebras-license-text {
+       padding-left: 0;
+       padding-bottom: 10px;
+   }
+
+}
+</style>
+        
+             <div class="bebras-header">
+              <div class="bebras-ages"><div class="bebras-age bebras-header-cell"><span class="bebras-header-caption">6yo–8yo</span><span class="bebras-header-value">—</span></div><div class="bebras-age bebras-header-cell"><span class="bebras-header-caption">8yo–10yo</span><span class="bebras-header-value">—</span></div><div class="bebras-age bebras-header-cell"><span class="bebras-header-caption">10yo–12yo</span><span class="bebras-header-value">—</span></div><div class="bebras-age bebras-header-cell"><span class="bebras-header-caption">12yo–14yo</span><span class="bebras-header-value">medium</span></div><div class="bebras-age bebras-header-cell"><span class="bebras-header-caption">14yo–16yo</span><span class="bebras-header-value">easy</span></div><div class="bebras-age bebras-header-cell"><span class="bebras-header-caption">16yo–19yo</span><span class="bebras-header-value">—</span></div></div>
+              <div class="bebras-answertype bebras-header-cell"><span class="bebras-header-caption">Answer Type</span><span class="bebras-header-value">interactive (click-on-object)</span></div>
+              <div class="bebras-categories bebras-header-cell"><div class="bebras-categories-cell"><span class="bebras-header-caption">Computer Science Areas</span><span class="bebras-header-value">☐ algorithms and programming</span><span class="bebras-header-value">☐ data structures and representations</span></div><div class="bebras-categories-cell"><span class="bebras-header-value">☐ computer processes and hardware</span><span class="bebras-header-value">☐ communication and networking</span><span class="bebras-header-value">☐ interactions, systems and society</span></div></div>
+              <div class="bebras-categories bebras-header-cell"><div class="bebras-categories-cell"><span class="bebras-header-caption">Computational Thinking Skills</span><span class="bebras-header-value">☐ abstraction</span><span class="bebras-header-value">☐ algorithmic thinking</span></div><div class="bebras-categories-cell"><span class="bebras-header-value">☐ decomposition</span><span class="bebras-header-value">☐ evaluation</span><span class="bebras-header-value">☐ pattern recognition</span></div></div>
+             </div></div></div><div class="bebras-sectioncontainer-2 bebras-sectioncontainer-body"><h2 id="body" tabindex="-1">Body</h2>
+<div class="bebras-sectionbody-2 bebras-sectionbody-body"><p>Dans la maison de Bruno le castor, il y a cinq appareils électriques (un ordinateur, un lave-linge, une télévision, une machine à café et un aspirateur) et cinq interrupteurs (A, B, C, D et E) pour allumer et éteindre des appareils. Le raccordement électrique est très inhabituel. Chaque interrupteur est connecté à plusieurs appareils, comme montré sur l’image en dessous. Chaque fois que l’on appuie sur un interrupteur, il change l’état de tous les appareils connectés: les appareils éteints s’allument et les appareils allumés s’éteignent.</p>
+<p>Au départ, tous les appareils sont éteints. Si l’on appuie par exemple sur les interrupteurs A, C et E, l’aspirateur est allumé, car le premier bouton l’allume, le deuxième l’éteint et le troisième le rallume.</p>
+</div></div><div class="bebras-sectioncontainer-2 bebras-sectioncontainer-questionchallenge"><h2 id="question%2Fchallenge" tabindex="-1">Question/Challenge</h2>
+<div class="bebras-sectionbody-2 bebras-sectionbody-questionchallenge"><p>Sur quels interrupteurs Bruno doit-il appuyer pour que seules la télévision et la machine à café soit allumées?</p>
+<p><img src="graphics/2020-JP-01b_taskbody-compatible.svg" alt="" title="Appareils et interrupteurs" class="only-img-in-p" style="width:500px"></p>
+</div></div><div class="bebras-sectioncontainer-2 bebras-sectioncontainer-answer-optionsinteractivity-description"><h2 id="answer-options%2Finteractivity-description" tabindex="-1">Answer Options/Interactivity Description</h2>
+<div class="bebras-sectionbody-2 bebras-sectionbody-answer-optionsinteractivity-description"><p></p>
+</div></div><div class="bebras-sectioncontainer-2 bebras-sectioncontainer-answer-explanation"><h2 id="answer-explanation" tabindex="-1">Answer Explanation</h2>
+<div class="bebras-sectionbody-2 bebras-sectionbody-answer-explanation"><p>Lorsque l’on appuie, dans n’importe quel ordre, sur les interrupteurs B, C, D et E, seules la télévision et la machine à café sont allumées.</p>
+<p>Nous pouvons aussi déterminer de manière systématique comment allumer et éteindre chaque appareil indépendamment des autres. Commençons avec deux combinaisons simples:</p>
+<ul>
+<li>A + E (appuyer sur A et B) contrôle la machine à café seulement.</li>
+<li>C + E (appuyer sur C et E) contrôle l’ordinateur seulement.</li>
+</ul>
+<p>On observe ensuite que le lave-linge peut être contrôlé indépendamment des autres en appuyant d’abord sur B avant de remettre l’ordinateur et la machine à café dans le même état qu’avant, soit en appuyant sur A + E et sur C + E. Le lave-linge peut donc être contrôlé indépendamment du reste en appuyant sur B + A + E + C + E. L’interrupteur E est ici utilisé deux fois. Appuyer deux fois sur un interrupteur revient à ne pas l’utiliser du tout, on peut donc aussi contrôler le lave-linge indépendamment avec B + A + C. En utilisant cette méthode, on obtient la liste de combinaisons suivante pour contrôler les appareils séparément:</p>
+<ul>
+<li>Ordinateur: C + E</li>
+<li>Machine à café: A + E</li>
+<li>Lave-linge: A + B + C</li>
+<li>Télévision: A + B + C + D</li>
+<li>Aspirateur: A + B + C + D + E</li>
+</ul>
+<p>Pour allumer seulement la télévision et la machine à café, nous devons donc appuyer sur A + B + C + D + A + E ce que l’on peut simplifier en B + C + D + E étant donné que les deux A s’annulent.</p>
+</div></div><div class="bebras-sectioncontainer-2 bebras-sectioncontainer-it's-informatics"><h2 id="it%E2%80%99s-informatics" tabindex="-1">It’s Informatics</h2>
+<div class="bebras-sectionbody-2 bebras-sectionbody-it's-informatics"><p>Le sytème composé des appareils et des interrupteurs peut être modélisé à l’aide d’un <em>automate fini</em> de la façon suivante.</p>
+<p>Le système des cinq appareils a beaucoup d’<em>états</em> différents. Un de ces états est par exemple le cas où seule la télévision est allumée. Un autre état est le cas où tous les appareils sont éteints (comme tous les appareils sont éteints au départ, on appelle cet état l’<em>état initial</em>). Un autre état est le cas où seules la télévision et la machine à café sont allumées (c’est l’<em>état final</em> dans notre exercice, car c’est ce que nous voulons obtenir).</p>
+<p>En appuyant sur un interrupteur, on fait passer le système d’un état à un autre. Par exemple, lorsque le système est à l’état initial et que l’on appuie sur l’interrupteur E, il passe à l’état auquel seuls la télévision et l’aspirateur sont allumés. Un tel passage d’un état à un autre s’appelle une <em>transition</em>.</p>
+<p>Si l’on représente les états du système avec des cercles et les transitions avec des flèches, on obtient une image comme celle ci-dessous (pour des raisons de place, seuls quatre états et les transitions entre ceux-ci sont représentés). L’état initial est marqué par une flèche spéciale. En informatique, ceci s’appelle un automate fini (un automate fini est simplement un graphe spécifique dans lequel les nœuds sont les états et les arêtes sont les transitions). On peut facilement voir sur l’image dans quel état l’on arrive lorsque l’on appuie sur différents interrupteurs.</p>
+<p><img src="graphics/2020-JP-01b_explanation-compatible.svg" alt="" title="Diagramme d’états" class="only-img-in-p" style="width:600px"></p>
+<p>Dans cet exercice, il s’agit de déterminer comment passer de l’état initial (tous les appareils ont éteints) à l’état final (seules la télévision et la machine à café sont allumées). On veut donc trouver un chemin allant de l’état initial à l’état final. Le recherche de chemin dans des graphes est une tâche fondamentale de l’informatique.</p>
+</div></div><div class="bebras-sectioncontainer-2 bebras-sectioncontainer-keywords-and-websites"><h2 id="keywords-and-websites" tabindex="-1">Keywords and Websites</h2>
+<div class="bebras-sectionbody-2 bebras-sectionbody-keywords-and-websites"><ul>
+<li>Automate fini: <a href="https://fr.wikipedia.org/wiki/Automate_fini">https://fr.wikipedia.org/wiki/Automate_fini</a></li>
+</ul>
+</div></div><div class="bebras-sectioncontainer-2 bebras-sectioncontainer-wording-and-phrases"><h2 id="wording-and-phrases" tabindex="-1">Wording and Phrases</h2>
+<div class="bebras-sectionbody-2 bebras-sectionbody-wording-and-phrases"><p>(Not reported from original file)</p>
+</div></div><div class="bebras-sectioncontainer-2 bebras-sectioncontainer-comments"><h2 id="comments" tabindex="-1">Comments</h2>
+<div class="bebras-sectionbody-2 bebras-sectionbody-comments"><p>(Not reported from original file)</p>
+</div></div><div class="bebras-sectioncontainer-2 bebras-sectioncontainer-contributors"><h2 id="contributors" tabindex="-1">Contributors</h2>
+<div class="bebras-sectionbody-2 bebras-sectionbody-contributors"><ul>
+<li>Students in Hakuyo High School, [no email], Japan (author)</li>
+<li>Anna Morpurgo, <a href="mailto:anna.morpurgo@unimi.it">anna.morpurgo@unimi.it</a>, Italy (contributor)</li>
+<li>Marios O. Choudary, <a href="mailto:marios.choudary@gmail.com">marios.choudary@gmail.com</a>, Pakistan (contributor)</li>
+<li>Maiko Shimabuku, <a href="mailto:shimabuku.m@gmail.com">shimabuku.m@gmail.com</a>, Japan (contributor, graphics)</li>
+<li>Susanne Datzko, <a href="mailto:susanne.datzko@inf.ethz.ch">susanne.datzko@inf.ethz.ch</a>, Switzerland (contributor, graphics)</li>
+<li>Eljakim Schrijvers, <a href="mailto:eschrijvers@eljakim.nl">eschrijvers@eljakim.nl</a>, USA (contributor)</li>
+<li>Christian Datzko, <a href="mailto:christian@bebras.services">christian@bebras.services</a>, Hungary (contributor)</li>
+<li>Michael Barot, <a href="mailto:michael.barot@kanti.sh.ch">michael.barot@kanti.sh.ch</a>, Switzerland (translation from English into German)</li>
+<li>Fabian Frei, <a href="mailto:fabian.frei@inf.ethz.ch">fabian.frei@inf.ethz.ch</a>, Switzerland (contributor)</li>
+<li>Elsa Pellet, <a href="mailto:elsa.pellet@gmx.net">elsa.pellet@gmx.net</a>, Switzerland (translation from German into French)</li>
+</ul>
+</div></div><div class="bebras-sectioncontainer-2 bebras-sectioncontainer-support-files"><h2 id="support-files" tabindex="-1">Support Files</h2>
+<div class="bebras-sectionbody-2 bebras-sectionbody-support-files"><ul>
+<li>2020-JP-01b-{a,b,c,d,e}.svg by Maiko Shimabuku</li>
+<li>Other svg files by Susanne Datzko</li>
+</ul>
+</div></div><div class="bebras-sectioncontainer-2 bebras-sectioncontainer-license"><h2 id="license" tabindex="-1">License</h2>
+<div class="bebras-sectionbody-2 bebras-sectionbody-license"><p>
+            <div class="bebras-license">
+              <div class="bebras-license-image">
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="license" title="CC BY-SA 4.0" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg"/></a>
+              </div>
+              <div class="bebras-license-text">
+                Copyright © 2020 Bebras – International Contest on Informatics and Computer Fluency. This work is licensed under a Creative Commons Attribution – ShareAlike 4.0 International License. <a href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a>
+              </div>
+            </div>
+          </p></div>  </body>
+     </html>

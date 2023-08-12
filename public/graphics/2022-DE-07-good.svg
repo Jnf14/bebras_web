@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="2022-DE-07-good.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg904"
+   version="1.1"
+   viewBox="0 0 69.317123 69.317123"
+   height="69.317123mm"
+   width="69.317123mm">
+  <defs
+     id="defs898" />
+  <sodipodi:namedview
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="560"
+     inkscape:cx="400"
+     inkscape:zoom="0.35"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata901">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(8.8745161,-188.02183)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Ebene 1">
+    <circle
+       cx="25.784046"
+       cy="222.68039"
+       r="33.367397"
+       style="clip-rule:evenodd;fill:#008000;fill-rule:evenodd;stroke:#000000;stroke-width:2.58233px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
+       id="circle2" />
+    <g
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
+       transform="matrix(0.26458333,0,0,0.23769505,-121.72952,49.158555)"
+       id="g6">
+      <path
+         d="m 626.16,747.884 c -9.197,52.602 -118.767,107.125 -137.257,-2.288"
+         style="fill:none;stroke:#000000;stroke-width:10.26px"
+         id="path4" />
+    </g>
+    <g
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
+       transform="matrix(0.26458333,0,0,0.23769505,-122.2898,48.353375)"
+       id="g10">
+      <path
+         d="m 586.108,669.72 c -5.157,-8.068 -28.936,31.014 -4.72,40.189 17.489,6.627 19.857,-36.661 4.72,-40.189 z"
+         id="path8" />
+    </g>
+    <g
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
+       transform="matrix(0.26458333,0,0,0.23769505,-136.75283,47.267105)"
+       id="g14">
+      <path
+         d="m 586.108,669.72 c -5.157,-8.068 -28.936,31.014 -4.72,40.189 17.489,6.627 19.857,-36.661 4.72,-40.189 z"
+         id="path12" />
+    </g>
+  </g>
+</svg>

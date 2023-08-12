@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="7.0103412mm"
+   height="5.6943483mm"
+   viewBox="0 0 7.0103412 5.6943484"
+   version="1.1"
+   id="svg1252"
+   sodipodi:docname="2022-SK-03-taskbody_actionblue.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1254"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.7543719"
+     inkscape:cx="57.133391"
+     inkscape:cy="88.563415"
+     inkscape:window-width="1680"
+     inkscape:window-height="1027"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1249" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-33.835991,-42.47146)">
+    <g
+       transform="matrix(0,-0.22447858,0.25193492,0,16.059715,88.634358)"
+       id="g210"
+       style="clip-rule:evenodd;fill-rule:evenodd">
+      <path
+         d="m 205.645,70.559 h -25.367 l 12.679,13.459 -12.679,14.367 h 25.367 L 192.957,84.018 Z"
+         style="fill:#2ad4ff"
+         id="path208" />
+    </g>
+  </g>
+</svg>
