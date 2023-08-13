@@ -1,41 +1,52 @@
 "use client";
 
 // import { useEffect, useState } from "react";
-import "iframe-resizer/js/iframeResizer.contentWindow";
 import { useEffect, useRef, useState } from "react";
 
 // Props type for HtmlFrame
 type HtmlFrameProps = { htmlText: string };
 
 export default function TaskHtmlFrame({ htmlText }: HtmlFrameProps) {
-  const [iframeHeight, setIframeHeight] = useState(0);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+
+  const resizeIFrameHandler = () => {
+    const iframe = iframeRef.current;
+    if (iframe && iframe.contentWindow) {
+      const newHeight = iframe.contentWindow.document.body.scrollHeight + 40;
+      iframe.height = `${newHeight}px`;
+    }
+  };
+
   useEffect(() => {
-    Array.from(document.getElementsByTagName("iframe")).forEach((iframe) => {
-      iframe.contentWindow?.addEventListener(
-        "load",
-        () => {
-          iframe.width = "100%";
-          iframe.height = iframe.contentWindow
-            ? (iframe.contentWindow.document.body.scrollHeight + 40).toString()
-            : "0";
-        },
-        true
-      );
+    const iframe = iframeRef.current;
+
+    if (iframe) {
+      iframe.contentWindow?.addEventListener("load", resizeIFrameHandler, true);
       iframe.contentWindow?.addEventListener(
         "resize",
-        () => {
-          iframe.height = iframe.contentWindow
-            ? (iframe.contentWindow.document.body.scrollHeight + 40).toString()
-            : "0";
-        },
+        resizeIFrameHandler,
         true
       );
-    });
+
+      // Call the resize handler once after attaching the load event listener
+      resizeIFrameHandler();
+
+      return () => {
+        iframe.contentWindow?.removeEventListener("load", resizeIFrameHandler);
+        iframe.contentWindow?.removeEventListener("load", resizeIFrameHandler);
+      };
+    }
   }, []);
 
   return (
     <div className=" embed">
-      <iframe srcDoc={htmlText} style={{ width: "100%", overflow: "auto" }} />
+      <iframe
+        ref={iframeRef}
+        id="htmlFrame"
+        srcDoc={htmlText}
+        style={{ width: "100%", overflow: "auto" }}
+        scrolling="no"
+      />
     </div>
   );
 }
