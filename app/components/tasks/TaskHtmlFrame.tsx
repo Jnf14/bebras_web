@@ -14,6 +14,7 @@ export default function TaskHtmlFrame({ htmlText }: HtmlFrameProps) {
     if (iframe && iframe.contentWindow) {
       const newHeight = iframe.contentWindow.document.body.scrollHeight + 40;
       iframe.height = `${newHeight}px`;
+      iframe.style.visibility = "visible";
     }
   };
 
@@ -44,7 +45,7 @@ export default function TaskHtmlFrame({ htmlText }: HtmlFrameProps) {
         ref={iframeRef}
         id="htmlFrame"
         srcDoc={htmlText}
-        style={{ width: "100%", overflow: "auto" }}
+        style={{ width: "100%", overflow: "auto", visibility: "hidden" }}
         scrolling="no"
       />
     </div>
