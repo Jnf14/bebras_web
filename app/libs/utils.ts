@@ -16,6 +16,16 @@ export function getTasksDirNames(datasetPath: string): string[] {
 }
 
 /**
+ * Returns the read file as a string given its path
+ * @param path the relative path to the file
+ * @returns the file as a string
+ */
+export function getTaskFile(path: string): string {
+    const file = fs.readFileSync(path).toString()
+    return file
+}
+
+/**
  * Parses the task's metadata matching prisma schema
  * @param taskDirName 
  * @param taskLanguage 
