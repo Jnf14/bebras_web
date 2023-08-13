@@ -1,24 +1,29 @@
-import { getAllTasks } from '@/prisma/task'
-import Link from 'next/link'
+import getTasks, { ISearchParams } from "@/app/actions/getTasks";
+import Container from "@/app/components/Container";
+import Empty from "@/app/components/Empty";
+import TaskCard from "./components/tasks/TaskCard";
 
+interface HomeProps {
+  searchParams: ISearchParams;
+}
 
-export default async function HomePage() {
+export default async function HomePage({ searchParams }: HomeProps) {
+  const tasks = await getTasks(searchParams);
 
-  const tasks = await getAllTasks()
+  if (tasks.length === 0) {
+    return <Empty showButton />;
+  }
 
   return (
-
-    <div className="">
-      {tasks.map((task) => (
-        <div key={task.id}>
-          <a href={`/${task.taskId}`} className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-              <div className="flex flex-col justify-between p-4 leading-normal">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{task.engTitle}</h5>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{task.taskId}</p>
-              </div>
-          </a>
+    <Container>
+      <div className="grid md:grid-cols-4">
+        <div className="bg-gray-200"></div>
+        <div className="md:col-span-3 ml-3">
+          {tasks.map((task) => (
+            <TaskCard task={task} />
+          ))}
         </div>
-      ))}
-    </div>
-  )
+      </div>
+    </Container>
+  );
 }
