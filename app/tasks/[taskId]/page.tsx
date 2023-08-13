@@ -1,32 +1,26 @@
-import * as bb from "bebras";
 import TaskHtmlFrame from "../../components/tasks/TaskHtmlFrame";
-import { getTaskFile } from "@/app/libs/utils";
-import Container from "../../components/Container";
-import getTaskById, { ISearchParams } from "@/app/actions/getTaskById";
+import { getTaskHtmlString } from "@/app/libs/utils";
+import getTaskById from "@/app/actions/getTaskById";
 import Empty from "@/app/components/Empty";
-import TaskHtmlInnerSet from "@/app/components/tasks/TaskHtmlInnerSet";
 
 interface TaskPageProps {
-  params: ISearchParams;
+  taskId: string;
 }
 
-export default async function TaskPage({ params }: TaskPageProps) {
-  const { taskId } = params;
-  const task = await getTaskById(params);
+export default async function TaskPage(props: TaskPageProps) {
+  const { taskId } = props;
+  const task = await getTaskById({ taskId });
 
   if (task == null) {
     return <Empty />;
   }
 
-  const t_text = getTaskFile(task.filePath);
-  const [htmlText, metadata] = bb.convert_html.renderMarkdown(
-    t_text,
-    task.dirPath,
-    false
-  );
+  const htmlText = getTaskHtmlString(task.filePath);
+
   return (
-    <Container>
+    <div>
+      <h1 className="text-lg font-bold">{task.engTitle}</h1>
       <TaskHtmlFrame htmlText={htmlText} />
-    </Container>
+    </div>
   );
 }
