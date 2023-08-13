@@ -24,18 +24,9 @@ export default async function TaskPage({ params }: TaskPageProps) {
     task.dirPath,
     false
   );
-
-  // Strip CSS
-  // const regex = new RegExp("<style>([\\s\\S]+?)</style>");
-  // const htmlNoCSS = htmlText.replace(regex, "");
-  // console.log(htmlNoCSS);
-
   return (
     <Container>
       <TaskHtmlFrame htmlText={htmlText} />
-      {/* <div>
-        <TaskHtmlInnerSet htmlText={htmlText} />
-      </div> */}
     </Container>
   );
 }
