@@ -1,0 +1,261 @@
+<svg id="svg195" width="1300" height="1130" version="1.1" viewBox="-800 474.88 1300 1130" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+ <g id="alloptions" transform="translate(-293 -150.8)">
+  <g id="option0" transform="matrix(-.93886 0 0 -.9396 400.77 1003.4)">
+   <path id="on_state0" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state0" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option1" transform="matrix(.93886 0 0 .9396 -112.98 532.79)">
+   <path id="on_state1" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state1" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option2" transform="matrix(.93886 0 0 .9396 -193.97 673.84)">
+   <path id="on_state2" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state2" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option3" transform="matrix(.93886 0 0 .9396 -30.61 673.84)">
+   <path id="on_state3" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state3" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option4" transform="matrix(-.93886 0 0 -.9396 400.77 1285.3)">
+   <path id="on_state4" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state4" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option5" transform="matrix(-.93886 0 0 -.9396 238.34 1285.3)">
+   <path id="on_state5" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state5" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option6" transform="matrix(-.93886 0 0 -.9396 563.19 1285.3)">
+   <path id="on_state6" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state6" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option7" transform="matrix(-.93886 0 0 -.9396 319.23 1144.9)">
+   <path id="on_state7" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state7" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option8" transform="matrix(-.93886 0 0 -.9396 482.59 1144.9)">
+   <path id="on_state8" transform="scale(-1)" d="m-272.6-400 86.279 149.44h-172.56z" bx:shape="triangle -358.88 -400 172.559 149.44 0.5 0 1@6f071633"/>
+   <path id="off_state8" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option9" transform="matrix(.93886 0 0 .9396 -355.21 954.17)">
+   <path id="on_state9" transform="scale(-1)" d="m-274.6-400 86.279 149.44h-172.56z" bx:shape="triangle -360.88 -400 172.559 149.44 0.5 0 1@e4587443"/>
+   <path id="off_state9" transform="scale(-1)" d="m-272.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -358.88 -400 172.559 149.44 0.5 0 1@6f071633"/>
+  </g>
+  <g id="option10" transform="matrix(-.93886 0 0 -.9396 157.55 1425.3)">
+   <path id="on_state10" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state10" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option11" transform="matrix(.93886 0 0 .9396 -437.19 1093.1)">
+   <path id="on_state11" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state11" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option12" transform="matrix(.93886 0 0 .9396 -274.76 1093.1)">
+   <path id="on_state12" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state12" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option13" transform="matrix(-.93886 0 0 -.9396 157.55 1704.5)">
+   <path id="on_state13" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state13" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option14" transform="matrix(-.93886 0 0 -.9396 -4.8712 1704.5)">
+   <path id="on_state14" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state14" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option15" transform="matrix(-.93886 0 0 -.9396 319.97 1704.5)">
+   <path id="on_state15" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state15" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option16" transform="matrix(-.93886 0 0 -.9396 76.013 1566.8)">
+   <path id="on_state16" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state16" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option17" transform="matrix(-.93886 0 0 -.9396 239.37 1566.8)">
+   <path id="on_state17" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state17" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option18" transform="matrix(.93886 0 0 .9396 129.71 954.17)">
+   <path id="on_state18" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state18" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option19" transform="matrix(-.93886 0 0 -.9396 643.41 1425.3)">
+   <path id="on_state19" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state19" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option20" transform="matrix(.93886 0 0 .9396 48.668 1093.1)">
+   <path id="on_state20" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state20" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option21" transform="matrix(.93886 0 0 .9396 211.09 1093.1)">
+   <path id="on_state21" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state21" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option22" transform="matrix(-.93886 0 0 -.9396 643.41 1704.5)">
+   <path id="on_state22" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state22" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option23" transform="matrix(-.93886 0 0 -.9396 480.98 1704.5)">
+   <path id="on_state23" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state23" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option24" transform="matrix(-.93886 0 0 -.9396 805.83 1704.5)">
+   <path id="on_state24" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state24" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option25" transform="matrix(-.93886 0 0 -.9396 561.87 1566.8)">
+   <path id="on_state25" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state25" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option26" transform="matrix(-.93886 0 0 -.9396 725.23 1566.8)">
+   <path id="on_state26" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state26" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option27" transform="matrix(-.93886 0 0 -.9396 399.1 1567.1)">
+   <path id="on_state27" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state27" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option28" transform="matrix(.93886 0 0 .9396 -114.6 1093.2)">
+   <path id="on_state28" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state28" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option29" transform="matrix(-.93886 0 0 -.9396 480.13 1425.5)">
+   <path id="on_state29" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state29" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option30" transform="matrix(-.93886 0 0 -.9396 317.71 1425.5)">
+   <path id="on_state30" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state30" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option31" transform="matrix(.93886 0 0 .9396 -114.6 814.05)">
+   <path id="on_state31" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state31" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option32" transform="matrix(.93886 0 0 .9396 47.818 814.05)">
+   <path id="on_state32" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state32" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option33" transform="matrix(.93886 0 0 .9396 -277.03 814.05)">
+   <path id="on_state33" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state33" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option34" transform="matrix(.93886 0 0 .9396 -33.066 954.44)">
+   <path id="on_state34" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state34" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option35" transform="matrix(.93886 0 0 .9396 -196.43 954.44)">
+   <path id="on_state35" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state35" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option36" transform="matrix(.93886 0 0 .9396 -354.24 1231.8)">
+   <path id="on_state36" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state36" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option37" transform="matrix(.93886 0 0 .9396 -435.4 1373.4)">
+   <path id="on_state37" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state37" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option38" transform="matrix(.93886 0 0 .9396 -275.2 1373.4)">
+   <path id="on_state38" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state38" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option39" transform="matrix(-.93886 0 0 -.9396 159.34 1984.8)">
+   <path id="on_state39" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state39" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option40" transform="matrix(-.93886 0 0 -.9396 -3.0804 1984.8)">
+   <path id="on_state40" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state40" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option41" transform="matrix(-.93886 0 0 -.9396 319.79 1984.8)">
+   <path id="on_state41" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state41" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option42" transform="matrix(-.93886 0 0 -.9396 77.925 1844.4)">
+   <path id="on_state42" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state42" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option43" transform="matrix(-.93886 0 0 -.9396 239.06 1844.4)">
+   <path id="on_state43" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state43" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option44" transform="matrix(.93886 0 0 .9396 125.77 1231.8)">
+   <path id="on_state44" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state44" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option45" transform="matrix(.93886 0 0 .9396 44.612 1373.4)">
+   <path id="on_state45" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state45" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option46" transform="matrix(.93886 0 0 .9396 207.03 1373.4)">
+   <path id="on_state46" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state46" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option47" transform="matrix(-.93886 0 0 -.9396 639.35 1984.8)">
+   <path id="on_state47" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state47" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option48" transform="matrix(-.93886 0 0 -.9396 482.96 1984.8)">
+   <path id="on_state48" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state48" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option49" transform="matrix(-.93886 0 0 -.9396 801.77 1984.8)">
+   <path id="on_state49" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state49" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option50" transform="matrix(-.93886 0 0 -.9396 557.93 1844.4)">
+   <path id="on_state50" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state50" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option51" transform="matrix(-.93886 0 0 -.9396 721.29 1844.4)">
+   <path id="on_state51" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state51" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option52" transform="matrix(-.93886 0 0 -.9396 399.81 1844.7)">
+   <path id="on_state52" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state52" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option53" transform="matrix(.93886 0 0 .9396 -112.63 1373.5)">
+   <path id="on_state53" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state53" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option54" transform="matrix(.93886 0 0 .9396 -37.002 1232)">
+   <path id="on_state54" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state54" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option55" transform="matrix(.93886 0 0 .9396 -194.52 1232)">
+   <path id="on_state55" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state55" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option56" transform="matrix(.93886 0 0 .9396 -596.83 1373.4)">
+   <path id="on_state56" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state56" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option57" transform="matrix(-.93886 0 0 -.9396 -164.51 1984.8)">
+   <path id="on_state57" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state57" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option58" transform="matrix(-.93886 0 0 -.9396 -83.509 1844.4)">
+   <path id="on_state58" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state58" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option59" transform="matrix(.93886 0 0 .9396 -516.43 1231.8)">
+   <path id="on_state59" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state59" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option60" transform="matrix(.93886 0 0 -.9396 370.22 1843.2)">
+   <path id="on_state60" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state60" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option61" transform="matrix(-.93886 0 0 .9396 802.54 1231.8)">
+   <path id="on_state61" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state61" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option62" transform="matrix(-.93886 0 0 .9396 883.3 1372.2)">
+   <path id="on_state62" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state62" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <g id="option63" transform="matrix(.93886 0 0 -.9396 450.38 1984.8)">
+   <path id="on_state63" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+   <path id="off_state63" transform="scale(-1)" d="m-273.6-400 86.279 149.44h-172.56z" style="fill:#fff" bx:shape="triangle -359.88 -400 172.559 149.44 0.5 0 1@e5252bf6"/>
+  </g>
+  <path id="path2178" d="m142.91 625.68c-1.1279 0.46041-2.5528 1.9379-3.5128 2.6075l-639.06 1106c-15.757 27.271-3.8731 21.212 25.906 21.216l1252.3 0.1757c20.513 0 14.388-8.4573 8.0596-19.752l-15.494-27.654c-208.45-360.45-414.74-720.4-623.86-1080.3-0.90254-0.65156-3.1888-2.2836-4.3008-2.2789zm0.0341 16.122c23.762 41.159 47.524 82.318 71.285 123.48h-142.57c23.762-41.159 47.524-82.318 71.285-123.48zm-71.296 134.22h142.59c-23.765 41.152-47.531 82.303-71.296 123.45-23.765-41.152-47.531-82.303-71.296-123.45zm-9.2918 5.3777c23.762 41.152 47.524 82.303 71.285 123.45h-142.57zm161.18 0c23.765 41.152 47.531 82.303 71.296 123.45h-142.57c23.758-41.152 47.516-82.303 71.274-123.45zm-232.46 134.2h142.58c-23.765 41.163-47.531 82.325-71.296 123.49-23.762-41.163-47.524-82.325-71.285-123.49zm161.19 0h142.57c-23.765 41.166-47.531 82.333-71.296 123.5-23.758-41.166-47.516-82.333-71.274-123.5zm-170.5 5.3777c23.762 41.159 47.524 82.318 71.285 123.48h-142.57c23.762-41.159 47.524-82.318 71.285-123.48zm161.19 0c23.762 41.159 47.524 82.318 71.285 123.48h-142.57c23.762-41.159 47.524-82.318 71.285-123.48zm161.2 0c23.762 41.159 47.524 82.318 71.285 123.48h-142.58c23.765-41.159 47.531-82.318 71.296-123.48zm-393.67 134.23h142.57c-23.75 41.167-47.516 82.326-71.274 123.49-23.765-41.163-47.531-82.325-71.296-123.49zm161.19 0h142.57c-23.75 41.167-47.516 82.326-71.274 123.49-23.765-41.163-47.531-82.325-71.296-123.49zm161.19 0h142.58c-23.757 41.166-47.523 82.325-71.285 123.49-23.765-41.163-47.531-82.325-71.296-123.49zm-331.69 5.3666c23.765 41.166 47.531 82.333 71.296 123.5h-142.58c23.762-41.166 47.524-82.333 71.285-123.5zm161.2 0c23.763 41.166 47.537 82.325 71.285 123.5h-142.57zm161.19 0c23.766 41.164 47.528 82.33 71.285 123.5h-142.57c23.762-41.166 47.524-82.333 71.285-123.5zm161.19 0c23.762 41.166 47.524 82.333 71.285 123.5h-142.57zm-554.86 134.24h142.58c-23.757 41.156-47.532 82.302-71.296 123.45-23.762-41.152-47.524-82.303-71.285-123.45zm161.2 0h142.57c-23.748 41.16-47.524 82.303-71.285 123.45-23.774-41.144-47.523-82.304-71.285-123.45zm161.18 0h142.58c-23.762 41.153-47.531 82.303-71.296 123.45-23.762-41.152-47.524-82.303-71.285-123.45zm161.2 0h142.57l-71.285 123.45c-23.762-41.152-47.524-82.303-71.285-123.45zm-492.88 5.3666c23.755 41.155 47.524 82.303 71.285 123.45h-142.57c23.762-41.152 47.524-82.303 71.285-123.45zm644.75 0c23.765 41.152 47.531 82.303 71.296 123.45h-142.57c23.758-41.152 47.516-82.303 71.274-123.45zm-483.56 0.011c23.762 41.148 47.524 82.296 71.285 123.44h-142.57c23.762-41.148 47.524-82.296 71.285-123.44zm161.19 0 71.285 123.44h-142.57c23.762-41.148 47.524-82.296 71.285-123.44zm161.19 0 71.296 123.44h-142.58c23.762-41.148 47.524-82.296 71.285-123.44zm-554.86 134.19h142.59c-23.763 41.171-47.528 82.342-71.296 123.51-23.765-41.17-47.531-82.34-71.296-123.51zm161.19 0h142.59c-23.762 41.17-47.524 82.34-71.285 123.51-23.769-41.17-47.538-82.34-71.307-123.51zm161.19 0h142.59c-23.758 41.171-47.532 82.332-71.296 123.5-23.765-41.166-47.531-82.333-71.296-123.5zm161.19 0h142.6c-23.762 41.171-47.539 82.332-71.307 123.5-23.765-41.166-47.531-82.333-71.296-123.5zm161.2 0h142.59c-23.76 41.172-47.529 82.338-71.307 123.5-23.762-41.166-47.524-82.333-71.285-123.5zm-654.05 5.3777c23.765 41.166 47.531 82.333 71.296 123.5h-142.6c23.769-41.166 47.538-82.333 71.307-123.5zm161.19 0c23.765 41.166 47.531 82.333 71.296 123.5h-142.6c23.761-41.171 47.539-82.332 71.307-123.5zm161.19 0c23.765 41.166 47.531 82.333 71.296 123.5h-142.59c23.758-41.171 47.532-82.332 71.296-123.5zm161.18 0c23.769 41.167 47.546 82.328 71.307 123.5h-142.59c23.762-41.166 47.524-82.333 71.285-123.5zm161.2 0c23.764 41.167 47.539 82.328 71.296 123.5h-142.58c23.762-41.166 47.524-82.333 71.285-123.5zm161.19 0 71.296 123.5h-142.59c23.765-41.166 47.531-82.333 71.296-123.5zm-877.23 134.24h142.58c-23.768 41.146-47.533 82.294-71.296 123.44-23.764-41.147-47.525-82.295-71.285-123.44zm161.19 0h142.58c-23.772 41.142-47.523 82.296-71.285 123.44-23.765-41.148-47.531-82.296-71.296-123.44zm161.2 0h142.57c-23.772 41.142-47.523 82.296-71.285 123.44-23.762-41.148-47.524-82.295-71.285-123.44zm161.19 0h142.57c-23.765 41.152-47.531 82.303-71.296 123.45-23.757-41.152-47.509-82.307-71.274-123.45zm161.19 0h142.57l-71.285 123.44c-23.762-41.148-47.524-82.296-71.285-123.44zm161.19 0h142.57l-71.285 123.45zm-654.06 5.3556c23.762 41.152 47.524 82.303 71.285 123.45h-142.57zm-161.19 0.011c23.762 41.148 47.524 82.296 71.285 123.44h-142.57c23.762-41.148 47.524-82.296 71.285-123.44zm322.39 0c23.758 41.148 47.516 82.296 71.274 123.44h-142.57zm161.19 0c23.761 41.146 47.519 82.294 71.274 123.44h-142.57c23.765-41.148 47.531-82.296 71.296-123.44zm161.19 0c23.76 41.149 47.522 82.297 71.285 123.44h-142.58c23.765-41.148 47.531-82.296 71.296-123.44zm161.19 0c23.763 41.147 47.514 82.302 71.285 123.44h-142.57c23.762-41.148 47.524-82.296 71.285-123.44zm161.19 0c23.762 41.148 47.524 82.296 71.285 123.44h-142.57c23.762-41.148 47.524-82.296 71.285-123.44zm-1038.4 134.19h142.59c-23.765 41.166-47.531 82.333-71.296 123.5-23.765-41.166-47.531-82.333-71.296-123.5zm161.19 0h142.59c-23.763 41.171-47.528 82.342-71.296 123.51-23.765-41.17-47.531-82.34-71.296-123.51zm161.19 0h142.59c-23.762 41.166-47.524 82.333-71.285 123.5-23.769-41.166-47.538-82.333-71.307-123.5zm161.19 0h142.59c-23.758 41.171-47.532 82.332-71.296 123.5-23.765-41.166-47.531-82.333-71.296-123.5zm161.19 0h142.6c-23.765 41.166-47.531 82.333-71.296 123.5-23.769-41.166-47.538-82.333-71.307-123.5zm161.2 0h142.59c-23.765 41.166-47.531 82.333-71.296 123.5-23.765-41.166-47.531-82.333-71.296-123.5zm161.19 0h142.59c-23.765 41.166-47.531 82.333-71.296 123.5-23.765-41.166-47.531-82.333-71.296-123.5zm-976.43 5.3776c23.761 41.165 47.516 82.333 71.274 123.5h-142.57c23.765-41.166 47.531-82.333 71.296-123.5zm161.19 0c23.762 41.166 47.524 82.333 71.285 123.5h-142.58c23.765-41.166 47.531-82.333 71.296-123.5zm161.19 0 71.296 123.5h-142.59c23.765-41.166 47.531-82.333 71.296-123.5zm161.19 0c23.762 41.166 47.524 82.333 71.285 123.5h-142.57zm161.18 0 71.296 123.5h-142.57c23.758-41.166 47.516-82.333 71.274-123.5zm161.21 0 71.285 123.5h-142.59c23.773-41.164 47.54-82.332 71.307-123.5zm161.18 0c23.766 41.164 47.523 82.333 71.285 123.5h-142.57zm161.19 0 71.296 123.5h-142.58z" style="color-rendering:auto;color:#000000;dominant-baseline:auto;font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;image-rendering:auto;inline-size:0;isolation:auto;mix-blend-mode:normal;shape-margin:0;shape-padding:0;shape-rendering:auto;solid-color:#000000;stop-color:#000000;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+ </g>
+</svg>
