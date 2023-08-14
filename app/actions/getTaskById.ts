@@ -1,16 +1,17 @@
 import prisma from "@/app/libs/prismadb";
 
-interface IParams {
-  taskId: string;
+export interface IParams {
+  taskId?: string;
 }
 /**
  * Get one task from Task collection given its id
  * @param taskId the id of the task (format YYYY-CC-XX-lll)
  * @returns the task object
  */
-export default async function getTaskById({ taskId }: IParams) {
+export default async function getTaskById(params: IParams) {
   try {
-    const task = await prisma.task.findUnique({
+    const { taskId } = params;
+    const task = await prisma.task.findFirst({
       where: {
         taskId: taskId,
       },
@@ -22,7 +23,6 @@ export default async function getTaskById({ taskId }: IParams) {
 
     return {
       ...task,
-      // createdAt: listing.createdAt.toString(),
     };
   } catch (error: any) {
     throw new Error(error);
