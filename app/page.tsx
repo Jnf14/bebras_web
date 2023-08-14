@@ -17,12 +17,12 @@ export default async function HomePage({ searchParams }: HomeProps) {
     return <Empty showButton />;
   }
 
+  // const ageCategories = prisma?.$runCommandRaw("db.Task.distinct('ages.age')");
+
   return (
     <Container>
       <div className="grid md:grid-cols-4">
-        <div className="bg-gray-200">
-          <AgeFilter />
-        </div>
+        <AgeFilter />
         <Suspense fallback={<Loading />}>
           <div className="md:col-span-3 ml-3">
             {tasks.map((task) => (

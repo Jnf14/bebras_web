@@ -5,7 +5,11 @@ interface AgeFilterProps {
 }
 
 const AgeFilter = () => {
-  return <h1>Ages</h1>;
+  return (
+    <div className="">
+      <h1 className="text-lg font-bold border-b border-cyan-800">Ages</h1>
+    </div>
+  );
 };
 
 export default AgeFilter;
