@@ -1,7 +1,8 @@
 import * as fs from "fs";
-import * as bb from "bebras";
 import * as path from "path";
 import { parse } from "yaml";
+import JSZip from "jszip";
+import { convert_html, convert_pdf, convert_tex } from "bebras";
 
 /**
  * Returns the names of all directories containing tasks
@@ -21,7 +22,7 @@ export function getTasksDirNames(datasetPath: string): string[] {
  * @param path the relative path to the file
  * @returns the file as a string
  */
-export function getTaskFile(path: string): string {
+export function getTaskFileString(path: string): string {
   const file = fs.readFileSync(path).toString();
   return file;
 }
@@ -97,14 +98,77 @@ export function parseTaskMetadata(
  * @returns
  */
 export function getTaskHtmlString(taskFilePath: string): string {
-  const t_text = getTaskFile(taskFilePath);
-  const [htmlText, _] = bb.convert_html.renderMarkdown(
+  const t_text = getTaskFileString(taskFilePath);
+  const [htmContent, _] = convert_html.renderMarkdown(
     t_text,
     path.dirname(taskFilePath),
-    false
+    true
   );
-  return htmlText;
+  return htmContent;
 }
+
+/**
+ *
+ * @param taskFilePath
+ * @returns
+ */
+export function getTaskMdString(taskFilePath: string): string {
+  return getTaskFileString(taskFilePath);
+}
+
+/**
+ *
+ * @param taskFilePath
+ * @returns
+ */
+export function getTaskTexString(taskFilePath: string): string {
+  const textMd = getTaskFileString(taskFilePath);
+  const langCode = "fra";
+  const [tokens, metadata] = convert_html.parseMarkdown(
+    textMd,
+    path.dirname(taskFilePath),
+    {
+      langCode,
+      // we use ⍀ to avoid escaping \ to \\, and we later convert it back to \
+      customQuotes: ["⍀enquote⦃", "⦄", "⍀enquote⦃", "⦄"],
+    }
+  );
+  const linealizedTokens = tokens.flatMap((t) => {
+    if (t.type === "inline") {
+      return t.children ?? [];
+    } else {
+      return [t];
+    }
+  });
+
+  const texDataStandalone = convert_tex.renderTex(
+    linealizedTokens,
+    langCode,
+    metadata,
+    taskFilePath,
+    true
+  );
+
+  return texDataStandalone;
+}
+
+// /**
+//  *
+//  * @param taskFilePath
+//  * @returns
+//  */
+// export async function getTaskPdfFile(taskFilePath: string): string {
+//   const taskFileName = path.basename(taskFilePath);
+//   const outputFileName = await convert_pdf.convertTask_pdf(
+//     taskFilePath,
+//     taskFileName
+//   );
+
+//   return outputFileName;
+//   // .then(function (outputFilePath) {
+//   //   return ""
+//   // });
+// }
 
 export function copyAllGraphics(datasetPath: string) {
   //TODO
