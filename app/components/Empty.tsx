@@ -11,11 +11,11 @@ interface EmptyProps {
   showButton?: boolean;
 }
 
-const Empty: React.FC<EmptyProps> = ({
+export default function Empty({
   title = "Pas de résultat",
-  subtitle = "Essayez de changer ou retirer certains de vos filtres",
+  subtitle = "Essayez de retirer certains filtres",
   showButton,
-}) => {
+}: EmptyProps) {
   const router = useRouter();
 
   return (
@@ -41,6 +41,4 @@ const Empty: React.FC<EmptyProps> = ({
       </div>
     </div>
   );
-};
-
-export default Empty;
+}
