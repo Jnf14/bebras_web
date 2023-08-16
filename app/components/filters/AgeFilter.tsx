@@ -28,7 +28,6 @@ export default function AgeFilter() {
         return age
       }
     }))
-    console.log("test1")
   }
   return (
     <>
