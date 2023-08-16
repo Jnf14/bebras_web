@@ -13,6 +13,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ task }) => {
 
   return (
     <div
+      key={task.id}
       onClick={() => router.push(`/tasks/${task.taskId}`)}
       className="
         cursor-pointer 
@@ -31,9 +32,9 @@ const TaskCard: React.FC<TaskCardProps> = ({ task }) => {
         <h3 className="font-light text-gray-700">{task.taskId}</h3>
       </div>
 
-      <div className="mt-5 flex justify-end">
-        {task.bebras_keywords?.map((keyword) => (
-          <TaskKeyword keyword={keyword} />
+      <div className="mt-5 flex justify-end flex-wrap">
+        {task.bebras_keywords?.map((keyword, i) => (
+          <TaskKeyword keyword={keyword} key={i} />
         ))}
       </div>
     </div>

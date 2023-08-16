@@ -22,14 +22,14 @@ export default async function HomePage({ searchParams }: HomeProps) {
   return (
     <Container>
       <div className="grid md:grid-cols-4">
-        <AgeFilter />
-        <Suspense fallback={<Loading />}>
-          <div className="md:col-span-3 ml-3">
-            {tasks.map((task) => (
-              <TaskCard task={task} />
-            ))}
-          </div>
-        </Suspense>
+        <div className="md:col-span-1 mx-2">
+          <AgeFilter />
+        </div>
+        <div className="md:col-span-3 mx-2">
+          {tasks.map((task) => (
+            <TaskCard task={task} />
+          ))}
+        </div>
       </div>
     </Container>
   );

@@ -17,7 +17,7 @@ const TaskCard: React.FC<TaskKeywordProp> = ({ keyword, color }) => {
         text-sm
         border-cyan-600
         rounded-lg  
-        mx-1
+        m-1
         p-1
         text-center 
         align-baseline
