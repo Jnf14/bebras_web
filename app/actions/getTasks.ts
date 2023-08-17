@@ -1,6 +1,8 @@
 import prisma from "@/app/libs/prismadb";
 
-export interface ISearchParams {}
+export interface ISearchParams {
+  age: string
+}
 
 /**
  * Get all tasks from Task collection
@@ -12,6 +14,8 @@ export default async function getTasks(params: ISearchParams) {
     } = params;
 
     let query: any = {};
+    console.log(params.age)
+    console.log("test2")
 
     // if (userId) {
     //   query.userId = userId;
