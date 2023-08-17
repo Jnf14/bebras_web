@@ -48,7 +48,7 @@ export default function useDownloadZip(
     // Get zip blob
     const zipBlob = await zip.generateAsync({ type: "blob" });
 
-    // Create URL and add <a> tag to document
+    // Create URL and add <a> tag to download file
     const url = URL.createObjectURL(zipBlob);
     const a = document.createElement("a");
     a.href = url;
