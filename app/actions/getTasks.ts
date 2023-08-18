@@ -1,77 +1,48 @@
 import prisma from "@/app/libs/prismadb";
+import { Task } from "@prisma/client";
 
 export interface ISearchParams {
-  age: string
+  ages?: string;
 }
 
 /**
  * Get all tasks from Task collection
  */
-export default async function getTasks(params: ISearchParams) {
+export default async function getTasks(params: ISearchParams): Promise<Task[]> {
   try {
-    const {
-      // To fill
-    } = params;
+    const { ages } = params;
 
     let query: any = {};
-    console.log(params.age)
-    console.log("test2")
 
-    // if (userId) {
-    //   query.userId = userId;
-    // }
+    if (ages) {
+      query.OR = { age: ages };
+    }
 
-    // if (category) {
-    //   query.category = category;
-    // }
-
-    // if (roomCount) {
-    //   query.roomCount = {
-    //     gte: +roomCount,
-    //   };
-    // }
-
-    // if (guestCount) {
-    //   query.guestCount = {
-    //     gte: +guestCount,
-    //   };
-    // }
-
-    // if (bathroomCount) {
-    //   query.bathroomCount = {
-    //     gte: +bathroomCount,
-    //   };
-    // }
-
-    // if (locationValue) {
-    //   query.locationValue = locationValue;
-    // }
-
-    // if (startDate && endDate) {
-    //   query.NOT = {
-    //     reservations: {
-    //       some: {
-    //         OR: [
-    //           {
-    //             endDate: { gte: startDate },
-    //             startDate: { lte: startDate },
-    //           },
-    //           {
-    //             startDate: { lte: endDate },
-    //             endDate: { gte: endDate },
-    //           },
-    //         ],
-    //       },
-    //     },
-    //   };
-    // }
-
-    const tasks = await prisma.task.findMany({
+    const taskIds = await prisma.ageCategory.findMany({
       where: query,
-      orderBy: {
-        taskId: "desc",
+      select: {
+        taskId: true,
       },
     });
+
+    const tasks = await prisma.task.findMany({
+      where: {
+        taskId: {
+          in: taskIds.map((item) => item.taskId),
+        },
+      },
+    });
+
+    // const ages = await prisma.ageCategory.findMany({
+    //   where: {
+    //     age: {
+    //       hasEvery: ["10-12"],
+    //     }
+    //   }
+    //   orderBy: {
+    //     taskId: "desc",
+    //   },
+    // });
 
     return tasks;
   } catch (error: any) {

@@ -1,8 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
 import { parse } from "yaml";
-import JSZip from "jszip";
-import { convert_html, convert_pdf, convert_tex } from "bebras";
+import { convert_html, convert_tex } from "bebras";
 
 /**
  * Returns the names of all directories containing tasks

@@ -2,9 +2,7 @@ import getTasks, { ISearchParams } from "@/app/actions/getTasks";
 import Container from "@/app/components/Container";
 import Empty from "@/app/components/Empty";
 import TaskCard from "./components/tasks/TaskCard";
-import AgeFilter from "./components/filters/AgeFilter";
-import { Suspense } from "react";
-import Loading from "./loading";
+import AgeFilter from "./components/sidebar/AgeFilter";
 
 interface HomeProps {
   searchParams: ISearchParams;
@@ -16,8 +14,6 @@ export default async function HomePage({ searchParams }: HomeProps) {
   if (tasks.length === 0) {
     return <Empty showButton />;
   }
-
-  // const ageCategories = prisma?.$runCommandRaw("db.Task.distinct('ages.age')");
 
   return (
     <Container>

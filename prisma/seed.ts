@@ -1,7 +1,12 @@
+import path from "path";
 import prisma from "../app/libs/prismadb";
 import { insertAllTasks, insertTask } from "./task";
 
 async function main() {
+  // prisma.ageCategory.deleteMany();
+  // prisma.category.deleteMany();
+
+  prisma.task.deleteMany({});
   // Clear database table
   // TODO
 

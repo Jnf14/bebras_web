@@ -8,7 +8,6 @@ import getTaskById, { IParams } from "@/app/actions/getTaskById";
 import Empty from "@/app/components/Empty";
 import TaskKeyword from "@/app/components/tasks/TaskKeyword";
 import Button from "@/app/components/Button";
-import useDownloadZipWithImages from "@/app/hooks/useDownloadZip";
 import TaskDownload from "@/app/components/tasks/TaskDownload";
 
 interface TaskPageProps {

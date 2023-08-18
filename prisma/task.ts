@@ -37,14 +37,29 @@ export async function insertTask(taskDirName: string) {
   // Get task's metadata
   const taskMetadata = util.parseTaskMetadata(taskDirName);
 
-  // Upsert the task
-  const task: Task = await prisma.task.upsert({
-    where: { taskId: taskMetadata.taskId },
-    update: {},
-    create: taskMetadata,
-  });
+  const ages = taskMetadata.ages as string[];
 
-  console.log(task);
+  // Upsert the task
+  const task: Task = await prisma.task.create({
+    data: {
+      taskId: taskMetadata.taskId,
+      engTitle: taskMetadata.engTitle,
+      dirPath: taskMetadata.dirPath,
+      filePath: taskMetadata.filePath,
+      language: taskMetadata.language,
+      title: taskMetadata.title,
+      age_categories: {
+        create: taskMetadata.ages,
+      },
+      computer_science_areas: taskMetadata.computer_science_areas,
+      computational_thinking_skills: taskMetadata.computational_thinking_skills,
+      contributors: taskMetadata.contributors,
+      bebras_categories: {
+        create: taskMetadata.bebras_categories,
+      },
+      bebras_keywords: taskMetadata.bebras_keywords,
+    },
+  });
 }
 
 /**

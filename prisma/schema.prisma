@@ -15,7 +15,7 @@ model Task {
   filePath     String
   language     String
   title        String
-  ages         Age[]
+  age_categories       AgeCategory[]
   computer_science_areas String[]
   computational_thinking_skills String[]
   contributors String[]
@@ -25,12 +25,18 @@ model Task {
   updatedAt    DateTime @updatedAt
 }
 
-type Category {
+model Category {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  taskId String
+  task Task @relation(fields: [taskId], references: [taskId], onDelete: Cascade)
   category String
   sub_categories String[]
 }
 
-type Age {
+model AgeCategory {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  taskId String
+  task Task @relation(fields: [taskId], references: [taskId], onDelete: Cascade)
   age String
   level TaskLevel
 }
