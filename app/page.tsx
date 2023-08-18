@@ -5,6 +5,7 @@ import TaskCard from "./components/tasks/TaskCard";
 import AgeFilter from "./components/filters/AgeFilter";
 import { Suspense } from "react";
 import Loading from "./loading";
+import { data } from "../tasks_dataset/data";
 
 interface HomeProps {
   searchParams: ISearchParams;
@@ -17,7 +18,7 @@ export default async function HomePage({ searchParams }: HomeProps) {
     return <Empty showButton />;
   }
 
-  // const ageCategories = prisma?.$runCommandRaw("db.Task.distinct('ages.age')");
+  // const applyFilter = () => {};
 
   return (
     <Container>
@@ -26,7 +27,7 @@ export default async function HomePage({ searchParams }: HomeProps) {
           <AgeFilter />
         </div>
         <div className="md:col-span-3 mx-2">
-          {tasks.map((task) => (
+          {data.map((task: any) => (
             <TaskCard task={task} />
           ))}
         </div>

@@ -5,15 +5,15 @@ import { Task } from "@prisma/client";
 import TaskKeyword from "./TaskKeyword";
 
 interface TaskCardProps {
-  task: Task;
+  task: any;
 }
 
-const TaskCard: React.FC<TaskCardProps> = ({ task }) => {
+const TaskCard: React.FC<TaskCardProps> = ({ task }: TaskCardProps) => {
   const router = useRouter();
 
   return (
     <div
-      key={task.id}
+      key={task.taskId}
       onClick={() => router.push(`/tasks/${task.taskId}`)}
       className="
         cursor-pointer 
@@ -33,7 +33,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ task }) => {
       </div>
 
       <div className="mt-5 flex justify-end flex-wrap">
-        {task.bebras_keywords?.map((keyword, i) => (
+        {task.bebras_keywords?.map((keyword: string, i: number) => (
           <TaskKeyword keyword={keyword} key={i} />
         ))}
       </div>
