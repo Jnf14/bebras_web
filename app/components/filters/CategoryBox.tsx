@@ -23,6 +23,6 @@ interface CategoryBoxProps {
           {name}
         </label>
       </div>
-    )
+    );
   }
   
