@@ -19,6 +19,14 @@ export type AgeCategory = {
   level: string;
 };
 
+export const CategoryNames = [
+  "Interactions, système et société",
+  "Communication et réseau",
+  "Programme et matériel informatique",
+  "Algorithmes et programmation",
+  "Structures et représentations de données",
+];
+
 export type BebrasCategory = {
   category: string;
   sub_categories: string[];
@@ -35,6 +43,6 @@ export type Task = {
   computer_science_areas: string[];
   computational_thinking_skills: string[];
   contributors: string[];
-  bebrasCategories?: BebrasCategory[];
-  bebrasKeywords?: string[];
+  bebrasCategories: BebrasCategory[];
+  bebrasKeywords: string[];
 };
