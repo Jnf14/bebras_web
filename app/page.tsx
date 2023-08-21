@@ -3,6 +3,7 @@ import Container from "@/app/components/Container";
 import Empty from "@/app/components/Empty";
 import TaskCard from "./components/tasks/TaskCard";
 import AgeCategoriesFilter from "./components/filters/AgeCategoriesFilter";
+import CategoriesFilter from "./components/filters/CategoryFilter";
 
 interface HomeProps {
   searchParams: ISearchParams;
@@ -20,6 +21,9 @@ export default async function HomePage({ searchParams }: HomeProps) {
       <div className="grid md:grid-cols-4">
         <div className="md:col-span-1 mx-2">
           <AgeCategoriesFilter />
+        </div>
+        <div className="md:col-span-1 mx-2">
+          <CategoriesFilter />
         </div>
         <div className="md:col-span-3 mx-2">
           {tasks.map((task: any) => (
