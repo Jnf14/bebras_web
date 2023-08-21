@@ -10,7 +10,7 @@ export default function AgeCategoriesFilter() {
   const params = useSearchParams();
 
   const parsedParams = qs.parse(params.toString());
-  parsedParams;
+  //parsedParams;
 
   const currentState = AgeCategoryNames.map((a) => {
     return {
@@ -53,7 +53,7 @@ export default function AgeCategoriesFilter() {
       <h1 className="text-3xl font-bold">Ages</h1>
       <ul>
         {currentState.map((s) => (
-          <li className="text-lg mb-2">
+          <li key={s.name} className="text-lg mb-2">
             <AgeCategoryBox
               name={s.name}
               isChecked={s.isChecked}
@@ -61,7 +61,6 @@ export default function AgeCategoriesFilter() {
             />
           </li>
         ))}
-        ;
       </ul>
       {/* <WriteAgeList ages={age} onToggle={handleToggleAges} /> */}
     </>

@@ -20,7 +20,7 @@ export default function AgeCategoryBox({
             onToggle(name);
           }}
         />
-        {name}
+        {name + "ans"}
       </label>
     </div>
   );
