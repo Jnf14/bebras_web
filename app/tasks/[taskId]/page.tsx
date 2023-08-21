@@ -7,16 +7,15 @@ import {
 import getTaskById, { IParams } from "@/app/actions/getTaskById";
 import Empty from "@/app/components/Empty";
 import TaskKeyword from "@/app/components/tasks/TaskKeyword";
-import Button from "@/app/components/Button";
-import useDownloadZipWithImages from "@/app/hooks/useDownloadZip";
 import TaskDownload from "@/app/components/tasks/TaskDownload";
+import { Task } from "@/app/types/Task";
 
 interface TaskPageProps {
   params: IParams;
 }
 
 export default async function TaskPage({ params }: TaskPageProps) {
-  const task = await getTaskById(params);
+  const task: Task = await getTaskById(params);
 
   if (task == null) {
     return <Empty subtitle="La tâche recherchée n'existe pas." />;
@@ -37,7 +36,7 @@ export default async function TaskPage({ params }: TaskPageProps) {
             texContent={texContent}
           />
           <h1 className="text-lg font-bold">Keywords</h1>
-          {task.bebras_keywords?.map((keyword) => (
+          {task.bebrasKeywords?.map((keyword) => (
             <TaskKeyword keyword={keyword} />
           ))}
         </div>

@@ -18,7 +18,9 @@ taskDirs.forEach((dir) => {
 
 const contenuFichier = `\
 // Ce fichier a été généré automatiquement
-export default const data = ${JSON.stringify(data, null, 2)};
+import { Task } from "@/app/types/Task";
+
+export const data: Task[]= ${JSON.stringify(data, null, 2)};
 `;
 
 fs.writeFile("tasks_dataset/data.ts", contenuFichier, (err) => {

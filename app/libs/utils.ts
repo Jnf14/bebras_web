@@ -1,11 +1,13 @@
 import * as fs from "fs";
 import * as path from "path";
 import { parse } from "yaml";
-import JSZip from "jszip";
-import { convert_html, convert_pdf, convert_tex } from "bebras";
+import { convert_html, convert_tex } from "bebras";
+import { AgeCategoryNames, Task } from "@/app/types/Task";
 
 /**
  * Returns the names of all directories containing tasks
+ * @warning The metadata must be in the correct format
+ * (only two occurrences of "---")
  * @param datasetPath
  * @returns
  */
@@ -56,10 +58,10 @@ export function parseTaskMetadata(
   // Parse YAML string into dictionary
   const yaml = parse(yamlString);
 
-  // Parse and format task ages field
+  // Parse and format task ages categories
   const ages = Object.entries<String>(yaml.ages)
     .filter(([_, v]) => v != null && v.indexOf("-") == -1)
-    .map(([k, v]) => ({ age: k, level: v }));
+    .map(([k, v]) => ({ name: k, level: v }));
 
   // Parse and format task ages field
   const bebrasCategories = yaml.bebras_categories
@@ -77,16 +79,16 @@ export function parseTaskMetadata(
     filePath: taskFilePath,
     language: taskLanguage,
     title: yaml.title,
-    ages: ages,
+    ageCategories: ages,
     computer_science_areas: yaml.computer_science_areas
       ? yaml.computer_science_areas
       : yaml.categories,
     computational_thinking_skills: yaml.computational_thinking_skills
       ? yaml.computational_thinking_skills
-      : undefined,
-    contributors: yaml.contributors,
-    bebras_categories: bebrasCategories,
-    bebras_keywords: yaml.bebras_keywords ? yaml.bebras_keywords : undefined,
+      : [],
+    contributors: yaml.contributors ? yaml.contributors : [],
+    bebrasCategories: bebrasCategories,
+    bebrasKeywords: yaml.bebras_keywords ? yaml.bebras_keywords : undefined,
   };
 
   return taskMetadata;

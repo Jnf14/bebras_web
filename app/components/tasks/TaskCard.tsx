@@ -1,11 +1,11 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { Task } from "@prisma/client";
 import TaskKeyword from "./TaskKeyword";
+import { Task } from "@/app/types/Task";
 
 interface TaskCardProps {
-  task: any;
+  task: Task;
 }
 
 const TaskCard: React.FC<TaskCardProps> = ({ task }: TaskCardProps) => {
@@ -33,7 +33,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ task }: TaskCardProps) => {
       </div>
 
       <div className="mt-5 flex justify-end flex-wrap">
-        {task.bebras_keywords?.map((keyword: string, i: number) => (
+        {task.bebrasKeywords?.map((keyword: string, i: number) => (
           <TaskKeyword keyword={keyword} key={i} />
         ))}
       </div>

@@ -1,80 +1,42 @@
-import prisma from "@/app/libs/prismadb";
+import { data } from "@/tasks_dataset/data";
+import { Task } from "../types/Task";
+import { isArray } from "bebras/out/util";
 
 export interface ISearchParams {
-  age: string
+  ageCategories: string[];
 }
 
 /**
- * Get all tasks from Task collection
+ * Get tasks from data file based on given filters
  */
-export default async function getTasks(params: ISearchParams) {
-  try {
-    const {
-      // To fill
-    } = params;
+export default function getTasks(params: ISearchParams): Task[] {
+  const { ageCategories } = params;
 
-    let query: any = {};
-    console.log(params.age)
-    console.log("test2")
+  console.log(ageCategories);
 
-    // if (userId) {
-    //   query.userId = userId;
-    // }
+  let tasks: Task[];
+  if (ageCategories) {
+    if (Array.isArray(ageCategories)) {
+      tasks = data.filter((task) => {
+        const taskAges = task.ageCategories.map((c) => c.name);
+        return ageCategories.every((c) => taskAges.includes(c));
+      });
+    } else {
+      tasks = data.filter((task) => {
+        const taskAges = task.ageCategories.map((c) => c.name);
+        return new Array(ageCategories).every((c) => taskAges.includes(c));
+      });
+    }
 
-    // if (category) {
-    //   query.category = category;
-    // }
+    // tasks = data.filter((task) => {
+    //   const taskAgeCategories = task.ageCategories.map((cat) => cat.name);
 
-    // if (roomCount) {
-    //   query.roomCount = {
-    //     gte: +roomCount,
-    //   };
-    // }
-
-    // if (guestCount) {
-    //   query.guestCount = {
-    //     gte: +guestCount,
-    //   };
-    // }
-
-    // if (bathroomCount) {
-    //   query.bathroomCount = {
-    //     gte: +bathroomCount,
-    //   };
-    // }
-
-    // if (locationValue) {
-    //   query.locationValue = locationValue;
-    // }
-
-    // if (startDate && endDate) {
-    //   query.NOT = {
-    //     reservations: {
-    //       some: {
-    //         OR: [
-    //           {
-    //             endDate: { gte: startDate },
-    //             startDate: { lte: startDate },
-    //           },
-    //           {
-    //             startDate: { lte: endDate },
-    //             endDate: { gte: endDate },
-    //           },
-    //         ],
-    //       },
-    //     },
-    //   };
-    // }
-
-    const tasks = await prisma.task.findMany({
-      where: query,
-      orderBy: {
-        taskId: "desc",
-      },
-    });
-
-    return tasks;
-  } catch (error: any) {
-    throw new Error(error);
+    //   return taskAgeCategories.every((cat) => ageCategories.includes(cat));
+    // });
+  } else {
+    tasks = data as Task[];
   }
+
+  console.log(tasks.length);
+  return tasks;
 }

@@ -9,12 +9,21 @@ type HtmlFrameProps = { htmlText: string };
 export default function TaskHtmlFrame({ htmlText }: HtmlFrameProps) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
-  const resizeIFrameHandler = () => {
-    const iframe = iframeRef.current;
+  const resizeIFrameHandler = (iframe: HTMLIFrameElement) => {
+    // const iframe = iframeRef.current;
     if (iframe && iframe.contentWindow) {
+      console.log(
+        "Height :" +
+          iframe.height +
+          "scrollHeight :" +
+          iframe.contentWindow.document.body.scrollHeight +
+          40
+      );
       const newHeight = iframe.contentWindow.document.body.scrollHeight + 40;
+      iframe.style.height = `${newHeight}px`;
       iframe.height = `${newHeight}px`;
       iframe.style.visibility = "visible";
+      console.log("New height :" + iframe.height);
     }
   };
 
@@ -22,19 +31,26 @@ export default function TaskHtmlFrame({ htmlText }: HtmlFrameProps) {
     const iframe = iframeRef.current;
 
     if (iframe) {
-      iframe.contentWindow?.addEventListener("load", resizeIFrameHandler, true);
-      iframe.contentWindow?.addEventListener(
-        "resize",
-        resizeIFrameHandler,
-        true
-      );
+      iframe.contentWindow?.addEventListener("DOMContentLoaded", function (e) {
+        resizeIFrameHandler(iframe);
+      });
 
-      // Call the resize handler once after attaching the load event listener
-      resizeIFrameHandler();
+      // iframe.contentWindow?.addEventListener("load", resizeIFrameHandler, true);
+      // iframe.contentWindow?.addEventListener(
+      //   "resize",
+      //   resizeIFrameHandler,
+      //   true
+      // );
+
+      // // Call the resize handler once after attaching the load event listener
+      // resizeIFrameHandler();
 
       return () => {
-        iframe.contentWindow?.removeEventListener("load", resizeIFrameHandler);
-        iframe.contentWindow?.removeEventListener("load", resizeIFrameHandler);
+        // iframe.contentWindow?.removeEventListener("load", resizeIFrameHandler);
+        // iframe.contentWindow?.removeEventListener(
+        //   "resize",
+        //   resizeIFrameHandler
+        // );
       };
     }
   }, []);
@@ -45,8 +61,10 @@ export default function TaskHtmlFrame({ htmlText }: HtmlFrameProps) {
         ref={iframeRef}
         id="htmlFrame"
         srcDoc={htmlText}
-        style={{ width: "100%", overflow: "auto", visibility: "hidden" }}
-        scrolling="no"
+        style={{
+          overflow: "auto",
+          visibility: "hidden",
+        }}
       />
     </div>
   );
