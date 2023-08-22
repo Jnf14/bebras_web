@@ -5,13 +5,14 @@ import { isArray } from "bebras/out/util";
 export interface ISearchParams {
   ageCategories: string[];
   categories: string[];
+  algoCategories: string[]
 }
 
 /**
  * Get tasks from data file based on given filters
  */
 export default function getTasks(params: ISearchParams): Task[] {
-  const { ageCategories, categories } = params;
+  const { ageCategories, categories, algoCategories} = params;
 
   console.log(ageCategories);
   console.log(categories);
@@ -49,6 +50,20 @@ export default function getTasks(params: ISearchParams): Task[] {
       tasks = tasks.filter((task) => {
         const taskCategories = task.bebrasCategories.map((c) => c.category);
         return new Array(categories).every((c) => taskCategories.includes(c));
+      });
+    }
+  }
+
+  if (algoCategories){
+    if (Array.isArray(algoCategories)) {
+      tasks = tasks.filter((task) => {
+        const taskSubCategories = task.bebrasCategories.map((c) => c.sub_categories);
+        return algoCategories.every((c)=>taskSubCategories[0].includes(c))
+      });
+    } else {
+      tasks = tasks.filter((task) => {
+        const taskSubCategories = task.bebrasCategories.map((c) => c.sub_categories);
+        return new Array(algoCategories).every((c) => taskSubCategories[0].includes(c));
       });
     }
   }

@@ -27,6 +27,14 @@ export const CategoryNames = [
   "Structures et représentations de données",
 ];
 
+export const AlgoSubCategoryNames = [
+  "Résoudre un problème avec des structures de données",
+  "Force brute / méthode exhaustive",
+  "Trier et chercher",
+  "Structure de contrôle",
+  "Problème d’optimisation",
+];
+
 export type BebrasCategory = {
   category: string;
   sub_categories: string[];

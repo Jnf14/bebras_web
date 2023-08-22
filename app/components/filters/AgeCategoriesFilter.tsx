@@ -19,8 +19,6 @@ export default function AgeCategoriesFilter() {
     };
   });
 
-  console.log(currentState);
-
   function handleToggle(name: string) {
     const ageCategories = currentState.map((s) => {
       return s.isChecked ? s.name : undefined;
