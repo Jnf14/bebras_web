@@ -29,29 +29,30 @@ export default function CategoriesFilter(){
     } else {
       categories.push(name);
     }
-    let query
+
+    let algoSubParams = params.getAll("algoCategories")
+    let strucSubParams = params.getAll("strucCategories")
+
+    /**
+     * If Algo & prog is not active, we must remove his subcategories from the query
+    */
     if(!categories.includes("Algorithmes et programmation")){
-       query = {
-        ...qs.parse(params.toString()),
-        categories: categories,
-        algoCategories: undefined
-      };
+       algoSubParams = []
     
     }
+    /**
+     * If Struc & repr is not active, we must remove his subcategories from the query
+    */
     if(!categories.includes("Structures et représentations de données")){
-      query = {
-        ...qs.parse(params.toString()),
-        categories: categories,
-        strucCategories: undefined
-      };
+      strucSubParams = []
     }
 
-    if(categories.includes("Algorithmes et programmation") && categories.includes("Structures et représentations de données")){
-      query = {
+    const query = {
       ...qs.parse(params.toString()),
       categories: categories,
+      algoCategories: algoSubParams,
+      strucCategories: strucSubParams
     };
-  }
 
     const url = qs.stringifyUrl(
       {
