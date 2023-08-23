@@ -32,7 +32,13 @@ export const AlgoSubCategoryNames = [
   "Force brute / méthode exhaustive",
   "Trier et chercher",
   "Structure de contrôle",
-  "Problème d’optimisation",
+  "Problème d'optimisation",
+  "Récursivité",
+  "Binaire et opérations logiques",
+  "Concept d'informatique",
+  "Exécution d'instructions",
+  "Algorithme spécifique",
+  "Autre",
 ];
 
 export type BebrasCategory = {
