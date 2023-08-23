@@ -9,7 +9,7 @@ import { AlgoSubCategoryNames } from "@/app/types/Task";
 export default function AlgoSubCategoryFilter(){
 
 
-    const router = useRouter();
+  const router = useRouter();
   const params = useSearchParams();
 
   const parsedParams = qs.parse(params.toString());
@@ -21,6 +21,7 @@ export default function AlgoSubCategoryFilter(){
       isChecked: params.getAll("algoCategories")?.includes(subCategory) ? true : false,
     };
   });
+
   const currentChosen: string[] = []
     currentState.map((subCategory)=>{
     if(subCategory.isChecked){
@@ -28,7 +29,8 @@ export default function AlgoSubCategoryFilter(){
     }
   })
 
-
+  const isActive:boolean = params.getAll("categories")?.includes("Algorithmes et programmation")?true : false;
+  
   function handleToggle(names: string[]) {
     let name : string[]
     if (names.length>currentChosen.length){
@@ -65,6 +67,14 @@ export default function AlgoSubCategoryFilter(){
   }
 
     return(
-        <Multiselect options={AlgoSubCategoryNames} showCheckbox={false} onRemove={handleToggle} onSelect={handleToggle} isObject={false} selectedValues={currentChosen} placeholder="Sous catégories"/>
+        <Multiselect 
+        options={AlgoSubCategoryNames}
+        showCheckbox={false} 
+        onRemove={handleToggle} 
+        onSelect={handleToggle} 
+        isObject={false} 
+        selectedValues={currentChosen} 
+        disable={!isActive}
+        placeholder="Sous catégories"/>
     )
 }
