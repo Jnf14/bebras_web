@@ -36,12 +36,22 @@ export default function CategoriesFilter(){
         categories: categories,
         algoCategories: undefined
       };
-    }else{
+    
+    }
+    if(!categories.includes("Structures et représentations de données")){
+      query = {
+        ...qs.parse(params.toString()),
+        categories: categories,
+        strucCategories: undefined
+      };
+    }
 
-     query = {
+    if(categories.includes("Algorithmes et programmation") && categories.includes("Structures et représentations de données")){
+      query = {
       ...qs.parse(params.toString()),
       categories: categories,
-    };}
+    };
+  }
 
     const url = qs.stringifyUrl(
       {

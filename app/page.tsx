@@ -5,6 +5,7 @@ import TaskCard from "./components/tasks/TaskCard";
 import AgeCategoriesFilter from "./components/filters/AgeCategoriesFilter";
 import CategoriesFilter from "./components/filters/CategoryFilter";
 import AlgoSubCategoryFilter from "./components/filters/AlgoSubCategoryFilter";
+import StrucSubCategoryFilter from "./components/filters/StrucSubCategoryFilter";
 
 interface HomeProps {
   searchParams: ISearchParams;
@@ -28,6 +29,9 @@ export default async function HomePage({ searchParams }: HomeProps) {
         </div>
         <div className="md:col-span-1 mx-2">
           <AlgoSubCategoryFilter />
+        </div>
+        <div className="md:col-span-1 mx-2">
+          <StrucSubCategoryFilter />
         </div>
         <div className="md:col-span-3 mx-2">
           {tasks.map((task: any) => (

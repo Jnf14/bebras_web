@@ -41,6 +41,15 @@ export const AlgoSubCategoryNames = [
   "Autre",
 ];
 
+export const StrucSubCategoryNames = [
+  "Représentation de l'information et des données à l'aide de symboles",
+  "Représentation et visualisation à l'aide de graphes et dessins",
+  "Protection et sécurité des données",
+  "Organisation et collecte des données",
+  "Cryptographie",
+  "Autre",
+]
+
 export type BebrasCategory = {
   category: string;
   sub_categories: string;
