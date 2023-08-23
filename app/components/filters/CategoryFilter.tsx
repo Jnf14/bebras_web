@@ -29,11 +29,19 @@ export default function CategoriesFilter(){
     } else {
       categories.push(name);
     }
+    let query
+    if(!categories.includes("Algorithmes et programmation")){
+       query = {
+        ...qs.parse(params.toString()),
+        categories: categories,
+        algoCategories: undefined
+      };
+    }else{
 
-    const query = {
+     query = {
       ...qs.parse(params.toString()),
       categories: categories,
-    };
+    };}
 
     const url = qs.stringifyUrl(
       {

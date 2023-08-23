@@ -23,6 +23,7 @@ export default function AgeCategoriesFilter() {
     const ageCategories = currentState.map((s) => {
       return s.isChecked ? s.name : undefined;
     });
+    console.log(ageCategories)
 
     const index = ageCategories.indexOf(name);
     if (index > -1) {
