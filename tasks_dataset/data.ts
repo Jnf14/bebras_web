@@ -35,9 +35,8 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Organisation et collecte des données"
-        ]
       }
     ],
     "bebrasKeywords": [
@@ -77,15 +76,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Récursivité"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -124,9 +123,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Exécution d'instructions"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -166,9 +165,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -212,9 +211,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Cryptographie"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -262,15 +261,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -314,15 +313,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -370,21 +369,21 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       },
       {
         "category": "Programme et matériel informatique",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -427,9 +426,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Cryptographie"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -468,9 +467,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Problème d'optimisation"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -515,9 +514,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation de l'information et des données à l'aide de symboles"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -557,15 +556,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -606,9 +605,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Problème d'optimisation"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -651,9 +650,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Communication et réseau",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -695,9 +694,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Récursivité"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -739,9 +738,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Algorithme spécifique"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -777,9 +776,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Organisation et collecte des données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -818,15 +817,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -866,9 +865,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation de l'information et des données à l'aide de symboles"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -913,9 +912,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -960,15 +959,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1018,9 +1017,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1063,15 +1062,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1110,15 +1109,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Programme et matériel informatique",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1161,9 +1160,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Structure de contôle"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1203,9 +1202,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Force brute / méthode exhaustive"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1248,21 +1247,21 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       },
       {
         "category": "Communication et réseau",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1306,9 +1305,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Communication et réseau",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1345,9 +1344,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Binaire et opérations logiques"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1395,9 +1394,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1441,9 +1440,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Exécution d'instructions"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1481,9 +1480,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Problème d'optimisation"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1529,15 +1528,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Concept d'informatique"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1577,9 +1576,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1620,15 +1619,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Problème d'optimisation"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1672,9 +1671,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Concept d'informatique"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1718,9 +1717,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1766,15 +1765,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1814,15 +1813,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation de l'information et des données à l'aide de symboles"
-        ]
+        
       },
       {
         "category": "Communication et réseau",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1862,9 +1861,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1908,15 +1907,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Trier et chercher"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Organisation et collecte des données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -1957,9 +1956,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2003,9 +2002,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2045,9 +2044,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2095,15 +2094,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2142,9 +2141,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Machine de Turing"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2181,9 +2180,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2225,15 +2224,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Exécution d'instructions"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2268,9 +2267,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2305,9 +2304,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2345,15 +2344,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Trier et chercher"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Organisation et collecte des données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2399,9 +2398,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2440,9 +2439,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Problème d'optimisation"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2482,9 +2481,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Problème d'optimisation"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2528,9 +2527,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2567,15 +2566,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       },
       {
         "category": "Programme et matériel informatique",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2618,9 +2617,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Trier et chercher"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2660,9 +2659,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Programme et matériel informatique",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2701,15 +2700,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Binaire et opérations logiques"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2748,9 +2747,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2795,15 +2794,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Organisation et collecte des données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2846,9 +2845,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2888,9 +2887,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2929,9 +2928,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Problème d'optimisation"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -2971,15 +2970,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Binaire et opérations logiques"
-        ]
+        
       },
       {
         "category": "Communication et réseau",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3021,9 +3020,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3063,9 +3062,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Cryptographie"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3108,9 +3107,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Problème d'optimisation"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3156,9 +3155,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Binaire et opérations logiques"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3202,9 +3201,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Trier et chercher"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3251,15 +3250,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3300,9 +3299,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3343,9 +3342,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3397,15 +3396,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Organisation et collecte des données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3463,21 +3462,21 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Binaire et opérations logiques"
-        ]
+        
       },
       {
         "category": "Programme et matériel informatique",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       },
       {
         "category": "Interactions, système et société",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3519,15 +3518,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3566,9 +3565,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3621,9 +3620,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3676,9 +3675,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3725,9 +3724,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation de l'information et des données à l'aide de symboles"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3774,9 +3773,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3823,9 +3822,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Représentation et visualisation à l'aide de graphes et dessins"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3873,9 +3872,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Concept d'informatique"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3929,15 +3928,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       },
       {
         "category": "Interactions, système et société",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -3985,9 +3984,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Trier et chercher"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4033,9 +4032,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Organisation et collecte des données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4082,15 +4081,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Concept d'informatique"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4134,9 +4133,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Concept d'informatique"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4183,9 +4182,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Exécution d'instructions"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4234,15 +4233,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4291,9 +4290,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Concept d'informatique"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4337,9 +4336,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Trier et chercher"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4388,15 +4387,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Concept d'informatique"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4443,9 +4442,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Force brute / méthode exhaustive"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4494,9 +4493,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Problème d'optimisation"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4546,21 +4545,21 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Concept d'informatique"
-        ]
+        
       },
       {
         "category": "Communication et réseau",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Protection et sécurité des données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4607,15 +4606,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4659,9 +4658,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Structure de contrôle"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4714,15 +4713,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Autre"
-        ]
+        
       },
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Organisation et collecte des données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4771,15 +4770,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Algorithme spécifique"
-        ]
+        
       },
       {
         "category": "Communication et réseau",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4825,15 +4824,15 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       },
       {
         "category": "Programme et matériel informatique",
-        "sub_categories": [
+        "sub_categories": 
           "--"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4872,9 +4871,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Structures et représentations de données",
-        "sub_categories": [
+        "sub_categories": 
           "Organisation et collecte des données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4918,9 +4917,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Résoudre un problème avec des structures de données"
-        ]
+        
       }
     ],
     "bebrasKeywords": [
@@ -4965,9 +4964,9 @@ export const data: Task[]= [
     "bebrasCategories": [
       {
         "category": "Algorithmes et programmation",
-        "sub_categories": [
+        "sub_categories": 
           "Structure de contrôle"
-        ]
+        
       }
     ],
     "bebrasKeywords": [

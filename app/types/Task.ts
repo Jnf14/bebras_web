@@ -37,7 +37,7 @@ export const AlgoSubCategoryNames = [
 
 export type BebrasCategory = {
   category: string;
-  sub_categories: string[];
+  sub_categories: string;
 };
 
 export type Task = {

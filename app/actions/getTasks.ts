@@ -58,12 +58,12 @@ export default function getTasks(params: ISearchParams): Task[] {
     if (Array.isArray(algoCategories)) {
       tasks = tasks.filter((task) => {
         const taskSubCategories = task.bebrasCategories.map((c) => c.sub_categories);
-        return algoCategories.every((c)=>taskSubCategories[0].includes(c))
+        return algoCategories.every((c)=>taskSubCategories.includes(c))
       });
     } else {
       tasks = tasks.filter((task) => {
         const taskSubCategories = task.bebrasCategories.map((c) => c.sub_categories);
-        return new Array(algoCategories).every((c) => taskSubCategories[0].includes(c));
+        return new Array(algoCategories).every((c) => taskSubCategories.includes(c));
       });
     }
   }
