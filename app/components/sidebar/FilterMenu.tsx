@@ -46,8 +46,6 @@ export default function FilterMenu({
       newCategories.push(name);
     }
 
-    console.log(newCategories)
-
     const query = {
       ...qs.parse(params.toString()),
       [searchKey]: isMultiSearch? newCategories: name,
