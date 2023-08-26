@@ -227,3 +227,28 @@ export function findFilesByExtension(
   }
   return res;
 }
+
+export function getDifficulty(difficulty:string): number{
+  switch(difficulty){
+    case "bonus":
+      return 0;
+    case "hard":
+      return 1;
+    case "medium":
+      return 2;
+    case "easy":
+      return 3;
+    default:
+      return 4;
+  }
+}
+
+export function getLevelFromName(ageName:string, task: Task): number{
+  let difficulty = 0
+  task.ageCategories.forEach((elem)=>{  
+    if (elem.name==ageName){
+      difficulty = getDifficulty(elem.level) 
+    }
+  })
+  return difficulty
+}

@@ -1,9 +1,10 @@
 import { data } from "@/tasks_dataset/data";
 import { Task } from "../types/Task";
 import sortBy from "sort-by";
+import { getDifficulty, getLevelFromName } from "../libs/utils";
 
 export interface ISearchParams {
-  ageCategories: string[];
+  ageCategories: string;
   categories: string[];
   algoCategories: string[];
   strucCategories: string[];
@@ -20,6 +21,7 @@ export default function getTasks({
 }: ISearchParams): Task[] {
   let tasks: Task[];
   tasks = data as Task[];
+
   if (ageCategories) {
     if (Array.isArray(ageCategories)) {
       tasks = tasks.filter((task) => {
@@ -33,6 +35,15 @@ export default function getTasks({
       });
     }
 
+    tasks.sort((a,b)=>{
+      if(getLevelFromName(ageCategories,a)<getLevelFromName(ageCategories,b)){
+        return -1
+      }else{
+        return 1
+      }
+  
+    })
+    
     // tasks = data.filter((task) => {
     //   const taskAgeCategories = task.ageCategories.map((cat) => cat.name);
 
@@ -93,8 +104,7 @@ export default function getTasks({
         );
       });
     }
-  }
+  }  
 
-  tasks.sort(sortBy("title"));
   return tasks;
 }
