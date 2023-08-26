@@ -1,4 +1,4 @@
-export const AgeCategoryNames = [
+export const AgeCategoriesNames = [
   "6-8",
   "8-10",
   "10-12",
@@ -48,11 +48,11 @@ export const StrucSubCategoryNames = [
   "Organisation et collecte des données",
   "Cryptographie",
   "Autre",
-]
+];
 
 export type BebrasCategory = {
   category: string;
-  sub_categories: string;
+  sub_categories: string[];
 };
 
 export type Task = {

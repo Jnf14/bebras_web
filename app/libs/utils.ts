@@ -1,8 +1,8 @@
 import * as fs from "fs";
 import * as path from "path";
 import { parse } from "yaml";
-import { convert_html, convert_tex } from "bebras";
-import { AgeCategoryNames, Task } from "@/app/types/Task";
+import { convert_html, convert_pdf, convert_tex } from "bebras";
+import { AgeCategoriesNames, Task } from "@/app/types/Task";
 
 /**
  * Returns the names of all directories containing tasks
@@ -154,24 +154,76 @@ export function getTaskTexString(taskFilePath: string): string {
   return texDataStandalone;
 }
 
-// /**
-//  *
-//  * @param taskFilePath
-//  * @returns
-//  */
-// export async function getTaskPdfFile(taskFilePath: string): string {
-//   const taskFileName = path.basename(taskFilePath);
-//   const outputFileName = await convert_pdf.convertTask_pdf(
-//     taskFilePath,
-//     taskFileName
-//   );
+/**
+ *
+ * @param taskFilePath
+ * @returns
+ */
+export async function getTaskPdfFile(taskFilePath: string): Promise<string> {
+  const taskFileName = path.basename(taskFilePath);
+  const outputFileName = await convert_pdf.convertTask_pdf(
+    taskFilePath,
+    taskFileName
+  );
 
-//   return outputFileName;
-//   // .then(function (outputFilePath) {
-//   //   return ""
-//   // });
-// }
+  return outputFileName;
+}
 
-export function copyAllGraphics(datasetPath: string) {
-  //TODO
+export function copyAllGraphics(datasetPath: string, destPath: string) {
+  const graphics: string[] = findFilesByExtension(datasetPath, ".svg");
+  let ignored: number = 0;
+  let copied: number = 0;
+
+  graphics.forEach((filePath) => {
+    const fileName: string = path.basename(filePath);
+    const dirName: string = path.basename(path.dirname(filePath));
+    const dest: string = path.join(destPath, dirName, fileName);
+
+    try {
+      fs.copyFileSync(filePath, dest);
+      copied++;
+    } catch (error) {
+      ignored++;
+    }
+  });
+
+  console.log(
+    `${copied} fichiers (${ignored} ignorés) ont été copiés vers ${destPath} .\n`
+  );
+}
+
+/**
+ * Recursive function which finds all files of a given extension in a dir
+ */
+export function findFilesByExtension(
+  dirPath: string,
+  extension: string,
+  files: string[] = [],
+  res: string[] = [],
+  regex: any = undefined
+) {
+  files = files.length === 0 ? fs.readdirSync(dirPath) : files;
+  regex = regex || new RegExp(`\\${extension}$`);
+
+  for (let i = 0; i < files.length; i++) {
+    const file = path.join(dirPath, files[i]);
+    if (fs.statSync(file).isDirectory() && !path.extname(file)) {
+      try {
+        res = findFilesByExtension(
+          file,
+          extension,
+          fs.readdirSync(file),
+          res,
+          regex
+        );
+      } catch (error) {
+        continue;
+      }
+    } else {
+      if (regex.test(file)) {
+        res.push(file);
+      }
+    }
+  }
+  return res;
 }

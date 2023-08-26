@@ -1,11 +1,15 @@
 import fs from "fs-extra";
-import { getTasksDirNames, parseTaskMetadata } from "./utils";
+import { copyAllGraphics, getTasksDirNames, parseTaskMetadata } from "./utils";
 import path from "path";
-// Public path for tasks dataset
+
+// Path to tasks dataset
 export const tasksDatasetPath: string = path.join(
   __dirname,
   "../../tasks_dataset/"
 );
+
+// Path to the public directory
+export const publicDirPath: string = path.join(__dirname, "../../public/tasks");
 
 const data: any = [];
 
@@ -30,3 +34,5 @@ fs.writeFile("tasks_dataset/data.ts", contenuFichier, (err) => {
     console.log("Le fichier data.ts a été généré avec succès.");
   }
 });
+
+copyAllGraphics(tasksDatasetPath, publicDirPath);

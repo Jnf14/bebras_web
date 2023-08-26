@@ -1,25 +1,25 @@
 import { data } from "@/tasks_dataset/data";
 import { Task } from "../types/Task";
-import { isArray } from "bebras/out/util";
+import sortBy from "sort-by";
 
 export interface ISearchParams {
   ageCategories: string[];
   categories: string[];
   algoCategories: string[];
-  strucCategories: string[]
+  strucCategories: string[];
 }
 
 /**
  * Get tasks from data file based on given filters
  */
-export default function getTasks(params: ISearchParams): Task[] {
-  const { ageCategories, categories, algoCategories, strucCategories} = params;
-
-  console.log(ageCategories);
-  console.log(categories);
-
+export default function getTasks({
+  ageCategories,
+  categories,
+  algoCategories,
+  strucCategories,
+}: ISearchParams): Task[] {
   let tasks: Task[];
-  tasks = data as Task[]
+  tasks = data as Task[];
   if (ageCategories) {
     if (Array.isArray(ageCategories)) {
       tasks = tasks.filter((task) => {
@@ -41,7 +41,7 @@ export default function getTasks(params: ISearchParams): Task[] {
   } else {
     //tasks = data as Task[];
   }
-  if (categories){
+  if (categories) {
     if (Array.isArray(categories)) {
       tasks = tasks.filter((task) => {
         const taskCategories = task.bebrasCategories.map((c) => c.category);
@@ -55,34 +55,46 @@ export default function getTasks(params: ISearchParams): Task[] {
     }
   }
 
-  if (algoCategories){
+  if (algoCategories) {
     if (Array.isArray(algoCategories)) {
       tasks = tasks.filter((task) => {
-        const taskSubCategories = task.bebrasCategories.map((c) => c.sub_categories);
-        return algoCategories.every((c)=>taskSubCategories.includes(c))
+        const taskSubCategories = task.bebrasCategories.map(
+          (c) => c.sub_categories[0]
+        );
+        return algoCategories.every((c) => taskSubCategories.includes(c));
       });
     } else {
       tasks = tasks.filter((task) => {
-        const taskSubCategories = task.bebrasCategories.map((c) => c.sub_categories);
-        return new Array(algoCategories).every((c) => taskSubCategories.includes(c));
+        const taskSubCategories = task.bebrasCategories.map(
+          (c) => c.sub_categories[0]
+        );
+        return new Array(algoCategories).every((c) =>
+          taskSubCategories.includes(c)
+        );
       });
     }
   }
 
-  if (strucCategories){
+  if (strucCategories) {
     if (Array.isArray(strucCategories)) {
       tasks = tasks.filter((task) => {
-        const taskSubCategories = task.bebrasCategories.map((c) => c.sub_categories);
-        return strucCategories.every((c)=>taskSubCategories.includes(c))
+        const taskSubCategories = task.bebrasCategories.map(
+          (c) => c.sub_categories[0]
+        );
+        return strucCategories.every((c) => taskSubCategories.includes(c));
       });
     } else {
       tasks = tasks.filter((task) => {
-        const taskSubCategories = task.bebrasCategories.map((c) => c.sub_categories);
-        return new Array(strucCategories).every((c) => taskSubCategories.includes(c));
+        const taskSubCategories = task.bebrasCategories.map(
+          (c) => c.sub_categories[0]
+        );
+        return new Array(strucCategories).every((c) =>
+          taskSubCategories.includes(c)
+        );
       });
     }
   }
 
-  console.log(tasks.length);
+  tasks.sort(sortBy("title"));
   return tasks;
 }
