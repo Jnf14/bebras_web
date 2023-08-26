@@ -41,7 +41,6 @@ export default function getTasks({
       }else{
         return 1
       }
-  
     })
     
     // tasks = data.filter((task) => {
