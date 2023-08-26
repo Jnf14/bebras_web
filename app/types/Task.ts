@@ -28,7 +28,6 @@ export const CategoryNames = [
 ];
 
 export const AlgoSubCategoryNames = [
-  "Algorithme spécifique",
   "Binaire et opérations logiques",
   "Concept d'informatique",
   "Résoudre un problème avec des structures de données",
