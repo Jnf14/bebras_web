@@ -18,11 +18,13 @@ export default function SideBar() {
           categoryName="Âges"
           options={AgeCategoryNames}
           searchKey="ageCategories"
+          isMultiSearch={false}
         />
         <FilterMenu
           categoryName="Catégories"
           options={CategoryNames}
           searchKey="categories"
+          isMultiSearch={true}
         />
         {params
           .getAll("categories")
@@ -31,6 +33,7 @@ export default function SideBar() {
             categoryName="Sous catégories algorithmes"
             options={AlgoSubCategoryNames}
             searchKey="algoCategories"
+            isMultiSearch={false}
           />
         ) : (
           <></>
@@ -42,6 +45,7 @@ export default function SideBar() {
             categoryName="Sous catégories structures"
             options={StrucSubCategoryNames}
             searchKey="strucCategories"
+            isMultiSearch={false}
           />
         ) : (
           <></>
