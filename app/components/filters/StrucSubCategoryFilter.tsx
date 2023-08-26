@@ -5,8 +5,8 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Multiselect } from "multiselect-react-dropdown";
 import { StrucSubCategoryNames } from "@/app/types/Task";
 
-export default function StrucSubCategoryFilter(){
-    const router = useRouter();
+export default function StrucSubCategoryFilter() {
+  const router = useRouter();
   const params = useSearchParams();
 
   const parsedParams = qs.parse(params.toString());
@@ -15,26 +15,31 @@ export default function StrucSubCategoryFilter(){
   const currentState = StrucSubCategoryNames.map((subCategory) => {
     return {
       name: subCategory,
-      isChecked: params.getAll("strucCategories")?.includes(subCategory) ? true : false,
+      isChecked: params.getAll("strucCategories")?.includes(subCategory)
+        ? true
+        : false,
     };
   });
 
-  let currentChosen: string[] = []
-    currentState.map((subCategory)=>{
-    if(subCategory.isChecked){
-        currentChosen.push(subCategory.name)
+  let currentChosen: string[] = [];
+  currentState.map((subCategory) => {
+    if (subCategory.isChecked) {
+      currentChosen.push(subCategory.name);
     }
-  })
+  });
 
-  const isActive:boolean = params.getAll("categories")?.includes("Structures et représentations de données")?true : false;
+  const isActive: boolean = params
+    .getAll("categories")
+    ?.includes("Structures et représentations de données")
+    ? true
+    : false;
 
-  if(!isActive){
-    currentChosen=[]
+  if (!isActive) {
+    currentChosen = [];
     //handleToggle([])
   }
 
   function handleToggle(names: string[]) {
-    
     const subCategories = currentState.map((row) => {
       return names.includes(row.name) ? row.name : undefined;
     });
@@ -46,23 +51,24 @@ export default function StrucSubCategoryFilter(){
 
     const url = qs.stringifyUrl(
       {
-        url: "/",
+        url: "/tasks",
         query: query,
       },
       { skipNull: true }
     );
     router.push(url);
   }
-  return(
-    <Multiselect 
-    key={"mselectstruc"}
-    options={StrucSubCategoryNames}
-    showCheckbox={false} 
-    onRemove={handleToggle} 
-    onSelect={handleToggle} 
-    isObject={false} 
-    selectedValues={currentChosen} 
-    disable={!isActive}
-    placeholder="Sous catégories struc"/>
-)
+  return (
+    <Multiselect
+      key={"mselectstruc"}
+      options={StrucSubCategoryNames}
+      showCheckbox={false}
+      onRemove={handleToggle}
+      onSelect={handleToggle}
+      isObject={false}
+      selectedValues={currentChosen}
+      disable={!isActive}
+      placeholder="Sous catégories struc"
+    />
+  );
 }

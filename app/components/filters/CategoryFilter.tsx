@@ -5,20 +5,20 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { CategoryNames } from "@/app/types/Task";
 import CategoryBox from "./CategoryBox";
 
-export default function CategoriesFilter(){
-    const router = useRouter();
-    const params = useSearchParams();
+export default function CategoriesFilter() {
+  const router = useRouter();
+  const params = useSearchParams();
 
-    const parsedParams = qs.parse(params.toString());
+  const parsedParams = qs.parse(params.toString());
 
-    const currentState = CategoryNames.map((category)=>{
-        return {
-            name : category,
-            isChecked: params.getAll("categories")?.includes(category) ? true : false,
-        };
-    })
+  const currentState = CategoryNames.map((category) => {
+    return {
+      name: category,
+      isChecked: params.getAll("categories")?.includes(category) ? true : false,
+    };
+  });
 
-    function handleToggle(name: string) {
+  function handleToggle(name: string) {
     const categories = currentState.map((s) => {
       return s.isChecked ? s.name : undefined;
     });
@@ -30,45 +30,44 @@ export default function CategoriesFilter(){
       categories.push(name);
     }
 
-    let algoSubParams = params.getAll("algoCategories")
-    let strucSubParams = params.getAll("strucCategories")
+    let algoSubParams = params.getAll("algoCategories");
+    let strucSubParams = params.getAll("strucCategories");
 
     /**
      * If Algo & prog is not active, we must remove his subcategories from the query
-    */
-    if(!categories.includes("Algorithmes et programmation")){
-       algoSubParams = []
-    
+     */
+    if (!categories.includes("Algorithmes et programmation")) {
+      algoSubParams = [];
     }
     /**
      * If Struc & repr is not active, we must remove his subcategories from the query
-    */
-    if(!categories.includes("Structures et représentations de données")){
-      strucSubParams = []
+     */
+    if (!categories.includes("Structures et représentations de données")) {
+      strucSubParams = [];
     }
 
     const query = {
       ...qs.parse(params.toString()),
       categories: categories,
       algoCategories: algoSubParams,
-      strucCategories: strucSubParams
+      strucCategories: strucSubParams,
     };
 
     const url = qs.stringifyUrl(
       {
-        url: "/",
+        url: "/tasks",
         query: query,
       },
       { skipNull: true }
     );
     router.push(url);
   }
-    return (
+  return (
     <>
-      <h1 className="text-3xl font-bold">Catégories</h1>
+      <h1 className="text-xl font-bold">Catégories</h1>
       <ul>
         {currentState.map((s) => (
-          <li key={s.name} className="text-lg mb-2">
+          <li key={s.name} className="mb-2">
             <CategoryBox
               name={s.name}
               isChecked={s.isChecked}

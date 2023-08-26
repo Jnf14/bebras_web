@@ -1,9 +1,10 @@
-import { Suspense } from "react";
 import Navbar from "./components/navbar/Navbar";
 import "./globals.css";
-import { Nunito } from "next/font/google";
+import { Inter } from "next/font/google";
+import SideBar from "./components/sidebar/SideBar";
 
-const nunito = Nunito({
+const font = Inter({
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -19,9 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={nunito.className}>
+      <body className={font.className}>
         <Navbar />
-        <div className="pb-20 pt-28">{children}</div>
+        <div className="">{children}</div>
       </body>
     </html>
   );

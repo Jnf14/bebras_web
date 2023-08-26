@@ -3,19 +3,19 @@
 import useDownloadZip from "@/app/hooks/useDownloadZip";
 import Button from "../Button";
 
-interface TaskDownloadProps {
+interface TaskDownloadZipProps {
   taskId: string;
   htmlContent: string;
   mdContent: string;
   texContent: string;
 }
 
-export default function TaskDownload({
+export default function TaskDownloadZip({
   taskId,
   htmlContent,
   mdContent,
   texContent,
-}: TaskDownloadProps) {
+}: TaskDownloadZipProps) {
   const downloadZip = useDownloadZip(
     taskId,
     htmlContent,
@@ -24,8 +24,8 @@ export default function TaskDownload({
   );
 
   return (
-    <div className="">
-      <Button label="Download ZIP" onClick={downloadZip} />
+    <div className="w-[50px]">
+      <Button small label="ZIP" onClick={downloadZip} />
     </div>
   );
 }

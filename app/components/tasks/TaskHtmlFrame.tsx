@@ -9,21 +9,13 @@ type HtmlFrameProps = { htmlText: string };
 export default function TaskHtmlFrame({ htmlText }: HtmlFrameProps) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
-  const resizeIFrameHandler = (iframe: HTMLIFrameElement) => {
-    // const iframe = iframeRef.current;
+  const resizeIFrameHandler = () => {
+    const iframe = iframeRef.current;
     if (iframe && iframe.contentWindow) {
-      console.log(
-        "Height :" +
-          iframe.height +
-          "scrollHeight :" +
-          iframe.contentWindow.document.body.scrollHeight +
-          40
-      );
       const newHeight = iframe.contentWindow.document.body.scrollHeight + 40;
       iframe.style.height = `${newHeight}px`;
       iframe.height = `${newHeight}px`;
       iframe.style.visibility = "visible";
-      console.log("New height :" + iframe.height);
     }
   };
 
@@ -32,38 +24,39 @@ export default function TaskHtmlFrame({ htmlText }: HtmlFrameProps) {
 
     if (iframe) {
       iframe.contentWindow?.addEventListener("DOMContentLoaded", function (e) {
-        resizeIFrameHandler(iframe);
+        resizeIFrameHandler();
       });
 
-      // iframe.contentWindow?.addEventListener("load", resizeIFrameHandler, true);
-      // iframe.contentWindow?.addEventListener(
-      //   "resize",
-      //   resizeIFrameHandler,
-      //   true
-      // );
+      iframe.contentWindow?.addEventListener("load", resizeIFrameHandler, true);
+      iframe.contentWindow?.addEventListener(
+        "resize",
+        resizeIFrameHandler,
+        true
+      );
 
-      // // Call the resize handler once after attaching the load event listener
-      // resizeIFrameHandler();
+      // Call the resize handler once after attaching the load event listener
+      resizeIFrameHandler();
 
       return () => {
-        // iframe.contentWindow?.removeEventListener("load", resizeIFrameHandler);
-        // iframe.contentWindow?.removeEventListener(
-        //   "resize",
-        //   resizeIFrameHandler
-        // );
+        iframe.contentWindow?.removeEventListener("load", resizeIFrameHandler);
+        iframe.contentWindow?.removeEventListener(
+          "resize",
+          resizeIFrameHandler
+        );
       };
     }
   }, []);
 
   return (
-    <div className=" embed">
+    <div className="">
       <iframe
         ref={iframeRef}
         id="htmlFrame"
         srcDoc={htmlText}
         style={{
-          overflow: "auto",
           visibility: "hidden",
+          width: "100%",
+          height: "900px",
         }}
       />
     </div>

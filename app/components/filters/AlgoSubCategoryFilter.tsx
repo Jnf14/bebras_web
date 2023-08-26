@@ -5,10 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Multiselect } from "multiselect-react-dropdown";
 import { AlgoSubCategoryNames } from "@/app/types/Task";
 
-
-export default function AlgoSubCategoryFilter(){
-
-
+export default function AlgoSubCategoryFilter() {
   const router = useRouter();
   const params = useSearchParams();
 
@@ -18,26 +15,31 @@ export default function AlgoSubCategoryFilter(){
   const currentState = AlgoSubCategoryNames.map((subCategory) => {
     return {
       name: subCategory,
-      isChecked: params.getAll("algoCategories")?.includes(subCategory) ? true : false,
+      isChecked: params.getAll("algoCategories")?.includes(subCategory)
+        ? true
+        : false,
     };
   });
 
-  let currentChosen: string[] = []
-    currentState.map((subCategory)=>{
-    if(subCategory.isChecked){
-        currentChosen.push(subCategory.name)
+  let currentChosen: string[] = [];
+  currentState.map((subCategory) => {
+    if (subCategory.isChecked) {
+      currentChosen.push(subCategory.name);
     }
-  })
+  });
 
-  const isActive:boolean = params.getAll("categories")?.includes("Algorithmes et programmation")?true : false;
+  const isActive: boolean = params
+    .getAll("categories")
+    ?.includes("Algorithmes et programmation")
+    ? true
+    : false;
 
-  if(!isActive){
-    currentChosen=[]
+  if (!isActive) {
+    currentChosen = [];
     //handleToggle([])
   }
 
   function handleToggle(names: string[]) {
-    
     const subCategories = currentState.map((row) => {
       return names.includes(row.name) ? row.name : undefined;
     });
@@ -49,25 +51,25 @@ export default function AlgoSubCategoryFilter(){
 
     const url = qs.stringifyUrl(
       {
-        url: "/",
+        url: "/tasks",
         query: query,
       },
       { skipNull: true }
     );
     router.push(url);
-    
   }
 
-    return(
-        <Multiselect 
-        key={"mselectalgo"}
-        options={AlgoSubCategoryNames}
-        showCheckbox={false} 
-        onRemove={handleToggle} 
-        onSelect={handleToggle} 
-        isObject={false} 
-        selectedValues={currentChosen} 
-        disable={!isActive}
-        placeholder="Sous catégories algo"/>
-    )
+  return (
+    <Multiselect
+      key={"mselectalgo"}
+      options={AlgoSubCategoryNames}
+      showCheckbox={false}
+      onRemove={handleToggle}
+      onSelect={handleToggle}
+      isObject={false}
+      selectedValues={currentChosen}
+      disable={!isActive}
+      placeholder="Sous catégories algo"
+    />
+  );
 }

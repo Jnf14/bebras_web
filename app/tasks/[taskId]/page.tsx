@@ -4,18 +4,19 @@ import {
   getTaskMdString,
   getTaskTexString,
 } from "@/app/libs/utils";
-import getTaskById, { IParams } from "@/app/actions/getTaskById";
+import getTaskById from "@/app/actions/getTaskById";
 import Empty from "@/app/components/Empty";
 import TaskKeyword from "@/app/components/tasks/TaskKeyword";
-import TaskDownload from "@/app/components/tasks/TaskDownload";
+import TaskDownloadZip from "@/app/components/tasks/TaskDownloadZip";
 import { Task } from "@/app/types/Task";
+import TaskDownloadPdf from "@/app/components/tasks/TaskDownloadPdf";
 
 interface TaskPageProps {
-  params: IParams;
+  params: { taskId: string };
 }
 
 export default async function TaskPage({ params }: TaskPageProps) {
-  const task: Task = await getTaskById(params);
+  const task: Task = getTaskById(params.taskId);
 
   if (task == null) {
     return <Empty subtitle="La tâche recherchée n'existe pas." />;
@@ -27,20 +28,29 @@ export default async function TaskPage({ params }: TaskPageProps) {
 
   return (
     <div>
-      <div className="grid grid-cols-4">
-        <div className="col-span-1 mx-2">
-          <TaskDownload
-            taskId={task.taskId}
-            htmlContent={htmlContent}
-            mdContent={mdContent}
-            texContent={texContent}
-          />
-          <h1 className="text-lg font-bold">Keywords</h1>
-          {task.bebrasKeywords?.map((keyword) => (
-            <TaskKeyword keyword={keyword} />
-          ))}
+      <div className="">
+        <div className="flex items-start justify-between p-2 m-2">
+          <div className="w-1/3 px-5">
+            <h1 className="text-lg font-bold">Mots-clés</h1>
+            {task.bebrasKeywords?.map((keyword) => (
+              <TaskKeyword keyword={keyword} />
+            ))}
+          </div>
+
+          <div className="w-1/5">
+            <h1 className="text-lg font-bold">Téléchargement</h1>
+            <div className="flex justify-start">
+              <TaskDownloadZip
+                taskId={task.taskId}
+                htmlContent={htmlContent}
+                mdContent={mdContent}
+                texContent={texContent}
+              />
+              <TaskDownloadPdf taskId={task.taskId} />
+            </div>
+          </div>
         </div>
-        <div className="col-span-3 mx-2">
+        <div className="mx-2 border-t-2">
           <TaskHtmlFrame htmlText={htmlContent} />
         </div>
       </div>

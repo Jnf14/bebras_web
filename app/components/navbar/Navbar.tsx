@@ -1,22 +1,57 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import Container from "../Container";
 import Logo from "./Logo";
-import Search from "./Search";
+import Link from "next/link";
 
-const Navbar = () => {
+const navItems = [
+  {
+    path: "/",
+    name: "Accueil",
+  },
+  {
+    path: "/tasks",
+    name: "Tâches",
+  },
+  // {
+  //   path: "/about",
+  //   name: "À propos",
+  // },
+];
+
+export default function Navbar() {
+  let pathname = usePathname() || "/";
+
   return (
-    <div className="fixed w-full bg-white z-10 shadow-sm select-none">
-      <div className="py-4 border-b-2">
-        <Container>
-          <div className="flex flex-row items-center justify-between gap-3 md:gap-0">
+    <div className="w-full bg-white z-10 shadow-sm select-none border-b-2">
+      <Container>
+        <div className="flex ">
+          <div>
             <Logo />
-            <Search />
           </div>
-        </Container>
-      </div>
+
+          <div className="ml-20 flex flex-row items-center justify-start gap-4">
+            {navItems.map((item, index) => {
+              const isActive = item.path === pathname;
+              console.log(isActive);
+              return (
+                <Link
+                  key={item.path}
+                  href={item.path}
+                  className={`px-2 py-2 rounded-md hover:bg-slate-200 ${
+                    isActive ? "border-2 font-bold" : ""
+                  }`}
+                >
+                  <span>{item.name}</span>
+                </Link>
+              );
+            })}
+          </div>
+
+          {/* <Search /> */}
+        </div>
+      </Container>
     </div>
   );
-};
-
-export default Navbar;
+}
