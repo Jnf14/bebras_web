@@ -18,7 +18,7 @@ export default function FilterMenu({
   const router = useRouter();
   const params = useSearchParams();
 
-  const [hidden, setHidden] = useState(false);
+  const [hidden, setHidden] = useState(!params.getAll(searchKey));
 
   // Get current state in search params
   const currentState = options.map((option) => {
@@ -43,7 +43,7 @@ export default function FilterMenu({
 
     const query = {
       ...qs.parse(params.toString()),
-      ageCategories: newCategories,
+      [searchKey]: newCategories,
     };
 
     const url = qs.stringifyUrl(
@@ -73,7 +73,7 @@ export default function FilterMenu({
     <div className="select-none">
       <div
         id={`${categoryName}Label`}
-        className={`flex justify-start text-xl font-bold border-b-2 p-2 mb-2 hover:bg-gray-100 cursor-pointer ${
+        className={`flex justify-start text-xl font-bold border-y-2 p-2 mb-2 hover:bg-gray-100 cursor-pointer ${
           hidden ? "text-gray-500" : "text-black"
         }`}
       >
@@ -90,7 +90,7 @@ export default function FilterMenu({
                 onToggle(s.name);
               }}
             />
-            <label className="ml-3 text-lg text-gray-600">{s.name}</label>
+            <label className="ml-3 text-base text-gray-600">{s.name}</label>
           </div>
         ))}
       </div>

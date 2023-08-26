@@ -6,9 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "gen": "ts-node app/libs/createMetadataFile.ts",
-    "genPdf": "ts-node app/libs/generatePdfFiles.ts"
+    "gen": "ts-node app/libs/createMetadataFile.ts && npm run genPdf",
+    "genPdf": "sh tasks_dataset/scripts/convert_bebras_tasks.sh"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",

@@ -20,33 +20,33 @@ export type AgeCategory = {
 };
 
 export const CategoryNames = [
-  "Interactions, système et société",
-  "Communication et réseau",
-  "Programme et matériel informatique",
   "Algorithmes et programmation",
+  "Communication et réseau",
+  "Interactions, système et société",
+  "Programme et matériel informatique",
   "Structures et représentations de données",
 ];
 
 export const AlgoSubCategoryNames = [
+  "Algorithme spécifique",
+  "Binaire et opérations logiques",
+  "Concept d'informatique",
   "Résoudre un problème avec des structures de données",
   "Force brute / méthode exhaustive",
   "Trier et chercher",
   "Structure de contrôle",
   "Problème d'optimisation",
   "Récursivité",
-  "Binaire et opérations logiques",
-  "Concept d'informatique",
   "Exécution d'instructions",
-  "Algorithme spécifique",
   "Autre",
 ];
 
 export const StrucSubCategoryNames = [
-  "Représentation de l'information et des données à l'aide de symboles",
-  "Représentation et visualisation à l'aide de graphes et dessins",
+  "Cryptographie",
   "Protection et sécurité des données",
   "Organisation et collecte des données",
-  "Cryptographie",
+  "Représentation de l'information et des données à l'aide de symboles",
+  "Représentation et visualisation à l'aide de graphes et dessins",
   "Autre",
 ];
 

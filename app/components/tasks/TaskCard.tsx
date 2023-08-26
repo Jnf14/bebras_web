@@ -3,6 +3,7 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import TaskKeyword from "./TaskKeyword";
 import { Task } from "@/app/types/Task";
+import TaskLevel from "./TaskLevel";
 
 const NUM_OF_KEYWORDS = 3;
 
@@ -42,10 +43,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ task }: TaskCardProps) => {
         {task.ageCategories
           .filter((cat) => ageCats.includes(cat.name))
           .map((cat) => (
-            <li>
-              <h3>{cat.name}</h3>
-              <h3>{cat.level}</h3>
-            </li>
+            <TaskLevel age={cat.name} level={cat.level} />
           ))}
       </ul>
     </div>
