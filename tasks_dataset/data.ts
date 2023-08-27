@@ -5,8 +5,8 @@ export const data: Task[]= [
   {
     "taskId": "2018-LT-04-fra",
     "engTitle": "Two Beavers are working",
-    "dirPath": "tasks_dataset\\2018-LT-04_Two_Beavers_are_working",
-    "filePath": "tasks_dataset\\2018-LT-04_Two_Beavers_are_working\\2018-LT-04-fra.task.md",
+    "dirPath": "tasks_dataset/2018-LT-04_Two_Beavers_are_working",
+    "filePath": "tasks_dataset/2018-LT-04_Two_Beavers_are_working/2018-LT-04-fra.task.md",
     "language": "fra",
     "title": "Plan de travail",
     "ageCategories": [
@@ -48,8 +48,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-AT-01-fra",
     "engTitle": "Growing Plants",
-    "dirPath": "tasks_dataset\\2020-AT-01_Growing_Plants",
-    "filePath": "tasks_dataset\\2020-AT-01_Growing_Plants\\2020-AT-01-fra.task.md",
+    "dirPath": "tasks_dataset/2020-AT-01_Growing_Plants",
+    "filePath": "tasks_dataset/2020-AT-01_Growing_Plants/2020-AT-01-fra.task.md",
     "language": "fra",
     "title": "Arbres digitaux",
     "ageCategories": [
@@ -97,8 +97,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-BE-03-fra",
     "engTitle": "Stars and moons",
-    "dirPath": "tasks_dataset\\2020-BE-03_Stars_and_moons",
-    "filePath": "tasks_dataset\\2020-BE-03_Stars_and_moons\\2020-BE-03-fra.task.md",
+    "dirPath": "tasks_dataset/2020-BE-03_Stars_and_moons",
+    "filePath": "tasks_dataset/2020-BE-03_Stars_and_moons/2020-BE-03-fra.task.md",
     "language": "fra",
     "title": "Bracelet céleste",
     "ageCategories": [
@@ -136,8 +136,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-CH-01c-fra",
     "engTitle": "Formal Languages",
-    "dirPath": "tasks_dataset\\2020-CH-01c_Formal_Languages",
-    "filePath": "tasks_dataset\\2020-CH-01c_Formal_Languages\\2020-CH-01c-fra.task.md",
+    "dirPath": "tasks_dataset/2020-CH-01c_Formal_Languages",
+    "filePath": "tasks_dataset/2020-CH-01c_Formal_Languages/2020-CH-01c-fra.task.md",
     "language": "fra",
     "title": "Les textes tendres de Tabea",
     "ageCategories": [
@@ -180,8 +180,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-CH-03a-fra",
     "engTitle": "Damaged Secret Table",
-    "dirPath": "tasks_dataset\\2020-CH-03a_Damaged_Secret_Table",
-    "filePath": "tasks_dataset\\2020-CH-03a_Damaged_Secret_Table\\2020-CH-03a-fra.task.md",
+    "dirPath": "tasks_dataset/2020-CH-03a_Damaged_Secret_Table",
+    "filePath": "tasks_dataset/2020-CH-03a_Damaged_Secret_Table/2020-CH-03a-fra.task.md",
     "language": "fra",
     "title": "Table incomplète",
     "ageCategories": [
@@ -227,8 +227,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-CH-04b-fra",
     "engTitle": "Tree Sudoku",
-    "dirPath": "tasks_dataset\\2020-CH-04b_Tree_Sudoku",
-    "filePath": "tasks_dataset\\2020-CH-04b_Tree_Sudoku\\2020-CH-04b-fra.task.md",
+    "dirPath": "tasks_dataset/2020-CH-04b_Tree_Sudoku",
+    "filePath": "tasks_dataset/2020-CH-04b_Tree_Sudoku/2020-CH-04b-fra.task.md",
     "language": "fra",
     "title": "Sudoku boisé 3×3",
     "ageCategories": [
@@ -283,8 +283,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-CH-04c-fra",
     "engTitle": "Tree Sudoku",
-    "dirPath": "tasks_dataset\\2020-CH-04c_Tree_Sudoku",
-    "filePath": "tasks_dataset\\2020-CH-04c_Tree_Sudoku\\2020-CH-04c-fra.task.md",
+    "dirPath": "tasks_dataset/2020-CH-04c_Tree_Sudoku",
+    "filePath": "tasks_dataset/2020-CH-04c_Tree_Sudoku/2020-CH-04c-fra.task.md",
     "language": "fra",
     "title": "Sudoku boisé 4×4",
     "ageCategories": [
@@ -335,8 +335,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-CH-07-fra",
     "engTitle": "Beaver at the Castle",
-    "dirPath": "tasks_dataset\\2020-CH-07_Beaver_at_the_Castle",
-    "filePath": "tasks_dataset\\2020-CH-07_Beaver_at_the_Castle\\2020-CH-07-fra.task.md",
+    "dirPath": "tasks_dataset/2020-CH-07_Beaver_at_the_Castle",
+    "filePath": "tasks_dataset/2020-CH-07_Beaver_at_the_Castle/2020-CH-07-fra.task.md",
     "language": "fra",
     "title": "Troc au château",
     "ageCategories": [
@@ -397,8 +397,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-CH-09b-fra",
     "engTitle": "Secret Digits",
-    "dirPath": "tasks_dataset\\2020-CH-09b_Secret_Digits",
-    "filePath": "tasks_dataset\\2020-CH-09b_Secret_Digits\\2020-CH-09b-fra.task.md",
+    "dirPath": "tasks_dataset/2020-CH-09b_Secret_Digits",
+    "filePath": "tasks_dataset/2020-CH-09b_Secret_Digits/2020-CH-09b-fra.task.md",
     "language": "fra",
     "title": "Chiffres secrets",
     "ageCategories": [
@@ -440,8 +440,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-CH-15-fra",
     "engTitle": "Water Taxi",
-    "dirPath": "tasks_dataset\\2020-CH-15_Water_Taxi",
-    "filePath": "tasks_dataset\\2020-CH-15_Water_Taxi\\2020-CH-15-fra.task.md",
+    "dirPath": "tasks_dataset/2020-CH-15_Water_Taxi",
+    "filePath": "tasks_dataset/2020-CH-15_Water_Taxi/2020-CH-15-fra.task.md",
     "language": "fra",
     "title": "Bateau-taxi",
     "ageCategories": [
@@ -483,8 +483,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-CH-18-fra",
     "engTitle": "Relax",
-    "dirPath": "tasks_dataset\\2020-CH-18_Relax",
-    "filePath": "tasks_dataset\\2020-CH-18_Relax\\2020-CH-18-fra.task.md",
+    "dirPath": "tasks_dataset/2020-CH-18_Relax",
+    "filePath": "tasks_dataset/2020-CH-18_Relax/2020-CH-18-fra.task.md",
     "language": "fra",
     "title": "Journée tranquille",
     "ageCategories": [
@@ -528,8 +528,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-CH-21-fra",
     "engTitle": "Exhibition Tour",
-    "dirPath": "tasks_dataset\\2020-CH-21_Exhibition_Tour",
-    "filePath": "tasks_dataset\\2020-CH-21_Exhibition_Tour\\2020-CH-21-fra.task.md",
+    "dirPath": "tasks_dataset/2020-CH-21_Exhibition_Tour",
+    "filePath": "tasks_dataset/2020-CH-21_Exhibition_Tour/2020-CH-21-fra.task.md",
     "language": "fra",
     "title": "Visite de musée",
     "ageCategories": [
@@ -576,8 +576,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-CN-04-fra",
     "engTitle": "Jigsaw puzzle",
-    "dirPath": "tasks_dataset\\2020-CN-04_Jigsaw_puzzle",
-    "filePath": "tasks_dataset\\2020-CN-04_Jigsaw_puzzle\\2020-CN-04-fra.task.md",
+    "dirPath": "tasks_dataset/2020-CN-04_Jigsaw_puzzle",
+    "filePath": "tasks_dataset/2020-CN-04_Jigsaw_puzzle/2020-CN-04-fra.task.md",
     "language": "fra",
     "title": "Mosaïque",
     "ageCategories": [
@@ -620,8 +620,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-CY-02-fra",
     "engTitle": "Jacques The Porter",
-    "dirPath": "tasks_dataset\\2020-CY-02_Jacques_The_Porter",
-    "filePath": "tasks_dataset\\2020-CY-02_Jacques_The_Porter\\2020-CY-02-fra.task.md",
+    "dirPath": "tasks_dataset/2020-CY-02_Jacques_The_Porter",
+    "filePath": "tasks_dataset/2020-CY-02_Jacques_The_Porter/2020-CY-02-fra.task.md",
     "language": "fra",
     "title": "Casiers",
     "ageCategories": [
@@ -665,8 +665,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-HU-02-fra",
     "engTitle": "Sierpinski triangle",
-    "dirPath": "tasks_dataset\\2020-HU-02_Sierpinski_triangle",
-    "filePath": "tasks_dataset\\2020-HU-02_Sierpinski_triangle\\2020-HU-02-fra.task.md",
+    "dirPath": "tasks_dataset/2020-HU-02_Sierpinski_triangle",
+    "filePath": "tasks_dataset/2020-HU-02_Sierpinski_triangle/2020-HU-02-fra.task.md",
     "language": "fra",
     "title": "Triangle de Sierpiński",
     "ageCategories": [
@@ -709,8 +709,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-ID-04-fra",
     "engTitle": "DNA",
-    "dirPath": "tasks_dataset\\2020-ID-04_DNA",
-    "filePath": "tasks_dataset\\2020-ID-04_DNA\\2020-ID-04-fra.task.md",
+    "dirPath": "tasks_dataset/2020-ID-04_DNA",
+    "filePath": "tasks_dataset/2020-ID-04_DNA/2020-ID-04-fra.task.md",
     "language": "fra",
     "title": "Séquence ADN",
     "ageCategories": [
@@ -752,8 +752,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-IE-09-fra",
     "engTitle": "Bowls",
-    "dirPath": "tasks_dataset\\2020-IE-09_Bowls",
-    "filePath": "tasks_dataset\\2020-IE-09_Bowls\\2020-IE-09-fra.task.md",
+    "dirPath": "tasks_dataset/2020-IE-09_Bowls",
+    "filePath": "tasks_dataset/2020-IE-09_Bowls/2020-IE-09-fra.task.md",
     "language": "fra",
     "title": "Bols",
     "ageCategories": [
@@ -790,8 +790,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-IN-26-fra",
     "engTitle": "Snakes and Ladders",
-    "dirPath": "tasks_dataset\\2020-IN-26_Snakes_and_Ladders",
-    "filePath": "tasks_dataset\\2020-IN-26_Snakes_and_Ladders\\2020-IN-26-fra.task.md",
+    "dirPath": "tasks_dataset/2020-IN-26_Snakes_and_Ladders",
+    "filePath": "tasks_dataset/2020-IN-26_Snakes_and_Ladders/2020-IN-26-fra.task.md",
     "language": "fra",
     "title": "Serpents et échelles",
     "ageCategories": [
@@ -837,8 +837,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-IR-03-fra",
     "engTitle": "Money Bags",
-    "dirPath": "tasks_dataset\\2020-IR-03_Money_Bags",
-    "filePath": "tasks_dataset\\2020-IR-03_Money_Bags\\2020-IR-03-fra.task.md",
+    "dirPath": "tasks_dataset/2020-IR-03_Money_Bags",
+    "filePath": "tasks_dataset/2020-IR-03_Money_Bags/2020-IR-03-fra.task.md",
     "language": "fra",
     "title": "Transport d’argent",
     "ageCategories": [
@@ -882,8 +882,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-IS-02-fra",
     "engTitle": "Teddy Bear hunt",
-    "dirPath": "tasks_dataset\\2020-IS-02_Teddy_Bear_hunt",
-    "filePath": "tasks_dataset\\2020-IS-02_Teddy_Bear_hunt\\2020-IS-02-fra.task.md",
+    "dirPath": "tasks_dataset/2020-IS-02_Teddy_Bear_hunt",
+    "filePath": "tasks_dataset/2020-IS-02_Teddy_Bear_hunt/2020-IS-02-fra.task.md",
     "language": "fra",
     "title": "Chasse à l’ours",
     "ageCategories": [
@@ -926,8 +926,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-JP-01b-fra",
     "engTitle": "Household appliances",
-    "dirPath": "tasks_dataset\\2020-JP-01b_Household_appliances",
-    "filePath": "tasks_dataset\\2020-JP-01b_Household_appliances\\2020-JP-01b-fra.task.md",
+    "dirPath": "tasks_dataset/2020-JP-01b_Household_appliances",
+    "filePath": "tasks_dataset/2020-JP-01b_Household_appliances/2020-JP-01b-fra.task.md",
     "language": "fra",
     "title": "Appareils ménagers",
     "ageCategories": [
@@ -978,8 +978,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-JP-02-fra",
     "engTitle": "Painting the houses",
-    "dirPath": "tasks_dataset\\2020-JP-02_Painting_the_houses",
-    "filePath": "tasks_dataset\\2020-JP-02_Painting_the_houses\\2020-JP-02-fra.task.md",
+    "dirPath": "tasks_dataset/2020-JP-02_Painting_the_houses",
+    "filePath": "tasks_dataset/2020-JP-02_Painting_the_houses/2020-JP-02-fra.task.md",
     "language": "fra",
     "title": "Quartier coloré",
     "ageCategories": [
@@ -1031,8 +1031,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-JP-04-fra",
     "engTitle": "Heaviest mark",
-    "dirPath": "tasks_dataset\\2020-JP-04_Heaviest_mark",
-    "filePath": "tasks_dataset\\2020-JP-04_Heaviest_mark\\2020-JP-04-fra.task.md",
+    "dirPath": "tasks_dataset/2020-JP-04_Heaviest_mark",
+    "filePath": "tasks_dataset/2020-JP-04_Heaviest_mark/2020-JP-04-fra.task.md",
     "language": "fra",
     "title": "Lourdes comparaisons",
     "ageCategories": [
@@ -1083,8 +1083,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-LT-01-fra",
     "engTitle": "Jumping Kangaroo",
-    "dirPath": "tasks_dataset\\2020-LT-01_Jumping_Kangaroo",
-    "filePath": "tasks_dataset\\2020-LT-01_Jumping_Kangaroo\\2020-LT-01-fra.task.md",
+    "dirPath": "tasks_dataset/2020-LT-01_Jumping_Kangaroo",
+    "filePath": "tasks_dataset/2020-LT-01_Jumping_Kangaroo/2020-LT-01-fra.task.md",
     "language": "fra",
     "title": "Kangourou bondissant",
     "ageCategories": [
@@ -1128,8 +1128,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-LT-05-fra",
     "engTitle": "Five Beavers",
-    "dirPath": "tasks_dataset\\2020-LT-05_Five_Beavers",
-    "filePath": "tasks_dataset\\2020-LT-05_Five_Beavers\\2020-LT-05-fra.task.md",
+    "dirPath": "tasks_dataset/2020-LT-05_Five_Beavers",
+    "filePath": "tasks_dataset/2020-LT-05_Five_Beavers/2020-LT-05-fra.task.md",
     "language": "fra",
     "title": "Fred le têtu",
     "ageCategories": [
@@ -1176,8 +1176,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-LT-06-fra",
     "engTitle": "Robot Parking",
-    "dirPath": "tasks_dataset\\2020-LT-06_Robot_Parking",
-    "filePath": "tasks_dataset\\2020-LT-06_Robot_Parking\\2020-LT-06-fra.task.md",
+    "dirPath": "tasks_dataset/2020-LT-06_Robot_Parking",
+    "filePath": "tasks_dataset/2020-LT-06_Robot_Parking/2020-LT-06-fra.task.md",
     "language": "fra",
     "title": "Heure de pointe",
     "ageCategories": [
@@ -1217,8 +1217,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-MK-03-fra",
     "engTitle": "Virus",
-    "dirPath": "tasks_dataset\\2020-MK-03_Virus",
-    "filePath": "tasks_dataset\\2020-MK-03_Virus\\2020-MK-03-fra.task.md",
+    "dirPath": "tasks_dataset/2020-MK-03_Virus",
+    "filePath": "tasks_dataset/2020-MK-03_Virus/2020-MK-03-fra.task.md",
     "language": "fra",
     "title": "Réseau de communication",
     "ageCategories": [
@@ -1274,8 +1274,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-PK-02-fra",
     "engTitle": "Log Classifier v2",
-    "dirPath": "tasks_dataset\\2020-PK-02_Log_Classifier_v2",
-    "filePath": "tasks_dataset\\2020-PK-02_Log_Classifier_v2\\2020-PK-02-fra.task.md",
+    "dirPath": "tasks_dataset/2020-PK-02_Log_Classifier_v2",
+    "filePath": "tasks_dataset/2020-PK-02_Log_Classifier_v2/2020-PK-02-fra.task.md",
     "language": "fra",
     "title": "Piles de troncs d'arbres",
     "ageCategories": [
@@ -1319,8 +1319,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-PK-03-fra",
     "engTitle": "Magic Potions",
-    "dirPath": "tasks_dataset\\2020-PK-03_Magic_Potions",
-    "filePath": "tasks_dataset\\2020-PK-03_Magic_Potions\\2020-PK-03-fra.task.md",
+    "dirPath": "tasks_dataset/2020-PK-03_Magic_Potions",
+    "filePath": "tasks_dataset/2020-PK-03_Magic_Potions/2020-PK-03-fra.task.md",
     "language": "fra",
     "title": "Las Bebras",
     "ageCategories": [
@@ -1359,8 +1359,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-PK-06-fra",
     "engTitle": "Air Conditioning",
-    "dirPath": "tasks_dataset\\2020-PK-06_Air_Conditioning",
-    "filePath": "tasks_dataset\\2020-PK-06_Air_Conditioning\\2020-PK-06-fra.task.md",
+    "dirPath": "tasks_dataset/2020-PK-06_Air_Conditioning",
+    "filePath": "tasks_dataset/2020-PK-06_Air_Conditioning/2020-PK-06-fra.task.md",
     "language": "fra",
     "title": "Chauffage au sol",
     "ageCategories": [
@@ -1407,8 +1407,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-PT-06-fra",
     "engTitle": "Train Tracks",
-    "dirPath": "tasks_dataset\\2020-PT-06_Train_Tracks",
-    "filePath": "tasks_dataset\\2020-PT-06_Train_Tracks\\2020-PT-06-fra.task.md",
+    "dirPath": "tasks_dataset/2020-PT-06_Train_Tracks",
+    "filePath": "tasks_dataset/2020-PT-06_Train_Tracks/2020-PT-06-fra.task.md",
     "language": "fra",
     "title": "Prochain arrêt, gare!",
     "ageCategories": [
@@ -1455,8 +1455,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-SI-01-fra",
     "engTitle": "Train trip",
-    "dirPath": "tasks_dataset\\2020-SI-01_Train_trip",
-    "filePath": "tasks_dataset\\2020-SI-01_Train_trip\\2020-SI-01-fra.task.md",
+    "dirPath": "tasks_dataset/2020-SI-01_Train_trip",
+    "filePath": "tasks_dataset/2020-SI-01_Train_trip/2020-SI-01-fra.task.md",
     "language": "fra",
     "title": "Excursion de groupe",
     "ageCategories": [
@@ -1495,8 +1495,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-SK-01-fra",
     "engTitle": "theater performance",
-    "dirPath": "tasks_dataset\\2020-SK-01_theater_performance",
-    "filePath": "tasks_dataset\\2020-SK-01_theater_performance\\2020-SK-01-fra.task.md",
+    "dirPath": "tasks_dataset/2020-SK-01_theater_performance",
+    "filePath": "tasks_dataset/2020-SK-01_theater_performance/2020-SK-01-fra.task.md",
     "language": "fra",
     "title": "La pièce de théâtre",
     "ageCategories": [
@@ -1548,8 +1548,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-SK-02-fra",
     "engTitle": "towns and highways",
-    "dirPath": "tasks_dataset\\2020-SK-02_towns_and_highways",
-    "filePath": "tasks_dataset\\2020-SK-02_towns_and_highways\\2020-SK-02-fra.task.md",
+    "dirPath": "tasks_dataset/2020-SK-02_towns_and_highways",
+    "filePath": "tasks_dataset/2020-SK-02_towns_and_highways/2020-SK-02-fra.task.md",
     "language": "fra",
     "title": "Réseau ferroviaire",
     "ageCategories": [
@@ -1590,8 +1590,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-SK-03b-fra",
     "engTitle": "sprinkler interactive",
-    "dirPath": "tasks_dataset\\2020-SK-03b_sprinkler_interactive",
-    "filePath": "tasks_dataset\\2020-SK-03b_sprinkler_interactive\\2020-SK-03b-fra.task.md",
+    "dirPath": "tasks_dataset/2020-SK-03b_sprinkler_interactive",
+    "filePath": "tasks_dataset/2020-SK-03b_sprinkler_interactive/2020-SK-03b-fra.task.md",
     "language": "fra",
     "title": "Arrosage",
     "ageCategories": [
@@ -1639,8 +1639,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-SK-04-fra",
     "engTitle": "where it can fly",
-    "dirPath": "tasks_dataset\\2020-SK-04_where_it_can_fly",
-    "filePath": "tasks_dataset\\2020-SK-04_where_it_can_fly\\2020-SK-04-fra.task.md",
+    "dirPath": "tasks_dataset/2020-SK-04_where_it_can_fly",
+    "filePath": "tasks_dataset/2020-SK-04_where_it_can_fly/2020-SK-04-fra.task.md",
     "language": "fra",
     "title": "Abeille assidue",
     "ageCategories": [
@@ -1686,8 +1686,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-TW-02-fra",
     "engTitle": "Epidemic Crisis",
-    "dirPath": "tasks_dataset\\2020-TW-02_Epidemic_Crisis",
-    "filePath": "tasks_dataset\\2020-TW-02_Epidemic_Crisis\\2020-TW-02-fra.task.md",
+    "dirPath": "tasks_dataset/2020-TW-02_Epidemic_Crisis",
+    "filePath": "tasks_dataset/2020-TW-02_Epidemic_Crisis/2020-TW-02-fra.task.md",
     "language": "fra",
     "title": "Épidémiologie",
     "ageCategories": [
@@ -1731,8 +1731,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-UZ-02-fra",
     "engTitle": "Beaverburg Delivery",
-    "dirPath": "tasks_dataset\\2020-UZ-02_Beaverburg_Delivery",
-    "filePath": "tasks_dataset\\2020-UZ-02_Beaverburg_Delivery\\2020-UZ-02-fra.task.md",
+    "dirPath": "tasks_dataset/2020-UZ-02_Beaverburg_Delivery",
+    "filePath": "tasks_dataset/2020-UZ-02_Beaverburg_Delivery/2020-UZ-02-fra.task.md",
     "language": "fra",
     "title": "L’archipel des castors",
     "ageCategories": [
@@ -1786,8 +1786,8 @@ export const data: Task[]= [
   {
     "taskId": "2020-VN-04-fra",
     "engTitle": "Marbles and Boxes",
-    "dirPath": "tasks_dataset\\2020-VN-04_Marbles_and_Boxes",
-    "filePath": "tasks_dataset\\2020-VN-04_Marbles_and_Boxes\\2020-VN-04-fra.task.md",
+    "dirPath": "tasks_dataset/2020-VN-04_Marbles_and_Boxes",
+    "filePath": "tasks_dataset/2020-VN-04_Marbles_and_Boxes/2020-VN-04-fra.task.md",
     "language": "fra",
     "title": "Des cases et des billes",
     "ageCategories": [
@@ -1832,8 +1832,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-AT-01-fra",
     "engTitle": "Forest Observation",
-    "dirPath": "tasks_dataset\\2021-AT-01_Forest_Observation",
-    "filePath": "tasks_dataset\\2021-AT-01_Forest_Observation\\2021-AT-01-fra.task.md",
+    "dirPath": "tasks_dataset/2021-AT-01_Forest_Observation",
+    "filePath": "tasks_dataset/2021-AT-01_Forest_Observation/2021-AT-01-fra.task.md",
     "language": "fra",
     "title": "Gardes forestiers",
     "ageCategories": [
@@ -1875,8 +1875,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-AT-04-fra",
     "engTitle": "Hashing",
-    "dirPath": "tasks_dataset\\2021-AT-04_Hashing",
-    "filePath": "tasks_dataset\\2021-AT-04_Hashing\\2021-AT-04-fra.task.md",
+    "dirPath": "tasks_dataset/2021-AT-04_Hashing",
+    "filePath": "tasks_dataset/2021-AT-04_Hashing/2021-AT-04-fra.task.md",
     "language": "fra",
     "title": "Bibliothèque",
     "ageCategories": [
@@ -1927,8 +1927,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-AT-06-fra",
     "engTitle": "Truchet",
-    "dirPath": "tasks_dataset\\2021-AT-06_Truchet",
-    "filePath": "tasks_dataset\\2021-AT-06_Truchet\\2021-AT-06-fra.task.md",
+    "dirPath": "tasks_dataset/2021-AT-06_Truchet",
+    "filePath": "tasks_dataset/2021-AT-06_Truchet/2021-AT-06-fra.task.md",
     "language": "fra",
     "title": "Pavage de Truchet",
     "ageCategories": [
@@ -1970,8 +1970,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-CA-01b-fra",
     "engTitle": "Cuckoo Birds",
-    "dirPath": "tasks_dataset\\2021-CA-01b_Cuckoo_Birds",
-    "filePath": "tasks_dataset\\2021-CA-01b_Cuckoo_Birds\\2021-CA-01b-fra.task.md",
+    "dirPath": "tasks_dataset/2021-CA-01b_Cuckoo_Birds",
+    "filePath": "tasks_dataset/2021-CA-01b_Cuckoo_Birds/2021-CA-01b-fra.task.md",
     "language": "fra",
     "title": "Emménagement",
     "ageCategories": [
@@ -2016,8 +2016,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-CA-02-fra",
     "engTitle": "Spider Quilts",
-    "dirPath": "tasks_dataset\\2021-CA-02_Spider_Quilts",
-    "filePath": "tasks_dataset\\2021-CA-02_Spider_Quilts\\2021-CA-02-fra.task.md",
+    "dirPath": "tasks_dataset/2021-CA-02_Spider_Quilts",
+    "filePath": "tasks_dataset/2021-CA-02_Spider_Quilts/2021-CA-02-fra.task.md",
     "language": "fra",
     "title": "Toiles d'araignée",
     "ageCategories": [
@@ -2057,8 +2057,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-CH-04c-fra",
     "engTitle": "Strawberry Thief",
-    "dirPath": "tasks_dataset\\2021-CH-04c_Strawberry_Thief",
-    "filePath": "tasks_dataset\\2021-CH-04c_Strawberry_Thief\\2021-CH-04c-fra.task.md",
+    "dirPath": "tasks_dataset/2021-CH-04c_Strawberry_Thief",
+    "filePath": "tasks_dataset/2021-CH-04c_Strawberry_Thief/2021-CH-04c-fra.task.md",
     "language": "fra",
     "title": "Voleur de fraise",
     "ageCategories": [
@@ -2115,8 +2115,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-CH-07a-fra",
     "engTitle": "Calculating with hats",
-    "dirPath": "tasks_dataset\\2021-CH-07a_Calculating_with_hats",
-    "filePath": "tasks_dataset\\2021-CH-07a_Calculating_with_hats\\2021-CH-07a-fra.task.md",
+    "dirPath": "tasks_dataset/2021-CH-07a_Calculating_with_hats",
+    "filePath": "tasks_dataset/2021-CH-07a_Calculating_with_hats/2021-CH-07a-fra.task.md",
     "language": "fra",
     "title": "Ruban de billes",
     "ageCategories": [
@@ -2154,8 +2154,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-CH-07b-fra",
     "engTitle": "Calculating with hats",
-    "dirPath": "tasks_dataset\\2021-CH-07b_Calculating_with_hats",
-    "filePath": "tasks_dataset\\2021-CH-07b_Calculating_with_hats\\2021-CH-07b-fra.task.md",
+    "dirPath": "tasks_dataset/2021-CH-07b_Calculating_with_hats",
+    "filePath": "tasks_dataset/2021-CH-07b_Calculating_with_hats/2021-CH-07b-fra.task.md",
     "language": "fra",
     "title": "Nombres en billes",
     "ageCategories": [
@@ -2195,8 +2195,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-CH-13-fra",
     "engTitle": "Fruit Stack",
-    "dirPath": "tasks_dataset\\2021-CH-13_Fruit_Stack",
-    "filePath": "tasks_dataset\\2021-CH-13_Fruit_Stack\\2021-CH-13-fra.task.md",
+    "dirPath": "tasks_dataset/2021-CH-13_Fruit_Stack",
+    "filePath": "tasks_dataset/2021-CH-13_Fruit_Stack/2021-CH-13-fra.task.md",
     "language": "fra",
     "title": "Pile de fruits",
     "ageCategories": [
@@ -2243,8 +2243,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-CH-19-fra",
     "engTitle": "Critical Edge",
-    "dirPath": "tasks_dataset\\2021-CH-19_Critical_Edge",
-    "filePath": "tasks_dataset\\2021-CH-19_Critical_Edge\\2021-CH-19-fra.task.md",
+    "dirPath": "tasks_dataset/2021-CH-19_Critical_Edge",
+    "filePath": "tasks_dataset/2021-CH-19_Critical_Edge/2021-CH-19-fra.task.md",
     "language": "fra",
     "title": "Travail d'équipe",
     "ageCategories": [
@@ -2281,8 +2281,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-DE-05-fra",
     "engTitle": "Counting by Nodding",
-    "dirPath": "tasks_dataset\\2021-DE-05_Counting_by_Nodding",
-    "filePath": "tasks_dataset\\2021-DE-05_Counting_by_Nodding\\2021-DE-05-fra.task.md",
+    "dirPath": "tasks_dataset/2021-DE-05_Counting_by_Nodding",
+    "filePath": "tasks_dataset/2021-DE-05_Counting_by_Nodding/2021-DE-05-fra.task.md",
     "language": "fra",
     "title": "Compter avec les muscles",
     "ageCategories": [
@@ -2318,8 +2318,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-DE-06-fra",
     "engTitle": "Beaver Sort",
-    "dirPath": "tasks_dataset\\2021-DE-06_Beaver_Sort",
-    "filePath": "tasks_dataset\\2021-DE-06_Beaver_Sort\\2021-DE-06-fra.task.md",
+    "dirPath": "tasks_dataset/2021-DE-06_Beaver_Sort",
+    "filePath": "tasks_dataset/2021-DE-06_Beaver_Sort/2021-DE-06-fra.task.md",
     "language": "fra",
     "title": "Beaver Sort",
     "ageCategories": [
@@ -2366,8 +2366,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-DE-07-fra",
     "engTitle": "Turtle Path",
-    "dirPath": "tasks_dataset\\2021-DE-07_Turtle_Path",
-    "filePath": "tasks_dataset\\2021-DE-07_Turtle_Path\\2021-DE-07-fra.task.md",
+    "dirPath": "tasks_dataset/2021-DE-07_Turtle_Path",
+    "filePath": "tasks_dataset/2021-DE-07_Turtle_Path/2021-DE-07-fra.task.md",
     "language": "fra",
     "title": "Chemins tortueux",
     "ageCategories": [
@@ -2412,8 +2412,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-DE-08a-fra",
     "engTitle": "Preferences",
-    "dirPath": "tasks_dataset\\2021-DE-08a_Preferences",
-    "filePath": "tasks_dataset\\2021-DE-08a_Preferences\\2021-DE-08a-fra.task.md",
+    "dirPath": "tasks_dataset/2021-DE-08a_Preferences",
+    "filePath": "tasks_dataset/2021-DE-08a_Preferences/2021-DE-08a-fra.task.md",
     "language": "fra",
     "title": "Cadeau favori",
     "ageCategories": [
@@ -2453,8 +2453,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-DE-08b-fra",
     "engTitle": "Preferences",
-    "dirPath": "tasks_dataset\\2021-DE-08b_Preferences",
-    "filePath": "tasks_dataset\\2021-DE-08b_Preferences\\2021-DE-08b-fra.task.md",
+    "dirPath": "tasks_dataset/2021-DE-08b_Preferences",
+    "filePath": "tasks_dataset/2021-DE-08b_Preferences/2021-DE-08b-fra.task.md",
     "language": "fra",
     "title": "Lieblingsgeschenk",
     "ageCategories": [
@@ -2495,8 +2495,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-HU-02-fra",
     "engTitle": "Error detection",
-    "dirPath": "tasks_dataset\\2021-HU-02_Error_detection",
-    "filePath": "tasks_dataset\\2021-HU-02_Error_detection\\2021-HU-02-fra.task.md",
+    "dirPath": "tasks_dataset/2021-HU-02_Error_detection",
+    "filePath": "tasks_dataset/2021-HU-02_Error_detection/2021-HU-02-fra.task.md",
     "language": "fra",
     "title": "Villages isolés",
     "ageCategories": [
@@ -2541,8 +2541,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-HU-05c-fra",
     "engTitle": "Stamping",
-    "dirPath": "tasks_dataset\\2021-HU-05c_Stamping",
-    "filePath": "tasks_dataset\\2021-HU-05c_Stamping\\2021-HU-05c-fra.task.md",
+    "dirPath": "tasks_dataset/2021-HU-05c_Stamping",
+    "filePath": "tasks_dataset/2021-HU-05c_Stamping/2021-HU-05c-fra.task.md",
     "language": "fra",
     "title": "Les tampons de Mika",
     "ageCategories": [
@@ -2586,8 +2586,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-ID-10-fra",
     "engTitle": "Colorful Tube",
-    "dirPath": "tasks_dataset\\2021-ID-10_Colorful_Tube",
-    "filePath": "tasks_dataset\\2021-ID-10_Colorful_Tube\\2021-ID-10-fra.task.md",
+    "dirPath": "tasks_dataset/2021-ID-10_Colorful_Tube",
+    "filePath": "tasks_dataset/2021-ID-10_Colorful_Tube/2021-ID-10-fra.task.md",
     "language": "fra",
     "title": "Couches de liquides",
     "ageCategories": [
@@ -2631,8 +2631,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-IE-02-fra",
     "engTitle": "Coin bag",
-    "dirPath": "tasks_dataset\\2021-IE-02_Coin_bag",
-    "filePath": "tasks_dataset\\2021-IE-02_Coin_bag\\2021-IE-02-fra.task.md",
+    "dirPath": "tasks_dataset/2021-IE-02_Coin_bag",
+    "filePath": "tasks_dataset/2021-IE-02_Coin_bag/2021-IE-02-fra.task.md",
     "language": "fra",
     "title": "Sac de pièces",
     "ageCategories": [
@@ -2673,8 +2673,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-IE-04-fra",
     "engTitle": "Football jerseys",
-    "dirPath": "tasks_dataset\\2021-IE-04_Football_jerseys",
-    "filePath": "tasks_dataset\\2021-IE-04_Football_jerseys\\2021-IE-04-fra.task.md",
+    "dirPath": "tasks_dataset/2021-IE-04_Football_jerseys",
+    "filePath": "tasks_dataset/2021-IE-04_Football_jerseys/2021-IE-04-fra.task.md",
     "language": "fra",
     "title": "Le bon maillot",
     "ageCategories": [
@@ -2720,8 +2720,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-IS-03-fra",
     "engTitle": "The Gift",
-    "dirPath": "tasks_dataset\\2021-IS-03_The_Gift",
-    "filePath": "tasks_dataset\\2021-IS-03_The_Gift\\2021-IS-03-fra.task.md",
+    "dirPath": "tasks_dataset/2021-IS-03_The_Gift",
+    "filePath": "tasks_dataset/2021-IS-03_The_Gift/2021-IS-03-fra.task.md",
     "language": "fra",
     "title": "Casse-tête d'anniversaire",
     "ageCategories": [
@@ -2761,8 +2761,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-KR-02-fra",
     "engTitle": "Moving the balls",
-    "dirPath": "tasks_dataset\\2021-KR-02_Moving_the_balls",
-    "filePath": "tasks_dataset\\2021-KR-02_Moving_the_balls\\2021-KR-02-fra.task.md",
+    "dirPath": "tasks_dataset/2021-KR-02_Moving_the_balls",
+    "filePath": "tasks_dataset/2021-KR-02_Moving_the_balls/2021-KR-02-fra.task.md",
     "language": "fra",
     "title": "Jeu de balles",
     "ageCategories": [
@@ -2813,8 +2813,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-LT-01-fra",
     "engTitle": "Meeting race",
-    "dirPath": "tasks_dataset\\2021-LT-01_Meeting_race",
-    "filePath": "tasks_dataset\\2021-LT-01_Meeting_race\\2021-LT-01-fra.task.md",
+    "dirPath": "tasks_dataset/2021-LT-01_Meeting_race",
+    "filePath": "tasks_dataset/2021-LT-01_Meeting_race/2021-LT-01-fra.task.md",
     "language": "fra",
     "title": "Un, deux, trois, partez, feu!",
     "ageCategories": [
@@ -2859,8 +2859,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-LT-06-fra",
     "engTitle": "Do They Meet",
-    "dirPath": "tasks_dataset\\2021-LT-06_Do_They_Meet",
-    "filePath": "tasks_dataset\\2021-LT-06_Do_They_Meet\\2021-LT-06-fra.task.md",
+    "dirPath": "tasks_dataset/2021-LT-06_Do_They_Meet",
+    "filePath": "tasks_dataset/2021-LT-06_Do_They_Meet/2021-LT-06-fra.task.md",
     "language": "fra",
     "title": "Rencontre",
     "ageCategories": [
@@ -2901,8 +2901,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-PH-03-fra",
     "engTitle": "Great Wall of Beavaria",
-    "dirPath": "tasks_dataset\\2021-PH-03_Great_Wall_of_Beavaria",
-    "filePath": "tasks_dataset\\2021-PH-03_Great_Wall_of_Beavaria\\2021-PH-03-fra.task.md",
+    "dirPath": "tasks_dataset/2021-PH-03_Great_Wall_of_Beavaria",
+    "filePath": "tasks_dataset/2021-PH-03_Great_Wall_of_Beavaria/2021-PH-03-fra.task.md",
     "language": "fra",
     "title": "Les clans de Castorland",
     "ageCategories": [
@@ -2942,8 +2942,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-PK-07-fra",
     "engTitle": "Bridge Construction",
-    "dirPath": "tasks_dataset\\2021-PK-07_Bridge_Construction",
-    "filePath": "tasks_dataset\\2021-PK-07_Bridge_Construction\\2021-PK-07-fra.task.md",
+    "dirPath": "tasks_dataset/2021-PK-07_Bridge_Construction",
+    "filePath": "tasks_dataset/2021-PK-07_Bridge_Construction/2021-PK-07-fra.task.md",
     "language": "fra",
     "title": "Construction de pont",
     "ageCategories": [
@@ -2991,8 +2991,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-SI-02-fra",
     "engTitle": "Jumping Jack",
-    "dirPath": "tasks_dataset\\2021-SI-02_Jumping_Jack",
-    "filePath": "tasks_dataset\\2021-SI-02_Jumping_Jack\\2021-SI-02-fra.task.md",
+    "dirPath": "tasks_dataset/2021-SI-02_Jumping_Jack",
+    "filePath": "tasks_dataset/2021-SI-02_Jumping_Jack/2021-SI-02-fra.task.md",
     "language": "fra",
     "title": "Petit singe",
     "ageCategories": [
@@ -3033,8 +3033,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-SK-01-fra",
     "engTitle": "Necklaces",
-    "dirPath": "tasks_dataset\\2021-SK-01_Necklaces",
-    "filePath": "tasks_dataset\\2021-SK-01_Necklaces\\2021-SK-01-fra.task.md",
+    "dirPath": "tasks_dataset/2021-SK-01_Necklaces",
+    "filePath": "tasks_dataset/2021-SK-01_Necklaces/2021-SK-01-fra.task.md",
     "language": "fra",
     "title": "Porte-clés",
     "ageCategories": [
@@ -3076,8 +3076,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-SV-01-fra",
     "engTitle": "ADeskTouble",
-    "dirPath": "tasks_dataset\\2021-SV-01_ADeskTouble",
-    "filePath": "tasks_dataset\\2021-SV-01_ADeskTouble\\2021-SV-01-fra.task.md",
+    "dirPath": "tasks_dataset/2021-SV-01_ADeskTouble",
+    "filePath": "tasks_dataset/2021-SV-01_ADeskTouble/2021-SV-01-fra.task.md",
     "language": "fra",
     "title": "Sacrés pupitres",
     "ageCategories": [
@@ -3120,8 +3120,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-TR-06-fra",
     "engTitle": "FarmerBeaver",
-    "dirPath": "tasks_dataset\\2021-TR-06_FarmerBeaver",
-    "filePath": "tasks_dataset\\2021-TR-06_FarmerBeaver\\2021-TR-06-fra.task.md",
+    "dirPath": "tasks_dataset/2021-TR-06_FarmerBeaver",
+    "filePath": "tasks_dataset/2021-TR-06_FarmerBeaver/2021-TR-06-fra.task.md",
     "language": "fra",
     "title": "Les moulins de castor Max",
     "ageCategories": [
@@ -3170,8 +3170,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-UY-11-fra",
     "engTitle": "OrangeJuice",
-    "dirPath": "tasks_dataset\\2021-UY-11_OrangeJuice",
-    "filePath": "tasks_dataset\\2021-UY-11_OrangeJuice\\2021-UY-11-fra.task.md",
+    "dirPath": "tasks_dataset/2021-UY-11_OrangeJuice",
+    "filePath": "tasks_dataset/2021-UY-11_OrangeJuice/2021-UY-11-fra.task.md",
     "language": "fra",
     "title": "Timber!",
     "ageCategories": [
@@ -3218,8 +3218,8 @@ export const data: Task[]= [
   {
     "taskId": "2021-UZ-02-fra",
     "engTitle": "HerculesHydra",
-    "dirPath": "tasks_dataset\\2021-UZ-02_HerculesHydra",
-    "filePath": "tasks_dataset\\2021-UZ-02_HerculesHydra\\2021-UZ-02-fra.task.md",
+    "dirPath": "tasks_dataset/2021-UZ-02_HerculesHydra",
+    "filePath": "tasks_dataset/2021-UZ-02_HerculesHydra/2021-UZ-02-fra.task.md",
     "language": "fra",
     "title": "Sauvetage d'arbre",
     "ageCategories": [
@@ -3272,8 +3272,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-AT-01a-fra",
     "engTitle": "Coloring page",
-    "dirPath": "tasks_dataset\\2022-AT-01a_Coloring_page",
-    "filePath": "tasks_dataset\\2022-AT-01a_Coloring_page\\2022-AT-01a-fra.task.md",
+    "dirPath": "tasks_dataset/2022-AT-01a_Coloring_page",
+    "filePath": "tasks_dataset/2022-AT-01a_Coloring_page/2022-AT-01a-fra.task.md",
     "language": "fra",
     "title": "Coloriage",
     "ageCategories": [
@@ -3313,8 +3313,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-AT-02-fra",
     "engTitle": "Floor Pattern",
-    "dirPath": "tasks_dataset\\2022-AT-02_Floor_Pattern",
-    "filePath": "tasks_dataset\\2022-AT-02_Floor_Pattern\\2022-AT-02-fra.task.md",
+    "dirPath": "tasks_dataset/2022-AT-02_Floor_Pattern",
+    "filePath": "tasks_dataset/2022-AT-02_Floor_Pattern/2022-AT-02-fra.task.md",
     "language": "fra",
     "title": "Carrelage",
     "ageCategories": [
@@ -3357,8 +3357,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-AT-04-fra",
     "engTitle": "Lists",
-    "dirPath": "tasks_dataset\\2022-AT-04_Lists",
-    "filePath": "tasks_dataset\\2022-AT-04_Lists\\2022-AT-04-fra.task.md",
+    "dirPath": "tasks_dataset/2022-AT-04_Lists",
+    "filePath": "tasks_dataset/2022-AT-04_Lists/2022-AT-04-fra.task.md",
     "language": "fra",
     "title": "Séquences",
     "ageCategories": [
@@ -3418,8 +3418,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-AU-03-fra",
     "engTitle": "Lights On",
-    "dirPath": "tasks_dataset\\2022-AU-03_Lights_On",
-    "filePath": "tasks_dataset\\2022-AU-03_Lights_On\\2022-AU-03-fra.task.md",
+    "dirPath": "tasks_dataset/2022-AU-03_Lights_On",
+    "filePath": "tasks_dataset/2022-AU-03_Lights_On/2022-AU-03-fra.task.md",
     "language": "fra",
     "title": "Que la lumière soit!",
     "ageCategories": [
@@ -3491,8 +3491,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-BE-02-fra",
     "engTitle": "Four Tiles",
-    "dirPath": "tasks_dataset\\2022-BE-02_Four_Tiles",
-    "filePath": "tasks_dataset\\2022-BE-02_Four_Tiles\\2022-BE-02-fra.task.md",
+    "dirPath": "tasks_dataset/2022-BE-02_Four_Tiles",
+    "filePath": "tasks_dataset/2022-BE-02_Four_Tiles/2022-BE-02-fra.task.md",
     "language": "fra",
     "title": "Mosaïque",
     "ageCategories": [
@@ -3539,8 +3539,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-CA-02-fra",
     "engTitle": "Mysteria",
-    "dirPath": "tasks_dataset\\2022-CA-02_Mysteria",
-    "filePath": "tasks_dataset\\2022-CA-02_Mysteria\\2022-CA-02-fra.task.md",
+    "dirPath": "tasks_dataset/2022-CA-02_Mysteria",
+    "filePath": "tasks_dataset/2022-CA-02_Mysteria/2022-CA-02-fra.task.md",
     "language": "fra",
     "title": "Objets magiques",
     "ageCategories": [
@@ -3581,8 +3581,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-CA-04-fra",
     "engTitle": "Favourite Gem",
-    "dirPath": "tasks_dataset\\2022-CA-04_Favourite_Gem",
-    "filePath": "tasks_dataset\\2022-CA-04_Favourite_Gem\\2022-CA-04-fra.task.md",
+    "dirPath": "tasks_dataset/2022-CA-04_Favourite_Gem",
+    "filePath": "tasks_dataset/2022-CA-04_Favourite_Gem/2022-CA-04-fra.task.md",
     "language": "fra",
     "title": "Pierres précieuses",
     "ageCategories": [
@@ -3634,8 +3634,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-CA-06-fra",
     "engTitle": "Nuts and Bolts",
-    "dirPath": "tasks_dataset\\2022-CA-06_Nuts_and_Bolts",
-    "filePath": "tasks_dataset\\2022-CA-06_Nuts_and_Bolts\\2022-CA-06-fra.task.md",
+    "dirPath": "tasks_dataset/2022-CA-06_Nuts_and_Bolts",
+    "filePath": "tasks_dataset/2022-CA-06_Nuts_and_Bolts/2022-CA-06-fra.task.md",
     "language": "fra",
     "title": "Boulons et écrous",
     "ageCategories": [
@@ -3690,8 +3690,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-CH-08-fra",
     "engTitle": "Pantry Map",
-    "dirPath": "tasks_dataset\\2022-CH-08_Pantry_Map",
-    "filePath": "tasks_dataset\\2022-CH-08_Pantry_Map\\2022-CH-08-fra.task.md",
+    "dirPath": "tasks_dataset/2022-CH-08_Pantry_Map",
+    "filePath": "tasks_dataset/2022-CH-08_Pantry_Map/2022-CH-08-fra.task.md",
     "language": "fra",
     "title": "Carte au trésor",
     "ageCategories": [
@@ -3740,8 +3740,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-CH-14-fra",
     "engTitle": "Treasure Chest",
-    "dirPath": "tasks_dataset\\2022-CH-14_Treasure_Chest",
-    "filePath": "tasks_dataset\\2022-CH-14_Treasure_Chest\\2022-CH-14-fra.task.md",
+    "dirPath": "tasks_dataset/2022-CH-14_Treasure_Chest",
+    "filePath": "tasks_dataset/2022-CH-14_Treasure_Chest/2022-CH-14-fra.task.md",
     "language": "fra",
     "title": "Permutations",
     "ageCategories": [
@@ -3786,8 +3786,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-CY-01-fra",
     "engTitle": "Marys Neighbours",
-    "dirPath": "tasks_dataset\\2022-CY-01_Marys_Neighbours",
-    "filePath": "tasks_dataset\\2022-CY-01_Marys_Neighbours\\2022-CY-01-fra.task.md",
+    "dirPath": "tasks_dataset/2022-CY-01_Marys_Neighbours",
+    "filePath": "tasks_dataset/2022-CY-01_Marys_Neighbours/2022-CY-01-fra.task.md",
     "language": "fra",
     "title": "Les voisins de Lili",
     "ageCategories": [
@@ -3839,8 +3839,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-DE-02-fra",
     "engTitle": "Heart Graphics",
-    "dirPath": "tasks_dataset\\2022-DE-02_Heart_Graphics",
-    "filePath": "tasks_dataset\\2022-DE-02_Heart_Graphics\\2022-DE-02-fra.task.md",
+    "dirPath": "tasks_dataset/2022-DE-02_Heart_Graphics",
+    "filePath": "tasks_dataset/2022-DE-02_Heart_Graphics/2022-DE-02-fra.task.md",
     "language": "fra",
     "title": "Cœur composé",
     "ageCategories": [
@@ -3887,8 +3887,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-DE-03-fra",
     "engTitle": "Listen and Walk",
-    "dirPath": "tasks_dataset\\2022-DE-03_Listen_and_Walk",
-    "filePath": "tasks_dataset\\2022-DE-03_Listen_and_Walk\\2022-DE-03-fra.task.md",
+    "dirPath": "tasks_dataset/2022-DE-03_Listen_and_Walk",
+    "filePath": "tasks_dataset/2022-DE-03_Listen_and_Walk/2022-DE-03-fra.task.md",
     "language": "fra",
     "title": "Poste robotisée",
     "ageCategories": [
@@ -3950,8 +3950,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-DE-05-fra",
     "engTitle": "Hangar Carousel",
-    "dirPath": "tasks_dataset\\2022-DE-05_Hangar_Carousel",
-    "filePath": "tasks_dataset\\2022-DE-05_Hangar_Carousel\\2022-DE-05-fra.task.md",
+    "dirPath": "tasks_dataset/2022-DE-05_Hangar_Carousel",
+    "filePath": "tasks_dataset/2022-DE-05_Hangar_Carousel/2022-DE-05-fra.task.md",
     "language": "fra",
     "title": "Hangar tournant",
     "ageCategories": [
@@ -4001,8 +4001,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-DE-06-fra",
     "engTitle": "Kids and Books",
-    "dirPath": "tasks_dataset\\2022-DE-06_Kids_and_Books",
-    "filePath": "tasks_dataset\\2022-DE-06_Kids_and_Books\\2022-DE-06-fra.task.md",
+    "dirPath": "tasks_dataset/2022-DE-06_Kids_and_Books",
+    "filePath": "tasks_dataset/2022-DE-06_Kids_and_Books/2022-DE-06-fra.task.md",
     "language": "fra",
     "title": "Bibliothèque",
     "ageCategories": [
@@ -4045,8 +4045,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-DE-07-fra",
     "engTitle": "Favorite Movie",
-    "dirPath": "tasks_dataset\\2022-DE-07_Favorite_Movie",
-    "filePath": "tasks_dataset\\2022-DE-07_Favorite_Movie\\2022-DE-07-fra.task.md",
+    "dirPath": "tasks_dataset/2022-DE-07_Favorite_Movie",
+    "filePath": "tasks_dataset/2022-DE-07_Favorite_Movie/2022-DE-07-fra.task.md",
     "language": "fra",
     "title": "Soirée ciné",
     "ageCategories": [
@@ -4101,8 +4101,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-FR-02a-fra",
     "engTitle": "bee hive",
-    "dirPath": "tasks_dataset\\2022-FR-02a_bee_hive",
-    "filePath": "tasks_dataset\\2022-FR-02a_bee_hive\\2022-FR-02a-fra.task.md",
+    "dirPath": "tasks_dataset/2022-FR-02a_bee_hive",
+    "filePath": "tasks_dataset/2022-FR-02a_bee_hive/2022-FR-02a-fra.task.md",
     "language": "fra",
     "title": "Ruche",
     "ageCategories": [
@@ -4147,8 +4147,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-HU-04-fra",
     "engTitle": "Minesweeper",
-    "dirPath": "tasks_dataset\\2022-HU-04_Minesweeper",
-    "filePath": "tasks_dataset\\2022-HU-04_Minesweeper\\2022-HU-04-fra.task.md",
+    "dirPath": "tasks_dataset/2022-HU-04_Minesweeper",
+    "filePath": "tasks_dataset/2022-HU-04_Minesweeper/2022-HU-04-fra.task.md",
     "language": "fra",
     "title": "Déchampignonneur",
     "ageCategories": [
@@ -4197,8 +4197,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-IT-02-fra",
     "engTitle": "The game of COL",
-    "dirPath": "tasks_dataset\\2022-IT-02_The_game_of_COL",
-    "filePath": "tasks_dataset\\2022-IT-02_The_game_of_COL\\2022-IT-02-fra.task.md",
+    "dirPath": "tasks_dataset/2022-IT-02_The_game_of_COL",
+    "filePath": "tasks_dataset/2022-IT-02_The_game_of_COL/2022-IT-02-fra.task.md",
     "language": "fra",
     "title": "Galets et coquillages",
     "ageCategories": [
@@ -4253,8 +4253,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-KR-03-fra",
     "engTitle": "Hamberger Recipe",
-    "dirPath": "tasks_dataset\\2022-KR-03_Hamberger_Recipe",
-    "filePath": "tasks_dataset\\2022-KR-03_Hamberger_Recipe\\2022-KR-03-fra.task.md",
+    "dirPath": "tasks_dataset/2022-KR-03_Hamberger_Recipe",
+    "filePath": "tasks_dataset/2022-KR-03_Hamberger_Recipe/2022-KR-03-fra.task.md",
     "language": "fra",
     "title": "Recette de hamburger",
     "ageCategories": [
@@ -4305,8 +4305,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-KR-06-fra",
     "engTitle": "Squidgame",
-    "dirPath": "tasks_dataset\\2022-KR-06_Squidgame",
-    "filePath": "tasks_dataset\\2022-KR-06_Squidgame\\2022-KR-06-fra.task.md",
+    "dirPath": "tasks_dataset/2022-KR-06_Squidgame",
+    "filePath": "tasks_dataset/2022-KR-06_Squidgame/2022-KR-06-fra.task.md",
     "language": "fra",
     "title": "Championnat Castor",
     "ageCategories": [
@@ -4351,8 +4351,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-LV-03-fra",
     "engTitle": "Tic-Tac-Toe fields",
-    "dirPath": "tasks_dataset\\2022-LV-03_Tic-Tac-Toe_fields",
-    "filePath": "tasks_dataset\\2022-LV-03_Tic-Tac-Toe_fields\\2022-LV-03-fra.task.md",
+    "dirPath": "tasks_dataset/2022-LV-03_Tic-Tac-Toe_fields",
+    "filePath": "tasks_dataset/2022-LV-03_Tic-Tac-Toe_fields/2022-LV-03-fra.task.md",
     "language": "fra",
     "title": "Morpion",
     "ageCategories": [
@@ -4408,8 +4408,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-MK-01-fra",
     "engTitle": "Treasure Box",
-    "dirPath": "tasks_dataset\\2022-MK-01_Treasure Box",
-    "filePath": "tasks_dataset\\2022-MK-01_Treasure Box\\2022-MK-01-fra.task.md",
+    "dirPath": "tasks_dataset/2022-MK-01_Treasure Box",
+    "filePath": "tasks_dataset/2022-MK-01_Treasure Box/2022-MK-01-fra.task.md",
     "language": "fra",
     "title": "Coffre au trésor",
     "ageCategories": [
@@ -4459,8 +4459,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-NL-03-fra",
     "engTitle": "Packing",
-    "dirPath": "tasks_dataset\\2022-NL-03_Packing",
-    "filePath": "tasks_dataset\\2022-NL-03_Packing\\2022-NL-03-fra.task.md",
+    "dirPath": "tasks_dataset/2022-NL-03_Packing",
+    "filePath": "tasks_dataset/2022-NL-03_Packing/2022-NL-03-fra.task.md",
     "language": "fra",
     "title": "Empaquetage",
     "ageCategories": [
@@ -4508,8 +4508,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-NZ-01-fra",
     "engTitle": "Computer Viruses",
-    "dirPath": "tasks_dataset\\2022-NZ-01_Computer_Viruses",
-    "filePath": "tasks_dataset\\2022-NZ-01_Computer_Viruses\\2022-NZ-01-fra.task.md",
+    "dirPath": "tasks_dataset/2022-NZ-01_Computer_Viruses",
+    "filePath": "tasks_dataset/2022-NZ-01_Computer_Viruses/2022-NZ-01-fra.task.md",
     "language": "fra",
     "title": "Virus",
     "ageCategories": [
@@ -4574,8 +4574,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-PH-03-fra",
     "engTitle": "Tortoise and Hare",
-    "dirPath": "tasks_dataset\\2022-PH-03_Tortoise_and_Hare",
-    "filePath": "tasks_dataset\\2022-PH-03_Tortoise_and_Hare\\2022-PH-03-fra.task.md",
+    "dirPath": "tasks_dataset/2022-PH-03_Tortoise_and_Hare",
+    "filePath": "tasks_dataset/2022-PH-03_Tortoise_and_Hare/2022-PH-03-fra.task.md",
     "language": "fra",
     "title": "Le lièvre et la tortue",
     "ageCategories": [
@@ -4628,8 +4628,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-SK-02-fra",
     "engTitle": "Embroidery machine",
-    "dirPath": "tasks_dataset\\2022-SK-02_Embroidery_machine",
-    "filePath": "tasks_dataset\\2022-SK-02_Embroidery_machine\\2022-SK-02-fra.task.md",
+    "dirPath": "tasks_dataset/2022-SK-02_Embroidery_machine",
+    "filePath": "tasks_dataset/2022-SK-02_Embroidery_machine/2022-SK-02-fra.task.md",
     "language": "fra",
     "title": "Broderie",
     "ageCategories": [
@@ -4675,8 +4675,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-SK-03-fra",
     "engTitle": "Sailor necklace",
-    "dirPath": "tasks_dataset\\2022-SK-03_Sailor_necklace",
-    "filePath": "tasks_dataset\\2022-SK-03_Sailor_necklace\\2022-SK-03-fra.task.md",
+    "dirPath": "tasks_dataset/2022-SK-03_Sailor_necklace",
+    "filePath": "tasks_dataset/2022-SK-03_Sailor_necklace/2022-SK-03-fra.task.md",
     "language": "fra",
     "title": "Collier de marin",
     "ageCategories": [
@@ -4732,8 +4732,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-SK-04-fra",
     "engTitle": "Cipher 8",
-    "dirPath": "tasks_dataset\\2022-SK-04_Cipher_8",
-    "filePath": "tasks_dataset\\2022-SK-04_Cipher_8\\2022-SK-04-fra.task.md",
+    "dirPath": "tasks_dataset/2022-SK-04_Cipher_8",
+    "filePath": "tasks_dataset/2022-SK-04_Cipher_8/2022-SK-04-fra.task.md",
     "language": "fra",
     "title": "Code 8",
     "ageCategories": [
@@ -4790,8 +4790,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-TR-02-fra",
     "engTitle": "Rug Weaving",
-    "dirPath": "tasks_dataset\\2022-TR-02_Rug_Weaving",
-    "filePath": "tasks_dataset\\2022-TR-02_Rug_Weaving\\2022-TR-02-fra.task.md",
+    "dirPath": "tasks_dataset/2022-TR-02_Rug_Weaving",
+    "filePath": "tasks_dataset/2022-TR-02_Rug_Weaving/2022-TR-02-fra.task.md",
     "language": "fra",
     "title": "Tissage",
     "ageCategories": [
@@ -4844,8 +4844,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-UK-02-fra",
     "engTitle": "Gobstoppers",
-    "dirPath": "tasks_dataset\\2022-UK-02_Gobstoppers",
-    "filePath": "tasks_dataset\\2022-UK-02_Gobstoppers\\2022-UK-02-fra.task.md",
+    "dirPath": "tasks_dataset/2022-UK-02_Gobstoppers",
+    "filePath": "tasks_dataset/2022-UK-02_Gobstoppers/2022-UK-02-fra.task.md",
     "language": "fra",
     "title": "Bonbons préférés",
     "ageCategories": [
@@ -4885,8 +4885,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-UZ-03-fra",
     "engTitle": "Maze",
-    "dirPath": "tasks_dataset\\2022-UZ-03_Maze",
-    "filePath": "tasks_dataset\\2022-UZ-03_Maze\\2022-UZ-03-fra.task.md",
+    "dirPath": "tasks_dataset/2022-UZ-03_Maze",
+    "filePath": "tasks_dataset/2022-UZ-03_Maze/2022-UZ-03-fra.task.md",
     "language": "fra",
     "title": "Labyrinthe",
     "ageCategories": [
@@ -4932,8 +4932,8 @@ export const data: Task[]= [
   {
     "taskId": "2022-VN-05-fra",
     "engTitle": "Colorful tower",
-    "dirPath": "tasks_dataset\\2022-VN-05_Colorful_tower",
-    "filePath": "tasks_dataset\\2022-VN-05_Colorful_tower\\2022-VN-05-fra.task.md",
+    "dirPath": "tasks_dataset/2022-VN-05_Colorful_tower",
+    "filePath": "tasks_dataset/2022-VN-05_Colorful_tower/2022-VN-05-fra.task.md",
     "language": "fra",
     "title": "Pyramide colorée",
     "ageCategories": [
