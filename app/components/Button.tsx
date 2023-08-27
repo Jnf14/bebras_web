@@ -5,52 +5,37 @@ import { IconType } from "react-icons";
 interface ButtonProps {
   label: string;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  disabled?: boolean;
   outline?: boolean;
-  small?: boolean;
+  large?: boolean;
+  bgColor?: string;
+  textColor?: string;
   icon?: IconType;
+  iconSize?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
   label,
   onClick,
-  disabled,
-  outline,
-  small,
+  outline: outline,
+  large,
+  bgColor,
+  textColor,
   icon: Icon,
+  iconSize = "12",
 }) => {
   return (
     <button
-      disabled={disabled}
       onClick={onClick}
       className={`
-        relative
-        disabled:opacity-70
-        disabled:cursor-not-allowed
-        rounded-lg
-        hover:opacity-80
-        transition
-        w-full
-        ${outline ? "bg-white" : "bg-black"}
-        ${outline ? "border-black" : "border-black"}
-        ${outline ? "text-black" : "text-white"}
-        ${small ? "text-sm" : "text-md"}
-        ${small ? "p-1" : "py-3"}
-        ${small ? "font-light" : "font-semibold"}
-        ${small ? "border-[1px]" : "border-2"}
+        relative rounded-lg hover:bg-neutral-100 transition w-full flex flex-row items-center gap-2 text-sm  font-light border-[1px]
+        ${outline ? "border-black" : "border-white"}
+        ${large ? "text-lg p-1 py-2" : "text-sm p-1"}
+        ${bgColor ? bgColor : "bg-white"}
+        ${textColor ? textColor : "text-gray-500"}
       `}
     >
-      {Icon && (
-        <Icon
-          size={24}
-          className="
-            absolute
-            left-4
-            top-3
-          "
-        />
-      )}
       {label}
+      {Icon && <Icon size={iconSize} />}
     </button>
   );
 };

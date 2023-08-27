@@ -2,7 +2,7 @@ import * as fs from "fs";
 import * as path from "path";
 import { parse } from "yaml";
 import { convert_html, convert_pdf, convert_tex } from "bebras";
-import { AgeCategoriesNames, Task } from "@/app/types/Task";
+import { Task } from "@/app/types/Task";
 
 /**
  * Returns the names of all directories containing tasks
@@ -228,8 +228,8 @@ export function findFilesByExtension(
   return res;
 }
 
-export function getDifficulty(difficulty:string): number{
-  switch(difficulty){
+export function getDifficulty(difficulty: string): number {
+  switch (difficulty) {
     case "bonus":
       return 0;
     case "hard":
@@ -243,12 +243,12 @@ export function getDifficulty(difficulty:string): number{
   }
 }
 
-export function getLevelFromName(ageName:string, task: Task): number{
-  let difficulty = 0
-  task.ageCategories.forEach((elem)=>{  
-    if (elem.name==ageName){
-      difficulty = getDifficulty(elem.level) 
+export function getLevelFromName(ageName: string, task: Task): number {
+  let difficulty = 0;
+  task.ageCategories.forEach((elem) => {
+    if (elem.name == ageName) {
+      difficulty = getDifficulty(elem.level);
     }
-  })
-  return difficulty
+  });
+  return difficulty;
 }

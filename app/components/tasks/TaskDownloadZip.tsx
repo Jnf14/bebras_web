@@ -1,6 +1,7 @@
 "use client";
 
 import useDownloadZip from "@/app/hooks/useDownloadZip";
+import { GrDocumentZip } from "react-icons/gr";
 import Button from "../Button";
 
 interface TaskDownloadZipProps {
@@ -24,8 +25,14 @@ export default function TaskDownloadZip({
   );
 
   return (
-    <div className="w-[50px]">
-      <Button small label="ZIP" onClick={downloadZip} />
+    <div className="">
+      <Button
+        large
+        label=""
+        onClick={downloadZip}
+        icon={GrDocumentZip}
+        iconSize="20"
+      />
     </div>
   );
 }

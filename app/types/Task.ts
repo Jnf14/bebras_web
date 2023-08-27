@@ -1,5 +1,47 @@
-export const AgeCategoriesNames = [
-  "6-8",
+// Task type for parsing and reuse
+export type Task = {
+  taskId: string;
+  engTitle: string;
+  dirPath: string;
+  filePath: string;
+  language: string;
+  title: string;
+  ageCategories: AgeCategory[];
+  computer_science_areas: string[];
+  computational_thinking_skills: string[];
+  contributors: string[];
+  bebrasCategories: BebrasCategory[];
+  bebrasKeywords: string[];
+};
+
+export type AgeCategory = {
+  name: string;
+  level: string;
+};
+
+export type BebrasCategory = {
+  category: string;
+  sub_categories: string[];
+};
+
+export const SortTasksOptions = [
+  {
+    name: "A -> Z",
+    key: "title",
+  },
+  {
+    name: "Par année",
+    key: "taskId",
+  },
+  {
+    name: "Par difficulté",
+    key: "diff",
+  },
+];
+
+// Age categories options
+export const AgeCategoryNames = [
+  // "6-8",
   "8-10",
   "10-12",
   "12-14",
@@ -13,11 +55,6 @@ export enum AgeCategoryLevel {
   "hard",
   "bonus",
 }
-
-export type AgeCategory = {
-  name: string;
-  level: string;
-};
 
 export const CategoryNames = [
   "Algorithmes et programmation",
@@ -48,23 +85,3 @@ export const StrucSubCategoryNames = [
   "Représentation et visualisation à l'aide de graphes et dessins",
   "Autre",
 ];
-
-export type BebrasCategory = {
-  category: string;
-  sub_categories: string[];
-};
-
-export type Task = {
-  taskId: string;
-  engTitle: string;
-  dirPath: string;
-  filePath: string;
-  language: string;
-  title: string;
-  ageCategories: AgeCategory[];
-  computer_science_areas: string[];
-  computational_thinking_skills: string[];
-  contributors: string[];
-  bebrasCategories: BebrasCategory[];
-  bebrasKeywords: string[];
-};

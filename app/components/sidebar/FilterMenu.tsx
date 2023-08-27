@@ -8,7 +8,7 @@ interface FilterMenuProps {
   categoryName: string;
   options: string[];
   searchKey: string;
-  isMultiSearch:boolean;
+  isMultiSearch: boolean;
 }
 
 export default function FilterMenu({
@@ -39,8 +39,8 @@ export default function FilterMenu({
     const index = newCategories.indexOf(name);
     if (index > -1) {
       newCategories.splice(index, 1);
-      if(!isMultiSearch){
-        name=""
+      if (!isMultiSearch) {
+        name = "";
       }
     } else {
       newCategories.push(name);
@@ -48,9 +48,8 @@ export default function FilterMenu({
 
     const query = {
       ...qs.parse(params.toString()),
-      [searchKey]: isMultiSearch? newCategories: name,
+      [searchKey]: isMultiSearch ? newCategories : name,
     };
-
 
     const url = qs.stringifyUrl(
       {
@@ -103,4 +102,3 @@ export default function FilterMenu({
     </div>
   );
 }
-

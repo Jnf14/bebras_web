@@ -2,7 +2,7 @@
 
 import FilterMenu from "./FilterMenu";
 import {
-  AgeCategoriesNames as AgeCategoryNames,
+  AgeCategoryNames as AgeCategoryNames,
   CategoryNames,
   StrucSubCategoryNames,
 } from "@/app/types/Task";
@@ -28,27 +28,23 @@ export default function SideBar() {
         />
         {params
           .getAll("categories")
-          .includes("Algorithmes et programmation") ? (
+          .includes("Algorithmes et programmation") && (
           <FilterMenu
             categoryName="Sous catégories algorithmes"
             options={AlgoSubCategoryNames}
             searchKey="algoCategories"
             isMultiSearch={false}
           />
-        ) : (
-          <></>
         )}
         {params
           .getAll("categories")
-          .includes("Structures et représentations de données") ? (
+          .includes("Structures et représentations de données") && (
           <FilterMenu
             categoryName="Sous catégories structures"
             options={StrucSubCategoryNames}
             searchKey="strucCategories"
             isMultiSearch={false}
           />
-        ) : (
-          <></>
         )}
       </div>
     </div>

@@ -1,13 +1,14 @@
 import { data } from "@/tasks_dataset/data";
-import { Task } from "../types/Task";
+import { SortTasksOptions, Task } from "../types/Task";
 import sortBy from "sort-by";
-import { getDifficulty, getLevelFromName } from "../libs/utils";
+import { getLevelFromName } from "../libs/utils";
 
 export interface ISearchParams {
   ageCategories: string;
   categories: string[];
-  algoCategories: string[];
-  strucCategories: string[];
+  algoCategories: string;
+  strucCategories: string;
+  sort: string;
 }
 
 /**
@@ -18,39 +19,20 @@ export default function getTasks({
   categories,
   algoCategories,
   strucCategories,
+  sort = SortTasksOptions[0].key,
 }: ISearchParams): Task[] {
   let tasks: Task[];
   tasks = data as Task[];
 
+  // Filter by age category
   if (ageCategories) {
-    if (Array.isArray(ageCategories)) {
-      tasks = tasks.filter((task) => {
-        const taskAges = task.ageCategories.map((c) => c.name);
-        return ageCategories.every((c) => taskAges.includes(c));
-      });
-    } else {
-      tasks = tasks.filter((task) => {
-        const taskAges = task.ageCategories.map((c) => c.name);
-        return new Array(ageCategories).every((c) => taskAges.includes(c));
-      });
-    }
-
-    tasks.sort((a,b)=>{
-      if(getLevelFromName(ageCategories,a)<getLevelFromName(ageCategories,b)){
-        return -1
-      }else{
-        return 1
-      }
-    })
-    
-    // tasks = data.filter((task) => {
-    //   const taskAgeCategories = task.ageCategories.map((cat) => cat.name);
-
-    //   return taskAgeCategories.every((cat) => ageCategories.includes(cat));
-    // });
-  } else {
-    //tasks = data as Task[];
+    tasks = tasks.filter((task) => {
+      const taskAges = task.ageCategories.map((c) => c.name);
+      return new Array(ageCategories).every((c) => taskAges.includes(c));
+    });
   }
+
+  // Filter by bebras categories
   if (categories) {
     if (Array.isArray(categories)) {
       tasks = tasks.filter((task) => {
@@ -65,45 +47,45 @@ export default function getTasks({
     }
   }
 
+  // Filter by algo sub category
   if (algoCategories) {
-    if (Array.isArray(algoCategories)) {
-      tasks = tasks.filter((task) => {
-        const taskSubCategories = task.bebrasCategories.map(
-          (c) => c.sub_categories[0]
-        );
-        return algoCategories.every((c) => taskSubCategories.includes(c));
-      });
-    } else {
-      tasks = tasks.filter((task) => {
-        const taskSubCategories = task.bebrasCategories.map(
-          (c) => c.sub_categories[0]
-        );
-        return new Array(algoCategories).every((c) =>
-          taskSubCategories.includes(c)
-        );
-      });
-    }
+    tasks = tasks.filter((task) => {
+      const taskSubCategories = task.bebrasCategories.map(
+        (c) => c.sub_categories[0]
+      );
+      return new Array(algoCategories).every((c) =>
+        taskSubCategories.includes(c)
+      );
+    });
   }
 
+  // Filter by struc sub category
   if (strucCategories) {
-    if (Array.isArray(strucCategories)) {
-      tasks = tasks.filter((task) => {
-        const taskSubCategories = task.bebrasCategories.map(
-          (c) => c.sub_categories[0]
-        );
-        return strucCategories.every((c) => taskSubCategories.includes(c));
-      });
-    } else {
-      tasks = tasks.filter((task) => {
-        const taskSubCategories = task.bebrasCategories.map(
-          (c) => c.sub_categories[0]
-        );
-        return new Array(strucCategories).every((c) =>
-          taskSubCategories.includes(c)
-        );
-      });
-    }
-  }  
+    tasks = tasks.filter((task) => {
+      const taskSubCategories = task.bebrasCategories.map(
+        (c) => c.sub_categories[0]
+      );
+      return new Array(strucCategories).every((c) =>
+        taskSubCategories.includes(c)
+      );
+    });
+  }
+
+  // Handle sorting
+  if (sort == SortTasksOptions[2].key) {
+    // Sort tasks by age level
+    tasks.sort((a, b) => {
+      if (
+        getLevelFromName(ageCategories, a) > getLevelFromName(ageCategories, b)
+      ) {
+        return -1;
+      } else {
+        return 1;
+      }
+    });
+  } else {
+    tasks.sort(sortBy(sort));
+  }
 
   return tasks;
 }

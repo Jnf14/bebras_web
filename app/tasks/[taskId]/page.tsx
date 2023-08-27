@@ -37,9 +37,9 @@ export default async function TaskPage({ params }: TaskPageProps) {
             ))}
           </div>
 
-          <div className="w-1/5">
-            <h1 className="text-lg font-bold">Téléchargement</h1>
-            <div className="flex justify-start">
+          <div className="">
+            <h1 className="text-lg font-bold">Téléchargements</h1>
+            <div className="flex flex-row items-center justify-start">
               <TaskDownloadZip
                 taskId={task.taskId}
                 htmlContent={htmlContent}

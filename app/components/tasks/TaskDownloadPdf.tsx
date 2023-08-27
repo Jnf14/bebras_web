@@ -1,6 +1,7 @@
 "use client";
 
 import Button from "../Button";
+import { GrDocumentPdf } from "react-icons/gr";
 
 interface TaskDownloadPdfProps {
   taskId: string;
@@ -8,12 +9,12 @@ interface TaskDownloadPdfProps {
 
 export default function TaskDownloadPdf({ taskId }: TaskDownloadPdfProps) {
   const pdfPath = `./pdfFiles/${taskId}.task.pdf`;
-  console.log(pdfPath)
-  console.log(taskId)
+  console.log(pdfPath);
+  console.log(taskId);
   return (
-    <div className="w-[50px]">
+    <div className="">
       <a href={pdfPath} download={`${taskId}.pdf`}>
-        <Button small label="PDF" />
+        <Button label="" icon={GrDocumentPdf} iconSize="20" />
       </a>
     </div>
   );
