@@ -3896,7 +3896,7 @@ export const data: Task[]= [
         ]
       },
       {
-        "category": "Structures et représentation de données",
+        "category": "Structures et représentations de données",
         "sub_categories": [
           "Encodage de l'information"
         ]
