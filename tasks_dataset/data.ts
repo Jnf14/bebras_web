@@ -387,7 +387,7 @@ export const data: Task[]= [
         ]
       },
       {
-        "category": "Programme et matériel informatique",
+        "category": "Processus et matériel informatique",
         "sub_categories": [
           "--"
         ]
@@ -1133,7 +1133,7 @@ export const data: Task[]= [
         ]
       },
       {
-        "category": "Programme et matériel informatique",
+        "category": "Processus et matériel informatique",
         "sub_categories": [
           "--"
         ]
@@ -2590,7 +2590,7 @@ export const data: Task[]= [
         ]
       },
       {
-        "category": "Programme et matériel informatique",
+        "category": "Processus et matériel informatique",
         "sub_categories": [
           "--"
         ]
@@ -2677,7 +2677,7 @@ export const data: Task[]= [
     ],
     "bebrasCategories": [
       {
-        "category": "Programme et matériel informatique",
+        "category": "Processus et matériel informatique",
         "sub_categories": [
           "--"
         ]
@@ -3486,7 +3486,7 @@ export const data: Task[]= [
         ]
       },
       {
-        "category": "Programme et matériel informatique",
+        "category": "Processus et matériel informatique",
         "sub_categories": [
           "--"
         ]
@@ -4860,7 +4860,7 @@ export const data: Task[]= [
         ]
       },
       {
-        "category": "Programme et matériel informatique",
+        "category": "Processus et matériel informatique",
         "sub_categories": [
           "--"
         ]
