@@ -1180,7 +1180,7 @@ export const data: Task[]= [
       {
         "category": "Algorithmes et programmation",
         "sub_categories": [
-          "Structures de contôle"
+          "Structures de contrôle"
         ]
       }
     ],
