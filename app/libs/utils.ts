@@ -1,8 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
 import { parse } from "yaml";
-import { convert_html, convert_pdf, convert_tex } from "bebras";
-import { Task } from "@/app/types/Task";
 
 /**
  * Returns the names of all directories containing tasks
