@@ -3,60 +3,58 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import qs from "query-string";
 import { useEffect, useState } from "react";
+import { BiMinus, BiPlus } from "react-icons/bi";
+
+const CATEGORY_SEARCH_KEY = "category";
+const SUBCATEGORY_SEARCH_KEY = "subcategory";
 
 interface FilterMenuProps {
   categoryName: string;
-  options: string[];
-  searchKey: string;
-  isMultiSearch: boolean;
+  subCategories?: string[];
+  categorySearchKey?: string;
+  subcategorySearchKey?: string;
+  clickable?: boolean;
 }
 
 export default function FilterMenu({
   categoryName,
-  options,
-  searchKey,
-  isMultiSearch,
+  subCategories,
+  categorySearchKey = CATEGORY_SEARCH_KEY,
+  subcategorySearchKey = SUBCATEGORY_SEARCH_KEY,
+  clickable,
 }: FilterMenuProps) {
   const router = useRouter();
   const params = useSearchParams();
 
-  const [hidden, setHidden] = useState(!params.getAll(searchKey));
-
-  // Get current state in search params
-  const currentState = options.map((option) => {
-    return {
-      name: option,
-      isChecked: params.getAll(searchKey)?.includes(option) ? true : false,
-    };
-  });
+  const isOpen = params.get(categorySearchKey) == categoryName || !clickable;
 
   // On toggle function to handle changes in checked categories
-  function onToggle(name: string) {
-    const newCategories = currentState.map((s) => {
-      return s.isChecked ? s.name : undefined;
-    });
-
-    const index = newCategories.indexOf(name);
-    if (index > -1) {
-      newCategories.splice(index, 1);
-      if (!isMultiSearch) {
-        name = "";
-      }
-    } else {
-      newCategories.push(name);
-    }
-
+  function pushSearchParams(
+    key: string,
+    value: string,
+    clear: boolean = false
+  ) {
     const query = {
       ...qs.parse(params.toString()),
-      [searchKey]: isMultiSearch ? newCategories : name,
     };
+
+    if (clear) {
+      query[categorySearchKey] = "";
+      query[subcategorySearchKey] = "";
+    }
+
+    if (params.get(key) == value) {
+      query[key] = "";
+    } else {
+      query[key] = value;
+    }
 
     const url = qs.stringifyUrl(
       {
         url: "/tasks/",
         query: query,
       },
-      { skipNull: true }
+      { skipNull: true, skipEmptyString: true }
     );
     router.push(url);
   }
@@ -66,38 +64,79 @@ export default function FilterMenu({
     const label = document.getElementById(`${categoryName}Label`);
 
     label?.addEventListener("click", () => {
-      if (hidden) {
-        setHidden(false);
-      } else {
-        setHidden(true);
+      if (clickable) {
+        pushSearchParams(categorySearchKey, categoryName, true);
       }
     });
   });
 
   return (
-    <div className="select-none">
+    <div className="select-none ml-2 mb-2">
       <div
         id={`${categoryName}Label`}
-        className={`flex justify-start text-xl font-bold border-y-2 p-2 mb-2 hover:bg-gray-100 cursor-pointer ${
-          hidden ? "text-gray-500" : "text-black"
-        }`}
+        className={`flex justify-between text-lg px-2 py-3 rounded-sm leading-none
+        ${isOpen ? "text-black font-semibold" : "text-gray-900 font-medium"} ${
+          isOpen && clickable
+            ? " border-l-[6px] border-thunderbird-700 bg-neutral-100"
+            : ""
+        }
+           ${clickable ? "hover:bg-neutral-100 cursor-pointer" : ""}`}
       >
         <h3>{categoryName}</h3>
+
+        <div className="flex flex-row items-center justify-end">
+          {subCategories &&
+            clickable &&
+            (isOpen ? <BiMinus size={20} /> : <BiPlus size={20} />)}
+        </div>
       </div>
-      <div className={hidden ? "hidden" : "block"}>
-        {currentState.map((s) => (
-          <div key={s.name} className="flex items-center pl-4">
-            <input
-              type="checkbox"
-              className="h-5 w-5 text-indigo-600 cursor-pointer"
-              checked={s.isChecked}
-              onChange={(e) => {
-                onToggle(s.name);
-              }}
-            />
-            <label className="ml-3 text-base text-gray-600">{s.name}</label>
-          </div>
-        ))}
+      <div className={isOpen ? "block" : "hidden"}>
+        <div className="flex flex-col">
+          {subCategories?.map((subCat) => (
+            <div
+              key={subCat}
+              className={`mx-6 pl-2 py-1 mt-1 hover:bg-neutral-100 rounded-sm cursor-pointer ${
+                params.get(subcategorySearchKey) === subCat
+                  ? "bg-neutral-100 border-l-4 border-thunderbird-700 font-medium"
+                  : "bg-white font-normal"
+              }`}
+            >
+              <div
+                className=" leading-none"
+                onClick={() => pushSearchParams(subcategorySearchKey, subCat)}
+              >
+                <h1>{subCat}</h1>
+              </div>
+              {/* <label
+                className={`w-full text-base cursor-pointer flex flex-row items-center gap-2 hover:bg-neutral-100 rounded-md px-3 ${
+                  params.get(subcategorySearchKey) === subCat
+                    ? "text-gray-800 font-semibold bg-neutral-100"
+                    : "text-gray-500"
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  className="appearance-none w-4 h-4 border-2 rounded-full bg-white shrink-0 checked:bg-thunderbird-700 checked:border-gray-400"
+                  checked={
+                    params.get(subcategorySearchKey) === subCat ? true : false
+                  }
+                  onChange={(e) => {
+                    pushSearchParams(subcategorySearchKey, subCat);
+                  }}
+                />
+                <div
+                  className={`${
+                    params.get(subcategorySearchKey) === subCat
+                      ? "border-l-2 border-thunderbird-700"
+                      : false
+                  }`}
+                >
+                  {subCat}
+                </div>
+              </label> */}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

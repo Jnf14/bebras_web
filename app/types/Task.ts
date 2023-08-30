@@ -5,6 +5,7 @@ export type Task = {
   dirPath: string;
   filePath: string;
   language: string;
+  year: string;
   title: string;
   ageCategories: AgeCategory[];
   computer_science_areas: string[];
@@ -15,7 +16,7 @@ export type Task = {
 };
 
 export type AgeCategory = {
-  name: string;
+  age: string;
   level: string;
 };
 
@@ -49,39 +50,41 @@ export const AgeCategoryNames = [
   "16-19",
 ];
 
-export enum AgeCategoryLevel {
-  "easy" = 1,
-  "medium",
-  "hard",
-  "bonus",
+export enum AgeLevel {
+  easy = 1,
+  medium = 2,
+  hard = 3,
+  bonus = 4,
 }
 
-export const CategoryNames = [
-  "Algorithmes et programmation",
-  "Communication et réseau",
-  "Interactions, système et société",
-  "Programme et matériel informatique",
-  "Structures et représentations de données",
-];
+// Main categories
+export const CategoryNames = {
+  algo: "Algorithmes et programmation",
+  netw: "Communication et réseau",
+  inte: "Interactions, système et société",
+  proc: "Processus et matériel informatique",
+  stru: "Structures et représentations de données",
+};
 
+// Algorithms subcategories
 export const AlgoSubCategoryNames = [
-  "Binaire et opérations logiques",
-  "Concept d'informatique",
-  "Résoudre un problème avec des structures de données",
-  "Force brute / méthode exhaustive",
-  "Trier et chercher",
-  "Structure de contrôle",
-  "Problème d'optimisation",
+  "Théorie des graphes",
   "Récursivité",
-  "Exécution d'instructions",
+  "Force brute",
+  "Tri et recherche",
+  "Optimisation",
+  "Binaire et logique",
+  "Exécution séquentielle",
+  "Variables",
+  "Structures de contrôle",
   "Autre",
 ];
 
-export const StrucSubCategoryNames = [
-  "Cryptographie",
-  "Protection et sécurité des données",
-  "Organisation et collecte des données",
-  "Représentation de l'information et des données à l'aide de symboles",
-  "Représentation et visualisation à l'aide de graphes et dessins",
+// Structures subcategories
+export const StruSubCategoryNames = [
+  "Encodage de l'information",
+  "Protection et sécurité",
+  "Stockage et collecte",
+  "Visualisation de l'information",
   "Autre",
 ];

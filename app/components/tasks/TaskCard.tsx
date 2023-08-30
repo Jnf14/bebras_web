@@ -18,19 +18,27 @@ const TaskCard: React.FC<TaskCardProps> = ({ task }: TaskCardProps) => {
   // Get task's keywords
   const keywords = task.bebrasKeywords?.slice(0, NUM_OF_KEYWORDS);
 
-  // Get current age categories
-  const ageCats = searchParams.getAll("ageCategories");
+  // Get current age
+  const age = searchParams.get("age")!;
+  const taskAgeCat = task.ageCategories.find((cat) => cat.age === age);
 
   return (
     <div
       key={task.taskId}
       onClick={() => router.push(`/tasks/${task.taskId}`)}
-      className="cursor-pointer p-2 my-1 bg-white border border-gray-300 rounded-lg hover:bg-gray-200 transition ease-out duration-500"
+      className="cursor-pointer p-2 my-1 z-0 bg-white border border-gray-300 rounded-lg hover:bg-neutral-100 transition ease-out duration-500"
     >
-      <div className="flex justify-between ">
-        <div className="flex justify-between">
-          <h2 className="font-semibold text-xl text-slate-700">{task.title}</h2>
-          {/* <h3 className="font-light text-gray-700">{task.taskId}</h3> */}
+      <div className="flex justify-between">
+        <div className="">
+          <div className="flex flex-row items-end gap-2">
+            <h2 className="text-xl text-cod-gray-950 font-medium">
+              {task.title}
+            </h2>
+            <h2>{" · "}</h2>
+            <h3 className="text-base text-cod-gray-300 font-light">
+              {task.year}
+            </h3>
+          </div>
         </div>
 
         <div className="w-1/3 mt-5 flex justify-end flex-wrap">
@@ -40,11 +48,9 @@ const TaskCard: React.FC<TaskCardProps> = ({ task }: TaskCardProps) => {
         </div>
       </div>
       <ul>
-        {task.ageCategories
-          .filter((cat) => ageCats.includes(cat.name))
-          .map((cat) => (
-            <TaskLevel age={cat.name} level={cat.level} />
-          ))}
+        {taskAgeCat && (
+          <TaskLevel age={taskAgeCat.age} level={taskAgeCat.level} />
+        )}
       </ul>
     </div>
   );

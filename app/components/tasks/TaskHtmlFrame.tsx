@@ -38,6 +38,10 @@ export default function TaskHtmlFrame({ htmlText }: HtmlFrameProps) {
       resizeIFrameHandler();
 
       return () => {
+        iframe.contentWindow?.removeEventListener(
+          "DOMContentLoaded",
+          resizeIFrameHandler
+        );
         iframe.contentWindow?.removeEventListener("load", resizeIFrameHandler);
         iframe.contentWindow?.removeEventListener(
           "resize",

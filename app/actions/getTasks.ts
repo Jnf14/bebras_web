@@ -1,84 +1,74 @@
 import { data } from "@/tasks_dataset/data";
-import { SortTasksOptions, Task } from "../types/Task";
+import { AgeLevel, SortTasksOptions, Task } from "../types/Task";
 import sortBy from "sort-by";
-import { getLevelFromName } from "../libs/utils";
 
 export interface ISearchParams {
-  ageCategories: string;
-  categories: string[];
-  algoCategories: string;
-  strucCategories: string;
+  age: string;
+  category: string;
+  subcategory: string;
   sort: string;
+  search: string;
 }
 
 /**
  * Get tasks from data file based on given filters
  */
 export default function getTasks({
-  ageCategories,
-  categories,
-  algoCategories,
-  strucCategories,
+  age,
+  category,
+  subcategory,
   sort = SortTasksOptions[0].key,
+  search,
 }: ISearchParams): Task[] {
-  let tasks: Task[];
-  tasks = data as Task[];
+  // All tasks
+  let tasks: Task[] = data;
 
-  // Filter by age category
-  if (ageCategories) {
+  // Filter tasks by age
+  if (age) {
     tasks = tasks.filter((task) => {
-      const taskAges = task.ageCategories.map((c) => c.name);
-      return new Array(ageCategories).every((c) => taskAges.includes(c));
+      return task.ageCategories.find((cat) => cat.age === age);
     });
   }
 
-  // Filter by bebras categories
-  if (categories) {
-    if (Array.isArray(categories)) {
-      tasks = tasks.filter((task) => {
-        const taskCategories = task.bebrasCategories.map((c) => c.category);
-        return categories.every((c) => taskCategories.includes(c));
-      });
-    } else {
-      tasks = tasks.filter((task) => {
-        const taskCategories = task.bebrasCategories.map((c) => c.category);
-        return new Array(categories).every((c) => taskCategories.includes(c));
-      });
-    }
-  }
-
-  // Filter by algo sub category
-  if (algoCategories) {
+  // Filter tasks by category and subcategory
+  if (category) {
     tasks = tasks.filter((task) => {
-      const taskSubCategories = task.bebrasCategories.map(
-        (c) => c.sub_categories[0]
+      const matching = task.bebrasCategories.find(
+        (cat) => cat.category === category
       );
-      return new Array(algoCategories).every((c) =>
-        taskSubCategories.includes(c)
-      );
+
+      if (!matching) {
+        return false;
+      }
+
+      if (subcategory) {
+        return matching.sub_categories.includes(subcategory);
+      }
+
+      return true;
     });
   }
 
-  // Filter by struc sub category
-  if (strucCategories) {
+  // Filter tasks using the search bar
+  if (search) {
+    const searchText = search.toLowerCase().trim();
     tasks = tasks.filter((task) => {
-      const taskSubCategories = task.bebrasCategories.map(
-        (c) => c.sub_categories[0]
-      );
-      return new Array(strucCategories).every((c) =>
-        taskSubCategories.includes(c)
-      );
+      const taskString = `${task.title} ${task.bebrasKeywords.join(" ")}`;
+      return taskString.toLowerCase().includes(searchText);
     });
   }
 
-  // Handle sorting
+  // Sort tasks
   if (sort == SortTasksOptions[2].key) {
     // Sort tasks by age level
     tasks.sort((a, b) => {
-      if (
-        getLevelFromName(ageCategories, a) > getLevelFromName(ageCategories, b)
-      ) {
-        return -1;
+      const catA = a.ageCategories.find((cat) => cat.age === age);
+      const catB = b.ageCategories.find((cat) => cat.age === age);
+
+      if (catA && catB) {
+        const levelA = AgeLevel[catA.level as keyof typeof AgeLevel];
+        const levelB = AgeLevel[catB.level as keyof typeof AgeLevel];
+        return levelA > levelB ? 1 : -1;
       } else {
         return 1;
       }

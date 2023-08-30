@@ -3,7 +3,7 @@
 import qs from "query-string";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Multiselect } from "multiselect-react-dropdown";
-import { StrucSubCategoryNames } from "@/app/types/Task";
+import { StruSubCategoryNames } from "@/app/types/Task";
 
 export default function StrucSubCategoryFilter() {
   const router = useRouter();
@@ -12,7 +12,7 @@ export default function StrucSubCategoryFilter() {
   const parsedParams = qs.parse(params.toString());
   //parsedParams;
 
-  const currentState = StrucSubCategoryNames.map((subCategory) => {
+  const currentState = StruSubCategoryNames.map((subCategory) => {
     return {
       name: subCategory,
       isChecked: params.getAll("strucCategories")?.includes(subCategory)
@@ -61,7 +61,7 @@ export default function StrucSubCategoryFilter() {
   return (
     <Multiselect
       key={"mselectstruc"}
-      options={StrucSubCategoryNames}
+      options={StruSubCategoryNames}
       showCheckbox={false}
       onRemove={handleToggle}
       onSelect={handleToggle}

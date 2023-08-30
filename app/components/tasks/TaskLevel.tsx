@@ -1,5 +1,7 @@
 "use client";
 
+import { AgeLevel } from "@/app/types/Task";
+
 interface TaskLevelProps {
   age: string;
   level: string;
@@ -7,11 +9,12 @@ interface TaskLevelProps {
 
 export default function TaskLevel({ age, level }: TaskLevelProps) {
   let color: string;
-  if (level === "easy") {
+  const levelValue = AgeLevel[level as keyof typeof AgeLevel];
+  if (levelValue === AgeLevel.easy) {
     color = "bg-green-100";
-  } else if (level === "medium") {
+  } else if (levelValue === AgeLevel.medium) {
     color = "bg-yellow-100";
-  } else if (level === "hard") {
+  } else if (levelValue === AgeLevel.hard) {
     color = "bg-red-100";
   } else {
     color = "bg-gray-100";
@@ -22,8 +25,7 @@ export default function TaskLevel({ age, level }: TaskLevelProps) {
       className={`
        inline-block
         whitespace-nowrap
-        font-light
-        text-gray-500
+        font-light text-cod-gray-800
         text-sm
         border-cyan-600
         rounded-lg  

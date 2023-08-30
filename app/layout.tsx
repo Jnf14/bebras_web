@@ -1,10 +1,8 @@
 import Navbar from "./components/navbar/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import SideBar from "./components/sidebar/SideBar";
 
 const font = Inter({
-  weight: "400",
   subsets: ["latin"],
 });
 
@@ -20,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={font.className}>
+      <body className={`${font.className} flex flex-col h-full`}>
         <Navbar />
-        <div className="px-3">{children}</div>
+        <div className="h-full">{children}</div>
       </body>
     </html>
   );

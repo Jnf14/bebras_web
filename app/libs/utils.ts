@@ -61,7 +61,7 @@ export function parseTaskMetadata(
   // Parse and format task ages categories
   const ages = Object.entries<String>(yaml.ages)
     .filter(([_, v]) => v != null && v.indexOf("-") == -1)
-    .map(([k, v]) => ({ name: k, level: v }));
+    .map(([k, v]) => ({ age: k, level: v }));
 
   // Parse and format task ages field
   const bebrasCategories = yaml.bebras_categories
@@ -78,6 +78,7 @@ export function parseTaskMetadata(
     dirPath: taskDirPath,
     filePath: taskFilePath,
     language: taskLanguage,
+    year: taskId.split("-")[0],
     title: yaml.title,
     ageCategories: ages,
     computer_science_areas: yaml.computer_science_areas
@@ -228,27 +229,27 @@ export function findFilesByExtension(
   return res;
 }
 
-export function getDifficulty(difficulty: string): number {
-  switch (difficulty) {
-    case "bonus":
-      return 0;
-    case "hard":
-      return 1;
-    case "medium":
-      return 2;
-    case "easy":
-      return 3;
-    default:
-      return 4;
-  }
-}
+// export function getDifficulty(difficulty: string): number {
+//   switch (difficulty) {
+//     case "bonus":
+//       return 0;
+//     case "hard":
+//       return 1;
+//     case "medium":
+//       return 2;
+//     case "easy":
+//       return 3;
+//     default:
+//       return 4;
+//   }
+// }
 
-export function getLevelFromName(ageName: string, task: Task): number {
-  let difficulty = 0;
-  task.ageCategories.forEach((elem) => {
-    if (elem.name == ageName) {
-      difficulty = getDifficulty(elem.level);
-    }
-  });
-  return difficulty;
-}
+// export function getLevelFromName(ageName: string, task: Task): number {
+//   let difficulty = 0;
+//   task.ageCategories.forEach((elem) => {
+//     if (elem.name == ageName) {
+//       difficulty = getDifficulty(elem.level);
+//     }
+//   });
+//   return difficulty;
+// }

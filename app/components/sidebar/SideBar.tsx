@@ -4,48 +4,41 @@ import FilterMenu from "./FilterMenu";
 import {
   AgeCategoryNames as AgeCategoryNames,
   CategoryNames,
-  StrucSubCategoryNames,
+  StruSubCategoryNames,
 } from "@/app/types/Task";
 import { useSearchParams } from "next/navigation";
 import { AlgoSubCategoryNames } from "@/app/types/Task";
+import { FiFilter } from "react-icons/fi";
 
 export default function SideBar() {
   const params = useSearchParams();
   return (
     <div className="h-full bg-white border-r-2">
-      <div className="flex flex-col space-y-4 ">
+      <div className="flex flex-col">
+        <div className="flex flex-row items-center justify-center px-2 py-[9px] gap-2 border-b-2">
+          <h1 className="font-semibold text-xl">Filtres</h1>
+          <FiFilter size={20} />
+        </div>
+        <div className="border-b-2">
+          <FilterMenu
+            categoryName="Âges (ans)"
+            subCategories={AgeCategoryNames}
+            subcategorySearchKey="age"
+          />
+        </div>
         <FilterMenu
-          categoryName="Âges"
-          options={AgeCategoryNames}
-          searchKey="ageCategories"
-          isMultiSearch={false}
+          categoryName={CategoryNames.algo}
+          subCategories={AlgoSubCategoryNames}
+          clickable
         />
         <FilterMenu
-          categoryName="Catégories"
-          options={CategoryNames}
-          searchKey="categories"
-          isMultiSearch={true}
+          categoryName={CategoryNames.stru}
+          subCategories={StruSubCategoryNames}
+          clickable
         />
-        {params
-          .getAll("categories")
-          .includes("Algorithmes et programmation") && (
-          <FilterMenu
-            categoryName="Sous catégories algorithmes"
-            options={AlgoSubCategoryNames}
-            searchKey="algoCategories"
-            isMultiSearch={false}
-          />
-        )}
-        {params
-          .getAll("categories")
-          .includes("Structures et représentations de données") && (
-          <FilterMenu
-            categoryName="Sous catégories structures"
-            options={StrucSubCategoryNames}
-            searchKey="strucCategories"
-            isMultiSearch={false}
-          />
-        )}
+        <FilterMenu categoryName={CategoryNames.netw} clickable />
+        <FilterMenu categoryName={CategoryNames.inte} clickable />
+        <FilterMenu categoryName={CategoryNames.proc} clickable />
       </div>
     </div>
   );
