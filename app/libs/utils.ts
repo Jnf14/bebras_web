@@ -24,8 +24,8 @@ export function getTasksDirNames(datasetPath: string): string[] {
  * @param path the relative path to the file
  * @returns the file as a string
  */
-export function getTaskFileString(path: string): string {
-  const file = fs.readFileSync(path).toString();
+export async function getTaskFileString(path: string): Promise<string> {
+  const file = await fs.promises.readFile(path, "utf-8");
   return file;
 }
 
@@ -100,8 +100,8 @@ export function parseTaskMetadata(
  * @param taskFilePath
  * @returns
  */
-export function getTaskHtmlString(taskFilePath: string): string {
-  const t_text = getTaskFileString(taskFilePath);
+export async function getTaskHtmlString(taskFilePath: string): Promise<string> {
+  const t_text = await getTaskFileString(taskFilePath);
   const [htmContent, _] = convert_html.renderMarkdown(
     t_text,
     path.dirname(taskFilePath),
@@ -115,8 +115,8 @@ export function getTaskHtmlString(taskFilePath: string): string {
  * @param taskFilePath
  * @returns
  */
-export function getTaskMdString(taskFilePath: string): string {
-  return getTaskFileString(taskFilePath);
+export async function getTaskMdString(taskFilePath: string): Promise<string> {
+  return await getTaskFileString(taskFilePath);
 }
 
 /**
@@ -124,8 +124,8 @@ export function getTaskMdString(taskFilePath: string): string {
  * @param taskFilePath
  * @returns
  */
-export function getTaskTexString(taskFilePath: string): string {
-  const textMd = getTaskFileString(taskFilePath);
+export async function getTaskTexString(taskFilePath: string): Promise<string> {
+  const textMd = await getTaskFileString(taskFilePath);
   const langCode = "fra";
   const [tokens, metadata] = convert_html.parseMarkdown(
     textMd,

@@ -10,23 +10,21 @@ import TaskKeyword from "@/app/components/tasks/TaskKeyword";
 import TaskDownloadZip from "@/app/components/tasks/TaskDownloadZip";
 import { Task } from "@/app/types/Task";
 import TaskDownloadPdf from "@/app/components/tasks/TaskDownloadPdf";
-import { Suspense } from "react";
-import Loading from "@/app/loading";
 
 interface TaskPageProps {
   params: { taskId: string };
 }
 
-export default function TaskPage({ params }: TaskPageProps) {
+export default async function TaskPage({ params }: TaskPageProps) {
   const task: Task = getTaskById(params.taskId);
 
   if (task == null) {
     return <Empty subtitle="La tâche recherchée n'existe pas." />;
   }
 
-  const htmlContent = getTaskHtmlString(task.filePath);
-  const mdContent = getTaskMdString(task.filePath);
-  const texContent = getTaskTexString(task.filePath);
+  const htmlContent = await getTaskHtmlString(task.filePath);
+  const mdContent = await getTaskMdString(task.filePath);
+  const texContent = await getTaskTexString(task.filePath);
 
   return (
     <div>
