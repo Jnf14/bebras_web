@@ -1,6 +1,8 @@
+import { Suspense } from "react";
 import Navbar from "./components/navbar/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import Loading from "./loading";
 
 const font = Inter({
   subsets: ["latin"],
@@ -20,7 +22,9 @@ export default function RootLayout({
     <html lang="fr">
       <body className={`${font.className} flex flex-col h-full`}>
         <Navbar />
-        <div className="h-full">{children}</div>
+        <div className="h-full">
+          <Suspense fallback={<Loading />}>{children}</Suspense>
+        </div>
       </body>
     </html>
   );
