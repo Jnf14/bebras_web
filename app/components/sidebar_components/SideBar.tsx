@@ -5,6 +5,7 @@ import {
   AgeCategoryNames as AgeCategoryNames,
   CategoryNames,
   StruSubCategoryNames,
+  YearCategoryNames,
 } from "@/app/types/Task";
 import { useSearchParams } from "next/navigation";
 import { AlgoSubCategoryNames } from "@/app/types/Task";
@@ -26,6 +27,15 @@ export default function SideBar() {
             subcategorySearchKey="age"
           />
         </div>
+        {/* <div className="border-b-2">
+          <FilterMenu
+            categoryName="Année"
+            subCategories={YearCategoryNames}
+            subcategorySearchKey="year"
+            clickable
+            categorySearchKey=""
+          />
+        </div> */}
         <FilterMenu
           categoryName={CategoryNames.algo}
           subCategories={AlgoSubCategoryNames}

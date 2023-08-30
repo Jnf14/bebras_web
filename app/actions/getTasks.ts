@@ -4,6 +4,7 @@ import sortBy from "sort-by";
 
 export interface ISearchParams {
   age: string;
+  year: string;
   category: string;
   subcategory: string;
   sort: string;
@@ -15,6 +16,7 @@ export interface ISearchParams {
  */
 export default function getTasks({
   age,
+  year,
   category,
   subcategory,
   sort = SortTasksOptions[0].key,
@@ -27,6 +29,13 @@ export default function getTasks({
   if (age) {
     tasks = tasks.filter((task) => {
       return task.ageCategories.find((cat) => cat.age === age);
+    });
+  }
+
+  // Filter tasks by age
+  if (year) {
+    tasks = tasks.filter((task) => {
+      return task.year === year;
     });
   }
 
@@ -69,6 +78,20 @@ export default function getTasks({
         const levelA = AgeLevel[catA.level as keyof typeof AgeLevel];
         const levelB = AgeLevel[catB.level as keyof typeof AgeLevel];
         return levelA > levelB ? 1 : -1;
+      } else {
+        return 1;
+      }
+    });
+  } else if (sort == SortTasksOptions[3].key) {
+    // Sort tasks by age level
+    tasks.sort((a, b) => {
+      const catA = a.ageCategories.find((cat) => cat.age === age);
+      const catB = b.ageCategories.find((cat) => cat.age === age);
+
+      if (catA && catB) {
+        const levelA = AgeLevel[catA.level as keyof typeof AgeLevel];
+        const levelB = AgeLevel[catB.level as keyof typeof AgeLevel];
+        return levelA < levelB ? 1 : -1;
       } else {
         return 1;
       }

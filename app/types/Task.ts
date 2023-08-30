@@ -35,8 +35,12 @@ export const SortTasksOptions = [
     key: "taskId",
   },
   {
-    name: "Par difficulté",
+    name: "Par difficulté ↑",
     key: "diff",
+  },
+  {
+    name: "Par difficulté ↓",
+    key: "diffdown",
   },
 ];
 
@@ -48,6 +52,16 @@ export const AgeCategoryNames = [
   "12-14",
   "14-16",
   "16-19",
+];
+
+// Year categories options
+export const YearCategoryNames = [
+  "2018",
+  "2019",
+  "2020",
+  "2021",
+  "2022",
+  "2023",
 ];
 
 export enum AgeLevel {
