@@ -1,11 +1,9 @@
 "use client";
 
 import { usePathname, useSearchParams } from "next/navigation";
-import Container from "../Container";
 import Logo from "./Logo";
 import Link from "next/link";
 import { GiBeaver } from "react-icons/gi";
-import { useState } from "react";
 
 const navItems = [
   {
@@ -37,7 +35,6 @@ export default function Navbar() {
           <div className="flex flex-row justify-start gap-4">
             {navItems.map((item, index) => {
               const isActive = item.path === pathname;
-              console.log(isActive);
               return (
                 <Link
                   key={item.path}

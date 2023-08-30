@@ -9,8 +9,7 @@ interface TaskDownloadPdfProps {
 
 export default function TaskDownloadPdf({ taskId }: TaskDownloadPdfProps) {
   const pdfPath = `./pdfFiles/${taskId}.task.pdf`;
-  console.log(pdfPath);
-  console.log(taskId);
+
   return (
     <div className="">
       <a href={pdfPath} download={`${taskId}.pdf`}>
