@@ -12,7 +12,7 @@ export default function TaskHtmlFrame({ htmlText }: HtmlFrameProps) {
   const resizeIFrameHandler = () => {
     const iframe = iframeRef.current;
     if (iframe && iframe.contentWindow) {
-      const newHeight = iframe.contentWindow.document.body.scrollHeight + 40;
+      const newHeight = iframe.contentWindow.document.body?.scrollHeight + 40;
       iframe.style.height = `${newHeight}px`;
       iframe.height = `${newHeight}px`;
       iframe.style.visibility = "visible";
