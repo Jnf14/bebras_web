@@ -35,7 +35,7 @@ export default function Empty({
           <Button
             outline
             label="Retirer tous les filtres"
-            onClick={() => router.push("/")}
+            onClick={() => router.push("/tasks")}
           />
         )}
       </div>

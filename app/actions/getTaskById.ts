@@ -1,30 +1,15 @@
-import prisma from "@/app/libs/prismadb";
+import { data } from "@/tasks_dataset/data";
+import { Task } from "../types/Task";
 
-export interface IParams {
-  taskId?: string;
-}
 /**
  * Get one task from Task collection given its id
  * @param taskId the id of the task (format YYYY-CC-XX-lll)
  * @returns the task object
  */
-export default async function getTaskById(params: IParams) {
-  try {
-    const { taskId } = params;
-    const task = await prisma.task.findFirst({
-      where: {
-        taskId: taskId,
-      },
-    });
+export default function getTaskById(taskId: string) {
+  const task: Task = data.filter((t) => {
+    return t.taskId === taskId;
+  })[0];
 
-    if (!task) {
-      return null;
-    }
-
-    return {
-      ...task,
-    };
-  } catch (error: any) {
-    throw new Error(error);
-  }
+  return task;
 }

@@ -10,9 +10,9 @@ const Logo = () => {
       onClick={() => router.push("/")}
       alt="Logo"
       className="hidden md:block cursor-pointer select-none "
-      height="30"
-      width="100"
-      src="/images/bebras_logo.png"
+      height="50"
+      width="150"
+      src="/images/bebras_CH.png"
     />
   );
 };

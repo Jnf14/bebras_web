@@ -1,80 +1,104 @@
-import prisma from "@/app/libs/prismadb";
+import { data } from "@/tasks_dataset/data";
+import { AgeLevel, SortTasksOptions, Task } from "../types/Task";
+import sortBy from "sort-by";
 
 export interface ISearchParams {
-  age: string
+  age: string;
+  year: string;
+  category: string;
+  subcategory: string;
+  sort: string;
+  search: string;
 }
 
 /**
- * Get all tasks from Task collection
+ * Get tasks from data file based on given filters
  */
-export default async function getTasks(params: ISearchParams) {
-  try {
-    const {
-      // To fill
-    } = params;
+export default function getTasks({
+  age,
+  year,
+  category,
+  subcategory,
+  sort = SortTasksOptions[0].key,
+  search,
+}: ISearchParams): Task[] {
+  // All tasks
+  let tasks: Task[] = data;
 
-    let query: any = {};
-    console.log(params.age)
-    console.log("test2")
-
-    // if (userId) {
-    //   query.userId = userId;
-    // }
-
-    // if (category) {
-    //   query.category = category;
-    // }
-
-    // if (roomCount) {
-    //   query.roomCount = {
-    //     gte: +roomCount,
-    //   };
-    // }
-
-    // if (guestCount) {
-    //   query.guestCount = {
-    //     gte: +guestCount,
-    //   };
-    // }
-
-    // if (bathroomCount) {
-    //   query.bathroomCount = {
-    //     gte: +bathroomCount,
-    //   };
-    // }
-
-    // if (locationValue) {
-    //   query.locationValue = locationValue;
-    // }
-
-    // if (startDate && endDate) {
-    //   query.NOT = {
-    //     reservations: {
-    //       some: {
-    //         OR: [
-    //           {
-    //             endDate: { gte: startDate },
-    //             startDate: { lte: startDate },
-    //           },
-    //           {
-    //             startDate: { lte: endDate },
-    //             endDate: { gte: endDate },
-    //           },
-    //         ],
-    //       },
-    //     },
-    //   };
-    // }
-
-    const tasks = await prisma.task.findMany({
-      where: query,
-      orderBy: {
-        taskId: "desc",
-      },
+  // Filter tasks by age
+  if (age) {
+    tasks = tasks.filter((task) => {
+      return task.ageCategories.find((cat) => cat.age === age);
     });
-
-    return tasks;
-  } catch (error: any) {
-    throw new Error(error);
   }
+
+  // Filter tasks by age
+  if (year) {
+    tasks = tasks.filter((task) => {
+      return task.year === year;
+    });
+  }
+
+  // Filter tasks by category and subcategory
+  if (category) {
+    tasks = tasks.filter((task) => {
+      const matching = task.bebrasCategories.find(
+        (cat) => cat.category === category
+      );
+
+      if (!matching) {
+        return false;
+      }
+
+      if (subcategory) {
+        return matching.sub_categories.includes(subcategory);
+      }
+
+      return true;
+    });
+  }
+
+  // Filter tasks using the search bar
+  if (search) {
+    const searchText = search.toLowerCase().trim();
+    tasks = tasks.filter((task) => {
+      const taskString = `${task.title} ${task.bebrasKeywords.join(" ")}`;
+      return taskString.toLowerCase().includes(searchText);
+    });
+  }
+
+  // Sort tasks
+  if (sort == SortTasksOptions[2].key) {
+    // Sort tasks by age level
+    tasks.sort((a, b) => {
+      const catA = a.ageCategories.find((cat) => cat.age === age);
+      const catB = b.ageCategories.find((cat) => cat.age === age);
+
+      if (catA && catB) {
+        const levelA = AgeLevel[catA.level as keyof typeof AgeLevel];
+        const levelB = AgeLevel[catB.level as keyof typeof AgeLevel];
+        return levelA > levelB ? 1 : -1;
+      } else {
+        return 1;
+      }
+    });
+  } else if (sort == SortTasksOptions[3].key) {
+    // Sort tasks by age level
+    tasks.sort((a, b) => {
+      const catA = a.ageCategories.find((cat) => cat.age === age);
+      const catB = b.ageCategories.find((cat) => cat.age === age);
+
+      if (catA && catB) {
+        const levelA = AgeLevel[catA.level as keyof typeof AgeLevel];
+        const levelB = AgeLevel[catB.level as keyof typeof AgeLevel];
+        return levelA < levelB ? 1 : -1;
+      } else {
+        return 1;
+      }
+    });
+  } else {
+    tasks.sort(sortBy(sort));
+  }
+
+  return tasks;
 }

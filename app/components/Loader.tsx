@@ -1,11 +1,11 @@
 "use client";
 
-import { PuffLoader } from "react-spinners";
+import { ClipLoader } from "react-spinners";
 
 export default function Loader() {
   return (
-    <div className="flex flex-col justify-center items-center m-36">
-      <PuffLoader size={75} />
+    <div className="h-[70vh] flex flex-col justify-center items-center">
+      <ClipLoader size={50} />
     </div>
   );
 }

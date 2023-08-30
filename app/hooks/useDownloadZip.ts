@@ -57,6 +57,5 @@ export default function useDownloadZip(
     URL.revokeObjectURL(url);
   };
 
-  // Return zip promise
   return downloadZip;
 }
