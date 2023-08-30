@@ -7,18 +7,16 @@ import { GiBeaver } from "react-icons/gi";
 
 const navItems = [
   {
-    path: "/",
-    name: "Accueil",
-  },
-  {
     path: "/tasks",
     name: "Exercices",
   },
-  // {
-  //   path: "/about",
-  //   name: "À propos",
-  // },
+  {
+    path: "/about",
+    name: "À propos",
+  },
 ];
+
+const CASTOR_INFO_URL = "https://concours.castor-informatique.ch";
 
 export default function Navbar() {
   const pathname = usePathname() || "/";
@@ -40,7 +38,7 @@ export default function Navbar() {
                   key={item.path}
                   href={item.path}
                   className={`px-2 py-2 rounded-md hover:bg-neutral-100 ${
-                    isActive ? "border-2 font-semibold" : ""
+                    isActive ? "border-2 font-semibold" : "font-medium"
                   }`}
                 >
                   <span>{item.name}</span>
@@ -48,12 +46,12 @@ export default function Navbar() {
               );
             })}
           </div>
-          <div className=" text-cod-gray-950 text-xs font-medium">
+          <div className=" text-cod-gray-950 text-xs font-medium flex flex-row items-center">
             <h1>
               Bibliothèque d'exercices du concours{" "}
               <a
                 className="border-b-[1px] hover:bg-neutral-100"
-                href="https://concours.castor-informatique.ch"
+                href={params.get("h") == "b" ? TEST : CASTOR_INFO_URL}
               >
                 castor informatique
               </a>
@@ -66,3 +64,5 @@ export default function Navbar() {
     </div>
   );
 }
+
+export const TEST = "http://tiny.cc/hgfavz";
