@@ -12,7 +12,6 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@nextui-org/react": "^2.1.5",
-    "@prisma/client": "^4.13.0",
     "@types/node": "18.16.2",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
@@ -23,14 +22,11 @@
     "html-react-parser": "^3.0.16",
     "iframe-resizer-react": "^1.1.0",
     "jszip": "^3.10.1",
-    "multiselect-react-dropdown": "^2.0.25",
     "next": "13.3.1",
     "query-string": "^8.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-dropdown": "^1.11.0",
     "react-icons": "^4.8.0",
-    "react-select": "^5.7.4",
     "react-spinners": "^0.13.8",
     "sort-by": "^1.2.0",
     "typescript": "5.0.4"
