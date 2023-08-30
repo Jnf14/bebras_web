@@ -34,7 +34,7 @@ const TaskCard: React.FC<TaskKeywordProp> = ({ keyword, color }) => {
         e.stopPropagation();
         pushSearchParams(keyword);
       }}
-      className="inline-block whitespace-nowrap bg-blue-100 font-light text-cyan-600 text-sm rounded-lg z-10 mb-1 mr-1 p-1 text-center leading-none cursor-pointer border border-transparent hover:border-cyan-600"
+      className="inline-block whitespace-nowrap bg-blue-100 font-light text-cyan-600 text-sm rounded-lg mb-1 mr-1 p-1 text-center leading-none cursor-pointer border border-transparent hover:border-cyan-600"
     >
       {keyword}
     </span>
