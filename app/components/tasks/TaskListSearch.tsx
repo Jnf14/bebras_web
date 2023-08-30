@@ -6,10 +6,17 @@ import { ChangeEvent, useState, KeyboardEvent } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import Button from "../Button";
 
+const SEARCH_KEY = "search";
+
 export default function TaskListSearch() {
   const router = useRouter();
   const params = useSearchParams();
-  const [searchText, setSearchText] = useState(params.get("search")!);
+
+  const [searchText, setSearchText] = useState("");
+  const currentSearch = params.get(SEARCH_KEY);
+  if (currentSearch) {
+    setSearchText(currentSearch);
+  }
 
   function handleChange(event: ChangeEvent<HTMLInputElement>) {
     setSearchText(event.target.value);
