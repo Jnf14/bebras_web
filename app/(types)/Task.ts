@@ -35,11 +35,11 @@ export const SortTasksOptions = [
     key: "taskId",
   },
   {
-    name: "Par difficulté ↑",
+    name: "Par difficulté ↓",
     key: "diff",
   },
   {
-    name: "Par difficulté ↓",
+    name: "Par difficulté ↑",
     key: "diffdown",
   },
 ];
