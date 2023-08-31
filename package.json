@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "reload_tasks": "npm run cpyImg && npm run genData && npm run genPdf",
-    "cpyImg": "ts-node app/\\(libs\\)/copyAllGraphics.ts",
-    "genData": "ts-node app/\\(libs\\)/createMetadataFile.ts",
-    "genPdf": "sh app/\\(libs\\)/generate_pdf.ts"
+    "cpyImg": "ts-node app/libs/copyAllGraphics.ts",
+    "genData": "ts-node app/libs/createMetadataFile.ts",
+    "genPdf": "sh app/libs/generate_pdf.sh"
   },
   "dependencies": {
     "@types/node": "18.16.2",

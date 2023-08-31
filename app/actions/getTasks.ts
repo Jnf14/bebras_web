@@ -1,5 +1,5 @@
-import { data } from "@/app/(libs)/data";
-import { AgeLevel, SortTasksOptions, Task } from "@/app/(types)/Task";
+import { data } from "@/app/libs/data";
+import { AgeLevel, SortTasksOptions, Task } from "@/app/types/Task";
 import sortBy from "sort-by";
 
 export interface ISearchParams {

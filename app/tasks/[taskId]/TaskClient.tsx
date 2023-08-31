@@ -1,10 +1,10 @@
 "use client";
 
-import TaskHtmlFrame from "../../(components)/tasks_components/TaskHtmlFrame";
-import TaskKeyword from "@/app/(components)/tasks_components/TaskKeyword";
-import TaskDownloadZip from "@/app/(components)/tasks_components/TaskDownloadZip";
-import { Task } from "@/app/(types)/Task";
-import TaskDownloadPdf from "@/app/(components)/tasks_components/TaskDownloadPdf";
+import TaskHtmlFrame from "../../components/tasks_components/TaskHtmlFrame";
+import TaskKeyword from "@/app/components/tasks_components/TaskKeyword";
+import TaskDownloadZip from "@/app/components/tasks_components/TaskDownloadZip";
+import { Task } from "@/app/types/Task";
+import TaskDownloadPdf from "@/app/components/tasks_components/TaskDownloadPdf";
 
 interface TaskClientProps {
   task: Task;

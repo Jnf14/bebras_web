@@ -1,6 +1,6 @@
-import getTaskById from "@/app/(actions)/getTaskById";
-import Empty from "@/app/(components)/Empty";
-import { Task } from "@/app/(types)/Task";
+import getTaskById from "@/app/actions/getTaskById";
+import Empty from "@/app/components/Empty";
+import { Task } from "@/app/types/Task";
 import TaskPage from "./TaskPage";
 import { Suspense } from "react";
 import Loading from "@/app/loading";

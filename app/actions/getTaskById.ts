@@ -1,5 +1,5 @@
-import { data } from "@/app/(libs)/data";
-import { Task } from "../(types)/Task";
+import { data } from "@/app/libs/data";
+import { Task } from "../types/Task";
 
 /**
  * Get one task from Task collection given its id

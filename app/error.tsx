@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import Heading from "./(components)/Heading";
-import Button from "./(components)/Button";
+import Heading from "./components/Heading";
+import Button from "./components/Button";
 
 interface ErrorProps {
   error: Error;

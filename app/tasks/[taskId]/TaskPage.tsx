@@ -1,10 +1,10 @@
-import { Task } from "@/app/(types)/Task";
+import { Task } from "@/app/types/Task";
 import TaskClient from "./TaskClient";
 import {
   getTaskHtml,
   getTaskMd,
   getTaskTex,
-} from "@/app/(actions)/getTaskContent";
+} from "@/app/actions/getTaskContent";
 
 interface TaskPageProps {
   task: Task;

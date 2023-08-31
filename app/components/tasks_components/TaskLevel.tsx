@@ -1,6 +1,6 @@
 "use client";
 
-import { AgeLevel } from "@/app/(types)/Task";
+import { AgeLevel } from "@/app/types/Task";
 
 interface TaskLevelProps {
   age: string;

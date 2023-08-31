@@ -1,4 +1,4 @@
-import { getTaskFileString } from "../(libs)/utils";
+import { getTaskFileString } from "../libs/utils";
 import { convert_html, convert_tex } from "bebras";
 import path from "path";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import useDownloadZip from "@/app/(hooks)/useDownloadZip";
+import useDownloadZip from "@/app/hooks/useDownloadZip";
 import { GrDocumentZip } from "react-icons/gr";
 import Button from "../Button";
 
