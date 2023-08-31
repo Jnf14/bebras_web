@@ -62,7 +62,6 @@ export default function TaskHtmlFrame({ htmlText }: HtmlFrameProps) {
           width: "100%",
           height: "900px",
         }}
-        scrolling="no"
       />
     </div>
   );
