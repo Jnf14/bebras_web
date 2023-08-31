@@ -8,7 +8,7 @@ export const tasksDatasetPath: string = path.join(
   "../../tasks_dataset/"
 );
 
-export const dataFilePath: string = "./data.ts";
+export const dataFilePath: string = path.join(__dirname, "data.ts");
 
 const data: any = [];
 
