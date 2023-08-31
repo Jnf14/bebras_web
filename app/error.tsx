@@ -1,15 +1,15 @@
 "use client";
 
 import { useEffect } from "react";
-import Heading from "./components/Heading";
-import Button from "./components/Button";
+import Heading from "./(components)/Heading";
+import Button from "./(components)/Button";
 
 interface ErrorProps {
   error: Error;
   reset: () => void;
 }
 
-const Error: React.FC<ErrorProps> = ({ error, reset }: ErrorProps) => {
+export default function Error({ error, reset }: ErrorProps) {
   useEffect(() => {
     console.error(error);
   }, [error]);
@@ -24,6 +24,4 @@ const Error: React.FC<ErrorProps> = ({ error, reset }: ErrorProps) => {
       <Button outline label="Réessayer" onClick={() => reset()} />
     </div>
   );
-};
-
-export default Error;
+}

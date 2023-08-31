@@ -4,7 +4,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 import Button from "../Button";
-import { SortTasksOptions } from "@/app/types/Task";
+import { SortTasksOptions } from "@/app/(types)/Task";
 import qs from "query-string";
 
 export default function TaskListSort() {

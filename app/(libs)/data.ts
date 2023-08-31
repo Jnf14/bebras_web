@@ -1,5 +1,5 @@
 // Ce fichier a été généré automatiquement
-import { Task } from "@/app/types/Task";
+import { Task } from "@/app/(types)/Task";
 
 export const data: Task[] = [
   {

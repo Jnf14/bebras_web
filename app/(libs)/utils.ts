@@ -93,29 +93,6 @@ export function parseTaskMetadata(
   return taskMetadata;
 }
 
-export function copyAllGraphics(datasetPath: string, destPath: string) {
-  const graphics: string[] = findFilesByExtension(datasetPath, ".svg");
-  let ignored: number = 0;
-  let copied: number = 0;
-
-  graphics.forEach((filePath) => {
-    const fileName: string = path.basename(filePath);
-    const dirName: string = path.basename(path.dirname(filePath));
-    const dest: string = path.join(destPath, dirName, fileName);
-
-    try {
-      fs.copyFileSync(filePath, dest);
-      copied++;
-    } catch (error) {
-      ignored++;
-    }
-  });
-
-  console.log(
-    `${copied} fichiers (${ignored} ignorés) ont été copiés vers ${destPath} .\n`
-  );
-}
-
 /**
  * Recursive function which finds all files of a given extension in a dir
  */
@@ -150,4 +127,21 @@ export function findFilesByExtension(
     }
   }
   return res;
+}
+
+export function findDuplicates(arr: string[]): string[] {
+  const seen: { [key: string]: boolean } = {};
+  const duplicates: string[] = [];
+
+  for (const item of arr) {
+    if (seen[item]) {
+      if (!duplicates.includes(item)) {
+        duplicates.push(item);
+      }
+    } else {
+      seen[item] = true;
+    }
+  }
+
+  return duplicates;
 }

@@ -2,7 +2,7 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import qs from "query-string";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { BiMinus, BiPlus } from "react-icons/bi";
 
 const CATEGORY_SEARCH_KEY = "category";

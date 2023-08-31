@@ -1,8 +1,6 @@
-import { Suspense } from "react";
-import Navbar from "./components/navbar_components/Navbar";
+import Navbar from "./(components)/navbar_components/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Loading from "./loading";
 
 const font = Inter({
   subsets: ["latin"],

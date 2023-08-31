@@ -6,12 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "gen": "ts-node app/libs/createMetadataFile.ts && npm run genPdf",
-    "genPdf": "sh tasks_dataset/scripts/convert_bebras_tasks.sh"
+    "reload_tasks": "npm run cpyImg && npm run genData && npm run genPdf",
+    "cpyImg": "ts-node app/\\(libs\\)/copyAllGraphics.ts",
+    "genData": "ts-node app/\\(libs\\)/createMetadataFile.ts",
+    "genPdf": "sh app/\\(libs\\)/generate_pdf.ts"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.17",
-    "@nextui-org/react": "^2.1.5",
     "@types/node": "18.16.2",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
@@ -19,8 +19,6 @@
     "bebras": "^0.4.4",
     "canvas": "^2.11.2",
     "fs-extra": "^11.1.1",
-    "html-react-parser": "^3.0.16",
-    "iframe-resizer-react": "^1.1.0",
     "jszip": "^3.10.1",
     "next": "13.3.1",
     "query-string": "^8.1.0",

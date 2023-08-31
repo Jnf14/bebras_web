@@ -2,7 +2,7 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import TaskKeyword from "./TaskKeyword";
-import { Task } from "@/app/types/Task";
+import { Task } from "@/app/(types)/Task";
 import TaskLevel from "./TaskLevel";
 
 const NUM_OF_KEYWORDS = 3;

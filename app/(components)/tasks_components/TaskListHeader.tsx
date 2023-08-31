@@ -1,9 +1,9 @@
 "use client";
 
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { RxReset } from "react-icons/rx";
 import Button from "../Button";
-import { Task } from "@/app/types/Task";
+import { Task } from "@/app/(types)/Task";
 import TaskListSort from "./TaskListSort";
 import TaskListSearch from "./TaskListSearch";
 

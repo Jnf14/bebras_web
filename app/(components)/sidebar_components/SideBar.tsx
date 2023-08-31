@@ -6,9 +6,9 @@ import {
   CategoryNames,
   StruSubCategoryNames,
   YearCategoryNames,
-} from "@/app/types/Task";
+} from "@/app/(types)/Task";
 import { useSearchParams } from "next/navigation";
-import { AlgoSubCategoryNames } from "@/app/types/Task";
+import { AlgoSubCategoryNames } from "@/app/(types)/Task";
 import { FiFilter } from "react-icons/fi";
 
 export default function SideBar() {
