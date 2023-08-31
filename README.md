@@ -1,39 +1,76 @@
-# bebras_web
 
+## Lancer le site Web en local
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
+1. Premièrement, veillez à avoir Node installé : [Node website](https://nodejs.org/en/download/)
+2. Une fois Node installé et le repo clone, lancez la commande: 
+```bash
+npm install
+```
+3. Ensuite lancez
+```bash
+npm run reload_tasks
+```
+4. Et pour finalement lancer la plateforme Web en local lancez:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
+Ouvrez [http://localhost:3000](http://localhost:3000) avec votre navigateur pour voir le résultat.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Maintenance
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Les différents choix que nous avons pu faire concernant le format des
+données ainsi que leur stockage ont également été fait dans l'optique de
+faciliter l'ajout de futures tâches. Pour ce faire il faut les 3 étapes
+suivantes :
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
+1. Ajouter les nouvelles tâches dans le dataset
+2. Dans les nouvelles tâches ajouter les nouvelles métadonnées
+3. Générer le fichier entier de métadonnées, images et PDF
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Nous allons expliquer en détails les 3 étapes à suivre ci-dessous.
 
-## Learn More
+#### Ajouter les tâches dans le dataset
 
-To learn more about Next.js, take a look at the following resources:
+Dans le projet, toutes les tâches sont actuellement stockées dans le
+dossier : /task_dataset/. Dans celui-ci, chaque nouvelle tâche devrait
+être dans le format suivant :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    202X-.../
+        graphics/
+        interactivity/
+        202X-...-deu.task.md
+        202X-...-fra.task.md
+        202X-...-ita.task.md
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Ajouter les métadonnées
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Pour les nouvelles tâches, rajouter les métadonnées concernant les
+keywords, les catégories et potentielles sous-catégories en suivant le
+format suivant: 
+
+![metadata](public/images/Exemple_meta.png)
+
+Dans l'exemple ci-dessus, la tâche possède trois catégories définies dans "*bebras_categories*": "*Algorithmes et programmation*","*Structures et représentations de données*" et "*Processus et matériel informatique*". Les deux premières ont également besoin d'être augmentées d'une sous-catégorie,
+dans ce cas "*Théorie des graphes*" et "*Visualisation de l'information*" respectivement. Pour les catégories sans sous-catégories, il faut mettre une sous-catégorie dénomée "--" comme dans l'exemple. Finalement, les mots-clés sont définis "*bebras_keywords*".
+
+#### Générer le fichier de métadonnées
+
+Pour finaliser l'ajout des tâches, il faut appeler la commande
+```bash
+npm run reload_tasks
+```
+Si tout a été bien effectué
+précédemment, la commande devrait générer le nouveau fichier de
+métadonnées ainsi que les images et les PDF.
+
+
+### Changement de classification
+
+Afin d'augmenter ou modifier les catégories/sous-catégories existantes,
+il faut aller dans le fichier app/types/Task.ts. Il se trouve à
+l'intérieur la définition de nos cinq catégories dans la constante **CategoryNames** ainsi que la définition des deux sous-catégories dans **AlgoSubCategoryNames** et **StrucSubCategoryNames**. La modification de ces objets entraînera la modification des catégories dans le site Web. Tout ce qu'il reste à faire est de mettre à jour les métadonnées des tâches impactées par le changement de catégories et de regénérer le ficher task.ts en exécutant dans un terminal.
+```bash
+npm run reload_tasks
+```
