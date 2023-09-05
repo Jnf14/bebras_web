@@ -2,7 +2,7 @@
 
 import qs from "query-string";
 import { useSearchParams, useRouter } from "next/navigation";
-import { ChangeEvent, useState, KeyboardEvent, useEffect } from "react";
+import { ChangeEvent, useState, KeyboardEvent } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsGearWideConnected } from "react-icons/bs";
 import { RxCross2 } from "react-icons/rx";
@@ -15,15 +15,9 @@ export default function TaskListSearch() {
   const params = useSearchParams();
 
   const currentSearch = params.get(SEARCH_KEY);
-  const [searchText, setSearchText] = useState("");
-
-  useEffect(() => {
-    if (currentSearch) {
-      setSearchText(currentSearch);
-    } else {
-      setSearchText("");
-    }
-  });
+  const [searchText, setSearchText] = useState(
+    currentSearch ? currentSearch : ""
+  );
 
   function handleChange(event: ChangeEvent<HTMLInputElement>) {
     setSearchText(event.target.value);
@@ -59,9 +53,7 @@ export default function TaskListSearch() {
             label=""
             icon={RxCross2}
             iconSize="16"
-            onClick={() => {
-              pushSearchParams("");
-            }}
+            onClick={() => pushSearchParams("")}
           />
         ) : (
           <></>
