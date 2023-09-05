@@ -38,8 +38,9 @@ export default function TaskListSort() {
       {isOpen && (
         <div className="absolute bg-white overflow-hidden border rounded-lg">
           <div className="flex flex-col cursor-pointer">
-            {SortTasksOptions.map((o) => (
+            {SortTasksOptions.map((o, i) => (
               <div
+                key={`sort${i}`}
                 onClick={() => sortOnClick(o.key)}
                 className={`px-2 py-1 hover:bg-neutral-100 text-sm text-gray-500 
                 ${params.get("sort") === o.key && "bg-neutral-100"}`}
