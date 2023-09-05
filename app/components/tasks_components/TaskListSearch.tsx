@@ -25,8 +25,6 @@ export default function TaskListSearch() {
     }
   });
 
-  console.log(currentSearch);
-
   function handleChange(event: ChangeEvent<HTMLInputElement>) {
     setSearchText(event.target.value);
   }
